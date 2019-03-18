@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://steedos.github.io/steedos-core//steedos-core/blog</id>
+    <title>Steedos Objects Blog</title>
+    <updated>2017-10-24T06:00:00Z</updated>
+    <generator>Feed for Node.js</generator>
+    <link rel="alternate" href="https://steedos.github.io/steedos-core//steedos-core/blog"/>
+    <subtitle>The best place to stay up-to-date with the latest Steedos Objects news and events.</subtitle>
+    <logo>https://steedos.github.io/steedos-core//steedos-core/img/docusaurus.svg</logo>
+    <rights>Copyright © 2019 Your Name or Your Company Name</rights>
+    <entry>
+        <title type="html"><![CDATA[New Version 1.0.0]]></title>
+        <id>https://steedos.github.io/steedos-core//steedos-core/blog/2017/10/24/new-version-1.0.0.html</id>
+        <link href="https://steedos.github.io/steedos-core//steedos-core/blog/2017/10/24/new-version-1.0.0.html">
+        </link>
+        <updated>2017-10-24T06:00:00Z</updated>
+        <summary type="html"><![CDATA[<p>This blog post will test file name parsing issues when periods are present.</p> ]]></summary>
+        <author>
+            <name>Eric Nakagawa</name>
+            <uri>http://twitter.com/ericnakagawa</uri>
+        </author>
+    </entry>
+</feed>

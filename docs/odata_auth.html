@@ -1,0 +1,37 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>odata_auth · Steedos Objects</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="&lt;p&gt;身份验证&lt;/p&gt;
+"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="odata_auth · Steedos Objects"/><meta property="og:type" content="website"/><meta property="og:url" content="https://steedos.github.io/steedos-core//steedos-core/index.html"/><meta property="og:description" content="&lt;p&gt;身份验证&lt;/p&gt;
+"/><meta property="og:image" content="https://steedos.github.io/steedos-core//steedos-core/img/docusaurus.png"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://steedos.github.io/steedos-core//steedos-core/img/docusaurus.png"/><link rel="shortcut icon" href="/steedos-core/img/favicon.png"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><link rel="alternate" type="application/atom+xml" href="https://steedos.github.io/steedos-core//steedos-core/blog/atom.xml" title="Steedos Objects Blog ATOM Feed"/><link rel="alternate" type="application/rss+xml" href="https://steedos.github.io/steedos-core//steedos-core/blog/feed.xml" title="Steedos Objects Blog RSS Feed"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><link rel="stylesheet" href="/steedos-core/css/main.css"/><script src="/steedos-core/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/steedos-core/"><img class="logo" src="/steedos-core/img/docusaurus.svg" alt="Steedos Objects"/><h2 class="headerTitleWithLogo">Steedos Objects</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class=""><a href="/steedos-core/docs/README" target="_self">Docs</a></li><li class=""><a href="/steedos-core/blog/" target="_self">Blog</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="container mainContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 class="postHeaderTitle">odata_auth</h1></header><article><div><span><h1><a class="anchor" aria-hidden="true" id="身份验证"></a><a href="#身份验证" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>身份验证</h1>
+<p>ODATA接口均以&quot;/api/odata/v4/&quot;开头，访问ODATA接口必须提供用户身份信息，用户只能在权限范围内进行数据查询和修改。用户可以通过oauth2协议获取并验证。</p>
+<h2><a class="anchor" aria-hidden="true" id="1-auth-token验证"></a><a href="#1-auth-token验证" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>1. Auth Token验证</h2>
+<p>调用ODATA接口时，需在请求的headers中包含如下信息</p>
+<ul>
+<li>X-Auth-Token</li>
+</ul>
+<p>用户登录自动生成的Token验证码</p>
+<ul>
+<li>X-User-Id</li>
+</ul>
+<p>用户ID</p>
+<p>以ODATA查询接口的请求为例</p>
+<p>HTTP 请求</p>
+<pre><code class="hljs css language-bash">curl
+     -X GET https://beta.steedos.com/api/odata/v4/Af8e****DqD3/contacts
+     -H <span class="hljs-string">"X-Auth-Token: f2KpRW7KeN9aPmjSZ"</span> 
+     -H <span class="hljs-string">"X-User-Id: fbdpsNf4oHiX79vMJ"</span>
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="2oauth2验证"></a><a href="#2oauth2验证" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>2.OAuth2验证</h2>
+<p>[待完善]</p>
+<h2><a class="anchor" aria-hidden="true" id="接口返回状态码说明"></a><a href="#接口返回状态码说明" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>接口返回状态码说明</h2>
+<ul>
+<li>200：请求执行成功</li>
+<li>400：无法成功解析请求，URL在语法或语义上可能不正确</li>
+<li>401：未进行身份验证</li>
+<li>403：没有访问该实体的权限</li>
+<li>404：未找到相关记录</li>
+<li>405：不能对该记录执行此请求</li>
+<li>406：无法满足实体/实体容器/实体集在接受标头中指定的请求格式</li>
+<li>413：返回数据过大</li>
+<li>500：内部服务器错误</li>
+<li>501：服务不可用</li>
+</ul>
+</span></div></article></div><div class="docs-prevnext"></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#1-auth-token验证">1. Auth Token验证</a></li><li><a href="#2oauth2验证">2.OAuth2验证</a></li><li><a href="#接口返回状态码说明">接口返回状态码说明</a></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/steedos-core/" class="nav-home"><img src="/steedos-core/img/docusaurus.svg" alt="Steedos Objects" width="66" height="58"/></a><div><h5>Docs</h5><a href="/steedos-core/docs/en/doc1.html">Getting Started (or other categories)</a><a href="/steedos-core/docs/en/doc2.html">Guides (or other categories)</a><a href="/steedos-core/docs/en/doc3.html">API Reference (or other categories)</a></div><div><h5>Community</h5><a href="/steedos-core/en/users.html">User Showcase</a><a href="http://stackoverflow.com/questions/tagged/" target="_blank" rel="noreferrer noopener">Stack Overflow</a><a href="https://discordapp.com/">Project Chat</a><a href="https://twitter.com/" target="_blank" rel="noreferrer noopener">Twitter</a></div><div><h5>More</h5><a href="/steedos-core/blog">Blog</a><a href="https://github.com/">GitHub</a><a class="github-button" data-icon="octicon-star" data-count-href="/facebook/docusaurus/stargazers" data-show-count="true" data-count-aria-label="# stargazers on GitHub" aria-label="Star this project on GitHub">Star</a></div></section><a href="https://code.facebook.com/projects/" target="_blank" rel="noreferrer noopener" class="fbOpenSource"><img src="/steedos-core/img/oss_logo.png" alt="Facebook Open Source" width="170" height="45"/></a><section class="copyright">Copyright © 2019 Your Name or Your Company Name</section></footer></div></body></html>
