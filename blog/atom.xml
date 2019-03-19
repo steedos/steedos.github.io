@@ -16,8 +16,8 @@
         <updated>1970-01-01T00:00:00Z</updated>
         <summary type="html"><![CDATA[<p>历经19年的开发和内部使用，Steedos 对象服务器正式开源。</p> ]]></summary>
         <author>
-            <name>Jack Zhuang</name>
-            <uri>http://github.com/steedos/</uri>
+            <name>Steedos</name>
+            <uri>http://steedos.github.io/</uri>
         </author>
     </entry>
 </feed>
