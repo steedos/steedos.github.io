@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0">
     <channel>
-        <title>Steedos Objects Blog</title>
+        <title>Steedos 对象服务器 Blog</title>
         <link>https://steedos.github.io//blog</link>
-        <description>The best place to stay up-to-date with the latest Steedos Objects news and events.</description>
-        <lastBuildDate>Tue, 24 Oct 2017 06:00:00 GMT</lastBuildDate>
+        <description>The best place to stay up-to-date with the latest Steedos 对象服务器 news and events.</description>
+        <lastBuildDate>Thu, 01 Jan 1970 00:00:00 GMT</lastBuildDate>
         <docs>http://blogs.law.harvard.edu/tech/rss</docs>
         <generator>Feed for Node.js</generator>
         <image>
-            <title>Steedos Objects Blog</title>
+            <title>Steedos 对象服务器 Blog</title>
             <url>https://steedos.github.io//img/icon.png</url>
             <link>https://steedos.github.io//blog</link>
         </image>
         <copyright>Copyright © 2019 Your Name or Your Company Name</copyright>
         <item>
-            <title><![CDATA[New Version 1.0.0]]></title>
-            <link>https://steedos.github.io//blog/2017/10/24/new-version-1.0.0.html</link>
-            <guid>https://steedos.github.io//blog/2017/10/24/new-version-1.0.0.html</guid>
-            <pubDate>Tue, 24 Oct 2017 06:00:00 GMT</pubDate>
-            <description><![CDATA[<p>This blog post will test file name parsing issues when periods are present.</p> ]]></description>
+            <title><![CDATA[Steedos 对象服务器开源]]></title>
+            <link>https://steedos.github.io//blog/2019/1/1/opensource.html</link>
+            <guid>https://steedos.github.io//blog/2019/1/1/opensource.html</guid>
+            <pubDate>Thu, 01 Jan 1970 00:00:00 GMT</pubDate>
+            <description><![CDATA[<p>历经19年的开发和内部使用，Steedos 对象服务器正式开源。</p> ]]></description>
         </item>
     </channel>
 </rss>
