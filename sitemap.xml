@@ -9,6 +9,7 @@
 <url> <loc>https://steedos.github.io/docs/en/app_ipad</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://steedos.github.io/docs/en/app_ipad" /> </url>
 <url> <loc>https://steedos.github.io/docs/en/app_mobile</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://steedos.github.io/docs/en/app_mobile" /> </url>
 <url> <loc>https://steedos.github.io/docs/en/app</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://steedos.github.io/docs/en/app" /> </url>
+<url> <loc>https://steedos.github.io/docs/en/graphql</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://steedos.github.io/docs/en/graphql" /> </url>
 <url> <loc>https://steedos.github.io/docs/en/installation</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://steedos.github.io/docs/en/installation" /> </url>
 <url> <loc>https://steedos.github.io/docs/en/object_action</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://steedos.github.io/docs/en/object_action" /> </url>
 <url> <loc>https://steedos.github.io/docs/en/object_audit</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://steedos.github.io/docs/en/object_audit" /> </url>
