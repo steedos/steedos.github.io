@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0">
     <channel>
-        <title>Steedos 对象服务 Blog</title>
+        <title>Steedos Object Schema Blog</title>
         <link>https://steedos.github.io//blog</link>
-        <description>The best place to stay up-to-date with the latest Steedos 对象服务 news and events.</description>
+        <description>The best place to stay up-to-date with the latest Steedos Object Schema news and events.</description>
         <lastBuildDate>Thu, 01 Jan 1970 00:00:00 GMT</lastBuildDate>
         <docs>http://blogs.law.harvard.edu/tech/rss</docs>
         <generator>Feed for Node.js</generator>
         <image>
-            <title>Steedos 对象服务 Blog</title>
+            <title>Steedos Object Schema Blog</title>
             <url>https://steedos.github.io//img/icon.png</url>
             <link>https://steedos.github.io//blog</link>
         </image>
