@@ -2,21 +2,21 @@
 <rss version="2.0">
     <channel>
         <title>ObjectQL Blog</title>
-        <link>https://www.objectql.org//blog</link>
+        <link>https://steedos.github.io//blog</link>
         <description>The best place to stay up-to-date with the latest ObjectQL news and events.</description>
         <lastBuildDate>Thu, 01 Jan 1970 00:00:00 GMT</lastBuildDate>
         <docs>http://blogs.law.harvard.edu/tech/rss</docs>
         <generator>Feed for Node.js</generator>
         <image>
             <title>ObjectQL Blog</title>
-            <url>https://www.objectql.org//img/icon.png</url>
-            <link>https://www.objectql.org//blog</link>
+            <url>https://steedos.github.io//img/icon.png</url>
+            <link>https://steedos.github.io//blog</link>
         </image>
         <copyright>Copyright © 2019 上海华炎软件科技有限公司</copyright>
         <item>
             <title><![CDATA[Steedos 对象服务器开源]]></title>
-            <link>https://www.objectql.org//blog/2019/1/1/opensource.html</link>
-            <guid>https://www.objectql.org//blog/2019/1/1/opensource.html</guid>
+            <link>https://steedos.github.io//blog/2019/1/1/opensource.html</link>
+            <guid>https://steedos.github.io//blog/2019/1/1/opensource.html</guid>
             <pubDate>Thu, 01 Jan 1970 00:00:00 GMT</pubDate>
             <description><![CDATA[<p>历经19年的开发和内部使用，Steedos 对象服务器正式开源。</p> ]]></description>
         </item>
