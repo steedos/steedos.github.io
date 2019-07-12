@@ -4,11 +4,16 @@
 <url> <loc>https://steedos.github.io/help</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> <xhtml:link rel="alternate" hreflang="en" href="https://steedos.github.io/en/help" /> </url>
 <url> <loc>https://steedos.github.io/index</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> <xhtml:link rel="alternate" hreflang="en" href="https://steedos.github.io/en/index" /> </url>
 <url> <loc>https://steedos.github.io/users</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> <xhtml:link rel="alternate" hreflang="en" href="https://steedos.github.io/en/users" /> </url>
-<url> <loc>https://steedos.github.io/blog/2019/1/1/opensource</loc> <changefreq>weekly</changefreq> <priority>0.3</priority> </url>
+<url> <loc>https://steedos.github.io/blog/2019/7/1/released</loc> <changefreq>weekly</changefreq> <priority>0.3</priority> </url>
 <url> <loc>https://steedos.github.io/docs/en/app_excel</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://steedos.github.io/docs/en/app_excel" /> </url>
 <url> <loc>https://steedos.github.io/docs/en/app_ipad</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://steedos.github.io/docs/en/app_ipad" /> </url>
 <url> <loc>https://steedos.github.io/docs/en/app_mobile</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://steedos.github.io/docs/en/app_mobile" /> </url>
 <url> <loc>https://steedos.github.io/docs/en/app</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://steedos.github.io/docs/en/app" /> </url>
+<url> <loc>https://steedos.github.io/docs/en/graphql_add</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://steedos.github.io/docs/en/graphql_add" /> </url>
+<url> <loc>https://steedos.github.io/docs/en/graphql_auth</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://steedos.github.io/docs/en/graphql_auth" /> </url>
+<url> <loc>https://steedos.github.io/docs/en/graphql_delete</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://steedos.github.io/docs/en/graphql_delete" /> </url>
+<url> <loc>https://steedos.github.io/docs/en/graphql_edit</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://steedos.github.io/docs/en/graphql_edit" /> </url>
+<url> <loc>https://steedos.github.io/docs/en/graphql_query</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://steedos.github.io/docs/en/graphql_query" /> </url>
 <url> <loc>https://steedos.github.io/docs/en/graphql</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://steedos.github.io/docs/en/graphql" /> </url>
 <url> <loc>https://steedos.github.io/docs/en/installation</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://steedos.github.io/docs/en/installation" /> </url>
 <url> <loc>https://steedos.github.io/docs/en/introduction</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://steedos.github.io/docs/en/introduction" /> </url>
