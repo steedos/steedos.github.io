@@ -68,6 +68,7 @@
 <p>比如你可以定义如下对象 src/accounts.object.yml</p>
 <pre><code class="hljs css language-yaml"><span class="hljs-attr">name:</span> <span class="hljs-string">accounts</span>
 <span class="hljs-attr">label:</span> <span class="hljs-string">单位</span>
+<span class="hljs-attr">icon:</span> <span class="hljs-string">person_account</span>
 <span class="hljs-attr">description:</span> <span class="hljs-string">统一保存客户、合作伙伴、供应商数据</span>
 <span class="hljs-attr">enable_files:</span> <span class="hljs-literal">true</span>
 <span class="hljs-attr">enable_search:</span> <span class="hljs-literal">true</span>
@@ -78,10 +79,10 @@
 <span class="hljs-attr">enable_chatter:</span> <span class="hljs-literal">true</span>
 <span class="hljs-attr">fields:</span>
 <span class="hljs-attr">  name:</span> 
-<span class="hljs-attr">    type:</span> <span class="hljs-string">String</span>
+<span class="hljs-attr">    type:</span> <span class="hljs-string">text</span>
 <span class="hljs-attr">    label:</span> <span class="hljs-string">标题</span> 
 <span class="hljs-attr">  priority:</span>
-<span class="hljs-attr">    type:</span> <span class="hljs-string">String</span>
+<span class="hljs-attr">    type:</span> <span class="hljs-string">text</span>
 <span class="hljs-attr">    label:</span> <span class="hljs-string">优先级</span>
 <span class="hljs-attr">    options:</span>
 <span class="hljs-attr">      - label:</span> <span class="hljs-string">高</span>
@@ -108,7 +109,7 @@
 <span class="hljs-bullet">      -</span> <span class="hljs-string">priority</span>
 <span class="hljs-attr">  high_priority:</span>
 <span class="hljs-attr">    label:</span> <span class="hljs-string">重点关注</span>
-<span class="hljs-attr">    filters:</span> <span class="hljs-string">["priority",</span> <span class="hljs-string">"="</span><span class="hljs-string">,</span> <span class="hljs-string">"high"</span><span class="hljs-string">]</span>
+<span class="hljs-attr">    filters:</span> <span class="hljs-string">[["priority",</span> <span class="hljs-string">"="</span><span class="hljs-string">,</span> <span class="hljs-string">"high"</span><span class="hljs-string">]]</span>
 <span class="hljs-attr">permission_set:</span>
 <span class="hljs-attr">  user:</span>
 <span class="hljs-attr">    allowCreate:</span> <span class="hljs-literal">true</span>
@@ -225,7 +226,7 @@
 <ul>
 <li><a href="https://github.com/steedos/object-server/tree/develop/packages/standard-objects">Steedos 标准对象</a>。</li>
 </ul>
-</span></div></article></div><div class="docLastUpdate"><em>Last updated on 2019-7-15 by 庄建国</em></div><div class="docs-prevnext"><a class="docs-prev button" href="/docs/en/getting_started"><span class="arrow-prev">← </span><span>快速向导</span></a><a class="docs-next button" href="/docs/en/object_field"><span>字段</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#描述业务对象">描述业务对象</a><ul class="toc-headings"><li><a href="#对象属性">对象属性</a></li><li><a href="#对象字段">对象字段</a></li><li><a href="#列表视图">列表视图</a></li><li><a href="#访问权限">访问权限</a></li><li><a href="#参考">参考</a></li></ul></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/" class="nav-home"><img src="/img/icon_blue.png" alt="华炎开发平台" width="66" height="58"/></a><div><h5>华炎开发平台</h5><a href="/docs/en/overview">关于“低代码”开发平台</a><a href="/docs/en/getting_started">快速向导</a><a href="https://www-steedos-com.oss-cn-beijing.aliyuncs.com/videos/creator/contracts-demo.mp4" target="_blank">开发指南</a></div><div><h5>案例</h5><a href="https://github.com/steedos/steedos-contracts-app" target="_blank">合同管理</a><a href="https://github.com/steedos/steedos-meeting-app" target="_blank">会议管理</a><a href="https://github.com/steedos/steedos-records-app" target="_blank">档案管理</a></div><div><h5>更多</h5><a href="/docs/assets/support_qq.jpg" target="_blank" rel="noreferrer noopener">技术交流QQ群：797469729</a><a href="https://github.com/steedos/object-server">GitHub</a><a href="/blog">动态</a><a class="github-button" href="https://github.com/steedos/object-server" data-icon="octicon-star" data-count-href="/steedos/object-server/stargazers" data-show-count="true" data-count-aria-label="# stargazers on GitHub" aria-label="Star this project on GitHub">Star</a></div></section><section class="copyright">Copyright © 2019 上海华炎软件科技有限公司</section></footer></div><script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script><script>
+</span></div></article></div><div class="docLastUpdate"><em>Last updated on 2019-7-23 by baozhoutao</em></div><div class="docs-prevnext"><a class="docs-prev button" href="/docs/en/getting_started"><span class="arrow-prev">← </span><span>快速向导</span></a><a class="docs-next button" href="/docs/en/object_field"><span>字段</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#描述业务对象">描述业务对象</a><ul class="toc-headings"><li><a href="#对象属性">对象属性</a></li><li><a href="#对象字段">对象字段</a></li><li><a href="#列表视图">列表视图</a></li><li><a href="#访问权限">访问权限</a></li><li><a href="#参考">参考</a></li></ul></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/" class="nav-home"><img src="/img/icon_blue.png" alt="华炎开发平台" width="66" height="58"/></a><div><h5>华炎开发平台</h5><a href="/docs/en/overview">关于“低代码”开发平台</a><a href="/docs/en/getting_started">快速向导</a><a href="https://www-steedos-com.oss-cn-beijing.aliyuncs.com/videos/creator/contracts-demo.mp4" target="_blank">开发指南</a></div><div><h5>案例</h5><a href="https://github.com/steedos/steedos-contracts-app" target="_blank">合同管理</a><a href="https://github.com/steedos/steedos-meeting-app" target="_blank">会议管理</a><a href="https://github.com/steedos/steedos-records-app" target="_blank">档案管理</a></div><div><h5>更多</h5><a href="/docs/assets/support_qq.jpg" target="_blank" rel="noreferrer noopener">技术交流QQ群：797469729</a><a href="https://github.com/steedos/object-server">GitHub</a><a href="/blog">动态</a><a class="github-button" href="https://github.com/steedos/object-server" data-icon="octicon-star" data-count-href="/steedos/object-server/stargazers" data-show-count="true" data-count-aria-label="# stargazers on GitHub" aria-label="Star this project on GitHub">Star</a></div></section><section class="copyright">Copyright © 2019 上海华炎软件科技有限公司</section></footer></div><script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script><script>
                 document.addEventListener('keyup', function(e) {
                   if (e.target !== document.body) {
                     return;
