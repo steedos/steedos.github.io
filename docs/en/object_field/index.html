@@ -1,5 +1,5 @@
-<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>字段 · 华炎开发平台</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="&lt;p&gt;Steedos 默认使用MongoDB数据库，相比传统的SQL数据库，可以额外实现数组（多选）、子表等高级字段类型。&lt;/p&gt;
-"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="字段 · 华炎开发平台"/><meta property="og:type" content="website"/><meta property="og:url" content="https://steedos.github.io//"/><meta property="og:description" content="&lt;p&gt;Steedos 默认使用MongoDB数据库，相比传统的SQL数据库，可以额外实现数组（多选）、子表等高级字段类型。&lt;/p&gt;
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>字段 · 华炎开发平台</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="&lt;p&gt;Steedos 默认使用MongoDB数据库，相比传统的SQL数据库，可以额外实现数组、内嵌对象、内嵌表格等高级字段类型。&lt;/p&gt;
+"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="字段 · 华炎开发平台"/><meta property="og:type" content="website"/><meta property="og:url" content="https://steedos.github.io//"/><meta property="og:description" content="&lt;p&gt;Steedos 默认使用MongoDB数据库，相比传统的SQL数据库，可以额外实现数组、内嵌对象、内嵌表格等高级字段类型。&lt;/p&gt;
 "/><meta property="og:image" content="https://steedos.github.io/img/docusaurus.png"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://steedos.github.io/img/docusaurus.png"/><link rel="shortcut icon" href="/img/icon_blue.png"/><link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><script src="https://unpkg.com/vanilla-back-to-top@7.1.14/dist/vanilla-back-to-top.min.js"></script><script>
         document.addEventListener('DOMContentLoaded', function() {
           addBackToTop(
@@ -62,8 +62,8 @@
                 };
               }
             });
-        </script></nav></div><div class="container mainContainer"><div class="wrapper"><div class="post"><header class="postHeader"><a class="edit-page-link button" href="https://github.com/steedos/object-server/edit/develop/docs/object_field.md" target="_blank" rel="noreferrer noopener">Edit</a><h1 class="postHeaderTitle">字段</h1></header><article><div><span><p>Steedos 默认使用MongoDB数据库，相比传统的SQL数据库，可以额外实现数组（多选）、子表等高级字段类型。</p>
-<h2><a class="anchor" aria-hidden="true" id="字段基本属性"></a><a href="#字段基本属性" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>字段基本属性</h2>
+        </script></nav></div><div class="container mainContainer"><div class="wrapper"><div class="post"><header class="postHeader"><a class="edit-page-link button" href="https://github.com/steedos/object-server/edit/develop/docs/object_field.md" target="_blank" rel="noreferrer noopener">Edit</a><h1 class="postHeaderTitle">字段</h1></header><article><div><span><p>Steedos 默认使用MongoDB数据库，相比传统的SQL数据库，可以额外实现数组、内嵌对象、内嵌表格等高级字段类型。</p>
+<h2><a class="anchor" aria-hidden="true" id="字段属性"></a><a href="#字段属性" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>字段属性</h2>
 <p>每个字段都可以配置以下属性，定义字段的功能和界面操作。</p>
 <ul>
 <li>字段名(name): 字段在数据库中保存的名称。</li>
@@ -73,7 +73,7 @@
 <li>帮助文本(inlineHelpText): 表单填写时显示的帮助文本</li>
 <li>宽字段(is_wide): 显示时占两列，默认只占一列</li>
 <li>分组(group)：在显示记录时可按分组显示字段</li>
-<li>多选(multiple)：可以一次选中多条记录。</li>
+<li>多选(multiple)：文本、选择类型字段添加此属性，可以实现多选功能，数据库中保存也是对应的数组类型。</li>
 <li>可搜索(seachable): 当用户在此对象中执行搜索时，会同时搜索此字段的内容</li>
 <li>可排序(sortable): 用户在浏览记录时，可以按照此字段执行排序操作。可排序字段系统会自动创建索引。默认为不可排序</li>
 <li>索引(index): 指定是否在数据库中为此字段创建索引，默认为不创建索引。</li>
@@ -84,17 +84,10 @@
 <li>禁用(disabled)</li>
 <li>黑箱字段(blackbox): Steedos在做数据验证时，忽略此字段的内容。</li>
 <li>值范围(allowedValues): 此字段的值必须在此范围之内。</li>
-<li>可选项(options)：对于下拉框、引用、主表子表类型的字段，可定义可选项的范围
-<ul>
-<li>数据格式为
-<ul>
-<li>选项显示与存储值一致时, 各选项以英文逗号(,)分隔，比如：&quot;选项1,选项2,选项3&quot;</li>
-<li>选项显示与存储值不一致时，可通过英文冒号(:)来指定选项值，比如：&quot;选项1:值1,选项2:值2,选项3:值3&quot;</li>
-</ul></li>
-</ul></li>
 </ul>
+<p><img src="/docs/assets/field_guide.png" alt="表单编辑效果"></p>
 <h2><a class="anchor" aria-hidden="true" id="字段类型"></a><a href="#字段类型" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>字段类型</h2>
-<p>Steedos支持以下基本字段类型。如果字段配置了数组(multiple)属性，表示当前字段为数组类型，以数组的形式保存在数据库中，用户界面上可以多选。</p>
+<p>Steedos支持以下基本字段类型。</p>
 <ul>
 <li>文本(text)</li>
 <li>多行文本(textarea)</li>
@@ -102,12 +95,11 @@
 <li>日期时间(datetime)</li>
 <li>下拉(select): 界面生成下拉框，需配合options属性使用</li>
 <li>布尔(boolean): 界面生成勾选框</li>
-<li>数值(number)</li>
+<li>数值(number): 只能输入数值内容，可以指定小数位数。</li>
 <li>引用(lookup): 可以引用其他相关对象中的记录，联合reference_to字段，从关联表中选择记录。</li>
-<li>主表/子表(master_detail): 主表子表字段类型是引用字段类型的一种扩展，将当前记录链接到主表成为子记录。</li>
-<li>表格(grid): 表格字段类型包含多个子字段，在界面上显示为一个表格。</li>
 <li>网址(url): 在只读时， 点击会以窗口形式打开网址</li>
 <li>邮件地址(email): 在只读时，点击会自动打开邮件客户端，并将字段值带入收件人中</li>
+<li>主表/子表(master_detail): 主表子表字段类型是引用字段类型的一种扩展，将当前记录链接到主表成为子记录。</li>
 </ul>
 <h3><a class="anchor" aria-hidden="true" id="文本-text"></a><a href="#文本-text" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>文本 text</h3>
 <pre><code class="hljs css language-yaml"><span class="hljs-attr">name:</span>
@@ -118,9 +110,11 @@
 <span class="hljs-attr">  searchable:</span> <span class="hljs-literal">true</span>
 <span class="hljs-attr">  index:</span> <span class="hljs-literal">true</span>
 </code></pre>
-<blockquote>
-<p>如果定义为文本且选择建立索引，则最多支持300个字符(不区分中英文)</p>
-</blockquote>
+<p>备注：</p>
+<ul>
+<li>如果配置了多选(multiple)属性，自动升级为文本数组类型，以数组的形式保存在数据库中，用户界面上可以输入多个文本。</li>
+<li>如果定义为文本且选择建立索引，则最多支持300个字符(不区分中英文)</li>
+</ul>
 <h3><a class="anchor" aria-hidden="true" id="多行文本-textarea"></a><a href="#多行文本-textarea" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>多行文本 textarea</h3>
 <pre><code class="hljs css language-yaml"><span class="hljs-attr">description:</span>
 <span class="hljs-attr">  label:</span> <span class="hljs-string">问题描述</span>
@@ -128,9 +122,8 @@
 <span class="hljs-attr">  is_wide:</span> <span class="hljs-literal">true</span>
 <span class="hljs-attr">  rows:</span> <span class="hljs-number">4</span>
 </code></pre>
-<blockquote>
-<p>多行文本类型不支持建立索引</p>
-</blockquote>
+<p>参数rows代表编辑时文本框默认显示的行数。
+多行文本类型不支持建立索引。</p>
 <h3><a class="anchor" aria-hidden="true" id="日期-date"></a><a href="#日期-date" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>日期 date</h3>
 <p>日期类型的字段，用户输入时自动弹出日期选择框。</p>
 <pre><code class="hljs css language-yaml"><span class="hljs-attr">deadline:</span>
@@ -169,15 +162,38 @@
 <pre><code class="hljs css language-yaml"><span class="hljs-attr">priority:</span>
 <span class="hljs-attr">  type:</span> <span class="hljs-string">select</span>
 <span class="hljs-attr">  label:</span> <span class="hljs-string">优先级</span>
-<span class="hljs-attr">  options:</span>
+<span class="hljs-attr">  options:</span> <span class="hljs-string">高:high,中:normal,低:low</span>
+<span class="hljs-attr">  defaultValue:</span> <span class="hljs-string">normal</span>
+<span class="hljs-attr">  filterable:</span> <span class="hljs-literal">true</span>
+</code></pre>
+<p>选择类型字段如果定义了多选(multiple)属性，表示当前字段为数组类型，以数组的形式保存在数据库中，用户界面上可以选中多个选项。
+可以用多种格式定义可选项(options)。</p>
+<p>完整格式</p>
+<pre><code class="hljs css language-yaml"><span class="hljs-attr">  options:</span>
 <span class="hljs-attr">    - label:</span> <span class="hljs-string">高</span>
 <span class="hljs-attr">      value:</span> <span class="hljs-string">high</span>
 <span class="hljs-attr">    - label:</span> <span class="hljs-string">中</span>
 <span class="hljs-attr">      value:</span> <span class="hljs-string">normal</span>
 <span class="hljs-attr">    - label:</span> <span class="hljs-string">低</span>
 <span class="hljs-attr">      value:</span> <span class="hljs-string">low</span>
-<span class="hljs-attr">  defaultValue:</span> <span class="hljs-string">normal</span>
-<span class="hljs-attr">  filterable:</span> <span class="hljs-literal">true</span>
+</code></pre>
+<p>简易格式 (区分显示值和储存值)</p>
+<pre><code class="hljs css language-yaml"><span class="hljs-attr">  options:</span> <span class="hljs-string">高:high,中:normal,低:low</span>
+</code></pre>
+<p>简易格式 (不区分显示值和储存值)</p>
+<pre><code class="hljs css language-yaml"><span class="hljs-attr">  options:</span> <span class="hljs-string">high,normal,low</span>
+</code></pre>
+<h3><a class="anchor" aria-hidden="true" id="网址-url"></a><a href="#网址-url" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>网址 url</h3>
+<p>网址类型的字段编辑时可输入网址，在只读界面点击网址，弹出到对应的。</p>
+<pre><code class="hljs css language-yaml"><span class="hljs-attr">website:</span>
+<span class="hljs-attr">  type:</span> <span class="hljs-string">"url"</span>
+<span class="hljs-attr">  label:</span> <span class="hljs-string">"网址"</span>
+</code></pre>
+<h3><a class="anchor" aria-hidden="true" id="邮件-email"></a><a href="#邮件-email" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>邮件 email</h3>
+<p>邮件类型字段编辑时，字段内可输入邮件地址，系统会校验邮件格式是否合法。在只读界面，点击邮件会自动打开邮件客户端，进入写邮件界面。</p>
+<pre><code class="hljs css language-yaml"><span class="hljs-attr">mail:</span>
+<span class="hljs-attr">  type:</span> <span class="hljs-string">"email"</span>
+<span class="hljs-attr">  label:</span> <span class="hljs-string">"邮件"</span>
 </code></pre>
 <h3><a class="anchor" aria-hidden="true" id="引用-lookup"></a><a href="#引用-lookup" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>引用 lookup</h3>
 <p>引用类型的字段，用户输入时生成下拉框，用户可以从相关表搜索并选中记录。引用类型的字段保存在数据库中的值是被选中记录的的id。当配置为多选时，可以一次选中多条记录。</p>
@@ -187,14 +203,15 @@
 <span class="hljs-attr">  reference_to:</span><span class="hljs-string">"accounts"</span>
 <span class="hljs-attr">  filters:</span> <span class="hljs-string">[["priority",</span> <span class="hljs-string">"="</span><span class="hljs-string">,</span> <span class="hljs-string">"normal"</span><span class="hljs-string">]]</span>
 </code></pre>
-<p>以上示例可以为联系人表定义了一个单位字段，此字段在显示时从accounts表的数据中选择，并需符合条件 priority == &quot;normal&quot;。
-引用字段可额外配置以下参数：</p>
+<p>以上示例可以为联系人表定义了一个单位字段，此字段在显示时从accounts表的数据中选择，并需符合条件 priority == &quot;normal&quot;。</p>
+<p>引用字段可额外配置以下参数：</p>
 <ul>
 <li>引用对象(reference_to): 编辑时，从关联表中选择记录，如果引用的对象上配置了enable_tree属性，则以tree形式列出关联表中记录供选择。</li>
 <li>过滤器(filters): 在reference_to对象中筛选可选项时，指定<a href="/docs/en/object_filter">过滤条件</a>，限定选择范围。</li>
 <li>可选项脚本(optionsFunction)：通过脚本生成可选项的内容</li>
 <li>默认图标(defaultIcon): 下拉选项中显示的默认图标，如果配置了reference_to，则显示引用对象的图标</li>
 <li>依赖字段(depend_on): 此字段的值需要依赖其他字段的值，当depend_on中的字段值发生变化时，会重新计算当前字段值/可选项。</li>
+<li>多选(multiple)：表示当前字段为数组类型，以数组的形式保存在数据库中，用户界面上可以选中多个选项。</li>
 </ul>
 <h3><a class="anchor" aria-hidden="true" id="主表-子表-master-detail"></a><a href="#主表-子表-master-detail" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>主表/子表 master/detail</h3>
 <p>在引用字段的基础上，创建一个此对象（子级或&quot;详细信息&quot;）与另一对象（父级或&quot;主&quot;）之间的特殊父子关系类型，其中：</p>
@@ -214,7 +231,7 @@
 <li>而取消删除主记录时也会取消删除相关的子表记录和次子表记录。</li>
 <li>但是，如果您删除一个子表记录，随后又单独删除其主记录，则不能取消删除该子表信息，因为它不再有关联的主记录。</li>
 </ul>
-<h3><a class="anchor" aria-hidden="true" id="子表-grid"></a><a href="#子表-grid" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>子表 grid</h3>
+<h3><a class="anchor" aria-hidden="true" id="内嵌表格-grid"></a><a href="#内嵌表格-grid" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>内嵌表格 grid</h3>
 <p>表格字段类型包含多个列字段，在界面上显示为一个表格。</p>
 <ul>
 <li>列字段可以是任何基本的字段类型。</li>
@@ -229,36 +246,47 @@
 <li>逐个新增除表格字段的其他类型字段的列字段，字段名规范：&quot;表格字段名.$.列字段名&quot;</li>
 </ul>
 <p>表格字段与子表不同，在数据库中不会生成一个新的表，而是作为一个对象数组字段保存在记录中。所以只适用于表格行数(小于100行)比较少的业务场景。</p>
-<h3><a class="anchor" aria-hidden="true" id="网址-url"></a><a href="#网址-url" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>网址 url</h3>
-<p>网址类型的字段编辑时可输入网址，在只读界面点击网址，弹出到对应的。</p>
-<pre><code class="hljs css language-yaml"><span class="hljs-attr">website:</span>
-<span class="hljs-attr">  type:</span> <span class="hljs-string">"url"</span>
-<span class="hljs-attr">  label:</span> <span class="hljs-string">"网址"</span>
+<h2><a class="anchor" aria-hidden="true" id="系统字段"></a><a href="#系统字段" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>系统字段</h2>
+<p>如果使用Steedos默认数据源，每个Steedos对象都会自动创建一些系统字段。</p>
+<h3><a class="anchor" aria-hidden="true" id="所属工作区-space"></a><a href="#所属工作区-space" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>所属工作区 space</h3>
+<p>Steedos可以分工作区保存用户数据，每个用户可以属于多个工作区。
+space字段值在记录创建时生成，默认为当前选中的工作区。
+当在视图中定义了 filter_scope: space 时，自动按照此字段过滤。</p>
+<h3><a class="anchor" aria-hidden="true" id="所属责任人-owner"></a><a href="#所属责任人-owner" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>所属责任人 owner</h3>
+<p>owner字段用于保存当前记录的责任人，例如合同的经办人，客户的负责人等。
+当在视图中定义了 filter_scope: mine 时，自动按照此字段过滤。
+字段值记录创建时自动生成，默认为当前用户。如果需要让用户自主选择，可以在代码中增加配置。</p>
+<pre><code class="hljs css language-yaml"><span class="hljs-attr">  owner:</span> 
+<span class="hljs-attr">    label:</span> <span class="hljs-string">责任人</span>
+<span class="hljs-attr">    omit:</span> <span class="hljs-literal">false</span>
+<span class="hljs-attr">    hidden:</span> <span class="hljs-literal">false</span>
 </code></pre>
-<h3><a class="anchor" aria-hidden="true" id="邮件-email"></a><a href="#邮件-email" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>邮件 email</h3>
-<p>邮件类型字段编辑时，字段内可输入邮件地址，系统会校验邮件格式是否合法。在只读界面，点击邮件会自动打开邮件客户端，进入写邮件界面。</p>
-<pre><code class="hljs css language-yaml"><span class="hljs-attr">mail:</span>
-<span class="hljs-attr">  type:</span> <span class="hljs-string">"email"</span>
-<span class="hljs-attr">  label:</span> <span class="hljs-string">"邮件"</span>
+<h3><a class="anchor" aria-hidden="true" id="所属单位-company_id"></a><a href="#所属单位-company_id" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>所属单位 company_id</h3>
+<p>Steedos可以控制单位级别权限，授权默写用户只能查看/修改本单位的数据。
+company_id字段用于标记记录责任人的所属单位，默认为隐藏(hidden)自动赋值。
+如果需要由用户在界面上选择，可以增加如下配置覆盖此字段属性。</p>
+<pre><code class="hljs css language-yaml"><span class="hljs-attr">  company_id:</span> 
+<span class="hljs-attr">    label:</span> <span class="hljs-string">所属单位</span>
+<span class="hljs-attr">    omit:</span> <span class="hljs-literal">false</span>
+<span class="hljs-attr">    hidden:</span> <span class="hljs-literal">false</span>
 </code></pre>
-<h2><a class="anchor" aria-hidden="true" id="内置字段"></a><a href="#内置字段" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>内置字段</h2>
-<p>每个Steedos对象都自动包含以下默认字段：</p>
+<h3><a class="anchor" aria-hidden="true" id="审计相关"></a><a href="#审计相关" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>审计相关</h3>
+<p>以下字段用于记录审计相关信息，系统会自动赋值。</p>
 <ul>
-<li>记录名称(name)</li>
-<li>记录所有人(owner)</li>
-<li>创建日期(created)</li>
-<li>创建人(created_by)</li>
-<li>修改日期(modified)</li>
-<li>修改人(modified_by)</li>
+<li>创建日期(created)：记录创建时生成，默认为当前时间</li>
+<li>创建人(created_by)：记录创建时生成，默认为当前用户</li>
+<li>修改日期(modified)：记录修改时生成，默认为当前时间</li>
+<li>修改人(modified_by)：记录修改时生成，默认为当前用户</li>
 <li>已删除(is_deleted)：字段类型为布尔(boolean)，默认为隐藏(hidden)、编辑时忽略(omit)</li>
 <li>删除日期(deleted)：默认为隐藏(hidden)、编辑时忽略(omit)</li>
 <li>删除人(deleted_by)：默认为隐藏(hidden)、编辑时忽略(omit)</li>
-<li>所属工作区(space)</li>
-<li>所属单位(company_id)：默认为隐藏(hidden)、编辑时忽略(omit)</li>
+</ul>
+<h3><a class="anchor" aria-hidden="true" id="审批相关"></a><a href="#审批相关" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>审批相关</h3>
+<ul>
 <li>已锁定(locked)：字段类型为布尔(boolean)，默认为隐藏(hidden)、编辑时忽略(omit)</li>
 <li>记录的相关审批单(instances)：默认为隐藏(hidden)、编辑时忽略(omit)</li>
 </ul>
-</span></div></article></div><div class="docLastUpdate"><em>Last updated on 2019-7-25 by 庄建国</em></div><div class="docs-prevnext"><a class="docs-prev button" href="/docs/en/object"><span class="arrow-prev">← </span><span>业务对象</span></a><a class="docs-next button" href="/docs/en/object_listview"><span>列表视图</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#字段基本属性">字段基本属性</a></li><li><a href="#字段类型">字段类型</a><ul class="toc-headings"><li><a href="#文本-text">文本 text</a></li><li><a href="#多行文本-textarea">多行文本 textarea</a></li><li><a href="#日期-date">日期 date</a></li><li><a href="#日期时间-datetime">日期时间 datetime</a></li><li><a href="#布尔-boolean">布尔 boolean</a></li><li><a href="#数值-number">数值 number</a></li><li><a href="#金额-currency">金额 currency</a></li><li><a href="#选择-select">选择 select</a></li><li><a href="#引用-lookup">引用 lookup</a></li><li><a href="#主表-子表-master-detail">主表/子表 master/detail</a></li><li><a href="#子表-grid">子表 grid</a></li><li><a href="#网址-url">网址 url</a></li><li><a href="#邮件-email">邮件 email</a></li></ul></li><li><a href="#内置字段">内置字段</a></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/" class="nav-home"><img src="/img/icon_blue.png" alt="华炎开发平台" width="66" height="58"/></a><div><h5>华炎开发平台</h5><a href="/docs/en/overview">关于“低代码”开发平台</a><a href="/docs/en/getting_started">快速向导</a><a href="https://www-steedos-com.oss-cn-beijing.aliyuncs.com/videos/creator/contracts-demo.mp4" target="_blank">视频演示</a></div><div><h5>案例</h5><a href="https://github.com/steedos/steedos-contracts-app" target="_blank">合同管理</a><a href="https://github.com/steedos/steedos-meeting-app" target="_blank">会议管理</a><a href="https://github.com/steedos/steedos-records-app" target="_blank">档案管理</a></div><div><h5>更多</h5><a href="/docs/assets/support_qq.jpg" target="_blank" rel="noreferrer noopener">技术交流QQ群：797469729</a><a href="https://github.com/steedos/object-server">GitHub</a><a href="/blog">动态</a><a class="github-button" href="https://github.com/steedos/object-server" data-icon="octicon-star" data-count-href="/steedos/object-server/stargazers" data-show-count="true" data-count-aria-label="# stargazers on GitHub" aria-label="Star this project on GitHub">Star</a></div></section><section class="copyright">Copyright © 2019 上海华炎软件科技有限公司</section></footer></div><script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script><script>
+</span></div></article></div><div class="docLastUpdate"><em>Last updated on 2019-7-29 by 庄建国</em></div><div class="docs-prevnext"><a class="docs-prev button" href="/docs/en/object"><span class="arrow-prev">← </span><span>业务对象</span></a><a class="docs-next button" href="/docs/en/object_listview"><span>列表视图</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#字段属性">字段属性</a></li><li><a href="#字段类型">字段类型</a><ul class="toc-headings"><li><a href="#文本-text">文本 text</a></li><li><a href="#多行文本-textarea">多行文本 textarea</a></li><li><a href="#日期-date">日期 date</a></li><li><a href="#日期时间-datetime">日期时间 datetime</a></li><li><a href="#布尔-boolean">布尔 boolean</a></li><li><a href="#数值-number">数值 number</a></li><li><a href="#金额-currency">金额 currency</a></li><li><a href="#选择-select">选择 select</a></li><li><a href="#网址-url">网址 url</a></li><li><a href="#邮件-email">邮件 email</a></li><li><a href="#引用-lookup">引用 lookup</a></li><li><a href="#主表-子表-master-detail">主表/子表 master/detail</a></li><li><a href="#内嵌表格-grid">内嵌表格 grid</a></li></ul></li><li><a href="#系统字段">系统字段</a><ul class="toc-headings"><li><a href="#所属工作区-space">所属工作区 space</a></li><li><a href="#所属责任人-owner">所属责任人 owner</a></li><li><a href="#所属单位-company_id">所属单位 company_id</a></li><li><a href="#审计相关">审计相关</a></li><li><a href="#审批相关">审批相关</a></li></ul></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/" class="nav-home"><img src="/img/icon_blue.png" alt="华炎开发平台" width="66" height="58"/></a><div><h5>华炎开发平台</h5><a href="/docs/en/overview">关于“低代码”开发平台</a><a href="/docs/en/getting_started">快速向导</a><a href="https://www-steedos-com.oss-cn-beijing.aliyuncs.com/videos/creator/contracts-demo.mp4" target="_blank">视频演示</a></div><div><h5>案例</h5><a href="https://github.com/steedos/steedos-contracts-app" target="_blank">合同管理</a><a href="https://github.com/steedos/steedos-meeting-app" target="_blank">会议管理</a><a href="https://github.com/steedos/steedos-records-app" target="_blank">档案管理</a></div><div><h5>更多</h5><a href="/docs/assets/support_qq.jpg" target="_blank" rel="noreferrer noopener">技术交流QQ群：797469729</a><a href="https://github.com/steedos/object-server">GitHub</a><a href="/blog">动态</a><a class="github-button" href="https://github.com/steedos/object-server" data-icon="octicon-star" data-count-href="/steedos/object-server/stargazers" data-show-count="true" data-count-aria-label="# stargazers on GitHub" aria-label="Star this project on GitHub">Star</a></div></section><section class="copyright">Copyright © 2019 上海华炎软件科技有限公司</section></footer></div><script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script><script>
                 document.addEventListener('keyup', function(e) {
                   if (e.target !== document.body) {
                     return;
