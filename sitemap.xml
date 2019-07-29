@@ -10,6 +10,7 @@
 <url> <loc>https://steedos.github.io/docs/en/app_ipad</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://steedos.github.io/docs/en/app_ipad" /> </url>
 <url> <loc>https://steedos.github.io/docs/en/app_mobile</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://steedos.github.io/docs/en/app_mobile" /> </url>
 <url> <loc>https://steedos.github.io/docs/en/app</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://steedos.github.io/docs/en/app" /> </url>
+<url> <loc>https://steedos.github.io/docs/en/datasource</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://steedos.github.io/docs/en/datasource" /> </url>
 <url> <loc>https://steedos.github.io/docs/en/getting_started</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://steedos.github.io/docs/en/getting_started" /> </url>
 <url> <loc>https://steedos.github.io/docs/en/graphql_add</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://steedos.github.io/docs/en/graphql_add" /> </url>
 <url> <loc>https://steedos.github.io/docs/en/graphql_auth</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://steedos.github.io/docs/en/graphql_auth" /> </url>
