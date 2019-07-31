@@ -5,7 +5,9 @@
 <url> <loc>https://steedos.github.io/index</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> <xhtml:link rel="alternate" hreflang="en" href="https://steedos.github.io/en/index" /> </url>
 <url> <loc>https://steedos.github.io/users</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> <xhtml:link rel="alternate" hreflang="en" href="https://steedos.github.io/en/users" /> </url>
 <url> <loc>https://steedos.github.io/blog/2019/7/1/released</loc> <changefreq>weekly</changefreq> <priority>0.3</priority> </url>
+<url> <loc>https://steedos.github.io/docs/en/api_auth</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://steedos.github.io/docs/en/api_auth" /> </url>
 <url> <loc>https://steedos.github.io/docs/en/api_jwt</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://steedos.github.io/docs/en/api_jwt" /> </url>
+<url> <loc>https://steedos.github.io/docs/en/api</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://steedos.github.io/docs/en/api" /> </url>
 <url> <loc>https://steedos.github.io/docs/en/app_excel</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://steedos.github.io/docs/en/app_excel" /> </url>
 <url> <loc>https://steedos.github.io/docs/en/app_ipad</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://steedos.github.io/docs/en/app_ipad" /> </url>
 <url> <loc>https://steedos.github.io/docs/en/app_mobile</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://steedos.github.io/docs/en/app_mobile" /> </url>
@@ -30,10 +32,10 @@
 <url> <loc>https://steedos.github.io/docs/en/object_workflow</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://steedos.github.io/docs/en/object_workflow" /> </url>
 <url> <loc>https://steedos.github.io/docs/en/object</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://steedos.github.io/docs/en/object" /> </url>
 <url> <loc>https://steedos.github.io/docs/en/odata_add</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://steedos.github.io/docs/en/odata_add" /> </url>
-<url> <loc>https://steedos.github.io/docs/en/odata_auth</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://steedos.github.io/docs/en/odata_auth" /> </url>
 <url> <loc>https://steedos.github.io/docs/en/odata_delete</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://steedos.github.io/docs/en/odata_delete" /> </url>
 <url> <loc>https://steedos.github.io/docs/en/odata_edit</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://steedos.github.io/docs/en/odata_edit" /> </url>
 <url> <loc>https://steedos.github.io/docs/en/odata_functions</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://steedos.github.io/docs/en/odata_functions" /> </url>
+<url> <loc>https://steedos.github.io/docs/en/odata_get</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://steedos.github.io/docs/en/odata_get" /> </url>
 <url> <loc>https://steedos.github.io/docs/en/odata_metadata</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://steedos.github.io/docs/en/odata_metadata" /> </url>
 <url> <loc>https://steedos.github.io/docs/en/odata_query</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://steedos.github.io/docs/en/odata_query" /> </url>
 <url> <loc>https://steedos.github.io/docs/en/odata_standard_api</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://steedos.github.io/docs/en/odata_standard_api" /> </url>
