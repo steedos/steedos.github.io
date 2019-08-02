@@ -53,6 +53,7 @@
 <url> <loc>https://steedos.github.io/docs/en/record_tasks</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://steedos.github.io/docs/en/record_tasks" /> </url>
 <url> <loc>https://steedos.github.io/docs/en/record_trash</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://steedos.github.io/docs/en/record_trash" /> </url>
 <url> <loc>https://steedos.github.io/docs/en/record_view</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://steedos.github.io/docs/en/record_view" /> </url>
+<url> <loc>https://steedos.github.io/docs/en/report_jsreport</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://steedos.github.io/docs/en/report_jsreport" /> </url>
 <url> <loc>https://steedos.github.io/docs/en/reports</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://steedos.github.io/docs/en/reports" /> </url>
 <url> <loc>https://steedos.github.io/docs/en/space_user</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://steedos.github.io/docs/en/space_user" /> </url>
 <url> <loc>https://steedos.github.io/docs/en/statistics</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://steedos.github.io/docs/en/statistics" /> </url>
