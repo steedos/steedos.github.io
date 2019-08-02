@@ -59,5 +59,6 @@
 <url> <loc>https://steedos.github.io/docs/en/statistics</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://steedos.github.io/docs/en/statistics" /> </url>
 <url> <loc>https://steedos.github.io/docs/en/SUMMARY</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://steedos.github.io/docs/en/SUMMARY" /> </url>
 <url> <loc>https://steedos.github.io/docs/en/workflow_archive</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://steedos.github.io/docs/en/workflow_archive" /> </url>
+<url> <loc>https://steedos.github.io/docs/en/workflow_overview</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://steedos.github.io/docs/en/workflow_overview" /> </url>
 <url> <loc>https://steedos.github.io/docs/en/workflow_submit</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://steedos.github.io/docs/en/workflow_submit" /> </url>
 </urlset>
