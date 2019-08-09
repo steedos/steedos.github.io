@@ -64,36 +64,82 @@
             });
         </script></nav></div><div class="container mainContainer"><div class="wrapper"><div class="post"><header class="postHeader"><a class="edit-page-link button" href="https://github.com/steedos/object-server/edit/develop/docs/api_auth.md" target="_blank" rel="noreferrer noopener">Edit</a><h1 class="postHeaderTitle">身份验证</h1></header><article><div><span><p>有多种方式可以和 Steedos API 进行身份验证。</p>
 <p>以下示例需确认 Steedos服务 运行于 <a href="http://localhost:5000">http://localhost:5000</a> 。</p>
-<h2><a class="anchor" aria-hidden="true" id="session-token"></a><a href="#session-token" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Session Token</h2>
-<p>Make an HTTP POST to <code>your-steedos-url.com/api/v4/users/login</code> with a JSON body indicating the user’s <code>username</code>, <code>password</code> and optionally the Space Id <code>space_id</code> for SAAS version of Steedos. The <code>username</code> can be an email, username or an mobile phone number depending on the system's configuration.</p>
-<pre><code class="hljs">curl -i -d <span class="hljs-string">'{"</span>username<span class="hljs-string">":"</span>someone@nowhere.com<span class="hljs-string">","</span>password<span class="hljs-string">":"</span>thisisabadpassword<span class="hljs-string">"}'</span> http:<span class="hljs-comment">//localhost:8065/api/v4/users/login</span>
+<h2><a class="anchor" aria-hidden="true" id="获取-token"></a><a href="#获取-token" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>获取 Token</h2>
+<p>调用用户登录接口，获取用户登录Token</p>
+<h3><a class="anchor" aria-hidden="true" id="url"></a><a href="#url" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>URL</h3>
+<pre><code class="hljs css language-js">POST <span class="hljs-string">'http://localhost:5000/api/v4/users/login'</span> 
 </code></pre>
-<p>NOTE: If you're running cURL on windows, you will have to change the single quotes to double quotes, and escape the inner double quotes with backslash, like below:</p>
-<pre><code class="hljs">curl -i -d "{<span class="hljs-symbol">\"</span>username<span class="hljs-symbol">\"</span>:<span class="hljs-symbol">\"</span>someone@nowhere.com<span class="hljs-symbol">\"</span>,<span class="hljs-symbol">\"</span>password<span class="hljs-symbol">\"</span>:<span class="hljs-symbol">\"</span>thisisabadpassword<span class="hljs-symbol">\"</span>}" http://localhost:8065/api/v4/users/login
+<h3><a class="anchor" aria-hidden="true" id="请求参数"></a><a href="#请求参数" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>请求参数</h3>
+<p>以JSON格式传入请求参数。</p>
+<table>
+<thead>
+<tr><th style="text-align:left">Param</th><th style="text-align:left">Required</th><th style="text-align:left">Type</th><th>Description</th></tr>
+</thead>
+<tbody>
+<tr><td style="text-align:left">username</td><td style="text-align:left">true</td><td style="text-align:left">string</td><td>可传入用户名、邮箱或手机号。</td></tr>
+<tr><td style="text-align:left">password</td><td style="text-align:left">true</td><td style="text-align:left">string</td><td>用户密码。</td></tr>
+<tr><td style="text-align:left">spaceId</td><td style="text-align:left">false</td><td style="text-align:left">string</td><td>需要登录的工作区Id，如果不传入，自动选中第一个工作区。</td></tr>
+</tbody>
+</table>
+<pre><code class="hljs css language-json">{
+    <span class="hljs-attr">"username"</span>: <span class="hljs-string">"jack"</span>,
+    <span class="hljs-attr">"password"</span>: <span class="hljs-string">"iloveu"</span>,
+    <span class="hljs-attr">"spaceId"</span>: <span class="hljs-string">"i6thCRrKWYmdjxpzt"</span>
+}
 </code></pre>
-<p>If successful, the response will contain a <code>Token</code> header and a user object in the body.</p>
+<h3><a class="anchor" aria-hidden="true" id="返回结果"></a><a href="#返回结果" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>返回结果</h3>
+<p>如果登录成功，Body返回UserContext对象，Header返回X-Space-Token。</p>
+<pre><code class="hljs css language-yaml"><span class="hljs-attr">userId:</span> <span class="hljs-string">dL4KFkLSqqGAozZ6C</span>     <span class="hljs-comment"># 用户Id</span>
+<span class="hljs-attr">spaceId:</span> <span class="hljs-string">i6thCRrKWYmdjxpzt</span>    <span class="hljs-comment"># 当前工作区Id</span>
+<span class="hljs-attr">space:</span>
+<span class="hljs-attr">  _id:</span> <span class="hljs-string">i6thCRrKWYmdjxpzt</span>      <span class="hljs-comment"># 当前工作区Id</span>
+<span class="hljs-attr">  name:</span> <span class="hljs-string">Apple</span>                 <span class="hljs-comment"># 当前工作区名称</span>
+<span class="hljs-attr">spaces:</span> <span class="hljs-string">[]</span>                    <span class="hljs-comment"># 返回数组，用户所属的所有工作区 </span>
+<span class="hljs-attr">name:</span> <span class="hljs-string">Jack</span> <span class="hljs-string">Zhuang</span>             <span class="hljs-comment"># 用户姓名</span>
+<span class="hljs-attr">username:</span> <span class="hljs-string">jack</span>                <span class="hljs-comment"># 用户名</span>
+<span class="hljs-attr">mobile:</span> <span class="hljs-number">1865201314</span>            <span class="hljs-comment"># 用户手机号</span>
+<span class="hljs-attr">email:</span> <span class="hljs-number">1865201314</span><span class="hljs-string">@qq.com</span>      <span class="hljs-comment"># 用户邮箱</span>
+<span class="hljs-attr">utcOffset:</span> <span class="hljs-number">8</span>                  <span class="hljs-comment"># 时区差，以小时为单位，北京时间为8</span>
+<span class="hljs-attr">company:</span>                   
+<span class="hljs-attr">  _id:</span> <span class="hljs-string">i6thCRrKWYmdjxpzt</span>      <span class="hljs-comment"># 用户所属主单位 </span>
+<span class="hljs-attr">  name:</span> <span class="hljs-string">Apple</span> <span class="hljs-string">China</span>           <span class="hljs-comment"># 用户所属主单位名称</span>
+<span class="hljs-attr">companies:</span> <span class="hljs-string">[company]</span>          <span class="hljs-comment"># 数组，用户所属的所有单位</span>
+<span class="hljs-attr">roles:</span>  <span class="hljs-string">["role_name"]</span>         <span class="hljs-comment"># 用户属于的所有权限组</span>
+<span class="hljs-attr">organization:</span>
+<span class="hljs-attr">  _id:</span> <span class="hljs-string">i6thCRrKWYmdjxpzt</span>
+<span class="hljs-attr">  name:</span> <span class="hljs-string">Sales</span>                 <span class="hljs-comment"># 用户所属部门</span>
+<span class="hljs-attr">  fullname:</span> <span class="hljs-string">Apple</span> <span class="hljs-string">China/Sales</span> <span class="hljs-comment"># 用户所属部门的全称</span>
+<span class="hljs-attr">organizations:</span> <span class="hljs-string">[organization]</span> <span class="hljs-comment"># 数组，用户所属的所有部门</span>
+</code></pre>
+<p>示例</p>
 <pre><code class="hljs">HTTP/1.1 <span class="hljs-number">200</span> OK
-<span class="hljs-attribute">Set-Cookie</span>: X-User-ID=fdsfdfsfgghdsfds; Path=/; Max-Age=2592000; HttpOnly
+<span class="hljs-attribute">Set-Cookie</span>: X-User-ID=dL4KFkLSqqGAozZ6C; Path=/; Max-Age=2592000; HttpOnly
 <span class="hljs-attribute">Token</span>: hyr5dmb1mbb49c44qmx4whniso
 <span class="hljs-attribute">X-Ratelimit-Limit</span>: 10
 <span class="hljs-attribute">X-Ratelimit-Remaining</span>: 9
 <span class="hljs-attribute">X-Ratelimit-Reset</span>: 1
 <span class="hljs-attribute">X-Request-Id</span>: smda55ckcfy89b6tia58shk5fh
 <span class="hljs-attribute">X-Version-Id</span>: developer
-<span class="hljs-attribute">X-User-Id</span>: fdsfdfsfgghdsfds
-<span class="hljs-attribute">X-Space-Id</span>: dasdsaffdsafgdsf
-<span class="hljs-attribute">X-Auth-Token</span>: dfasfgfsdajlkrwq
+<span class="hljs-attribute">X-User-Id</span>: dL4KFkLSqqGAozZ6C
+<span class="hljs-attribute">X-Auth-Token</span>: 392mkylUmFyNTRLR3aSTbsyM287On8bTULh-GDO1sH_
+<span class="hljs-attribute">X-Space-Id</span>: i6thCRrKWYmdjxpzt
+<span class="hljs-attribute">X-Space-Token</span>: i6thCRrKWYmdjxpzt,392mkylUmFyNTRLR3aSTbsyM287On8bTULh-GDO1sH_
 <span class="hljs-attribute">Date</span>: Fri, 11 Sep 2015 13:21:14 GMT
 <span class="hljs-attribute">Content-Length</span>: 657
 <span class="hljs-attribute">Content-Type</span>: application/json; charset=utf-8
 
-<span class="crmsh">{{<span class="hljs-keyword">user</span> <span class="hljs-title">object</span> as json}}
+<span class="crmsh">{{<span class="hljs-keyword">user</span> <span class="hljs-title">context</span> as json}}
 </span></code></pre>
-<p>Include the <code>Token</code> as part of the <code>Authorization</code> header on your future API requests with the <code>Bearer</code> method.</p>
-<pre><code class="hljs">curl -i -H <span class="hljs-string">'Authorization: Bearer hyr5dmb1mbb49c44qmx4whniso'</span> http:<span class="hljs-regexp">//</span>localhost:<span class="hljs-number">8065</span><span class="hljs-regexp">/api/</span>v4<span class="hljs-regexp">/users/m</span>e
+<h2><a class="anchor" aria-hidden="true" id="调用api"></a><a href="#调用api" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>调用API</h2>
+<h3><a class="anchor" aria-hidden="true" id="url-1"></a><a href="#url-1" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>URL</h3>
+<pre><code class="hljs css language-js">POST <span class="hljs-string">'http://localhost:5000/api/v4/users/me'</span> 
 </code></pre>
-<p>You should now be able to access the API as the user you logged in as.</p>
-</span></div></article></div><div class="docLastUpdate"><em>Last updated on 2019-7-31 by 庄建国</em></div><div class="docs-prevnext"><a class="docs-prev button" href="/docs/en/api"><span class="arrow-prev">← </span><span>简介</span></a><a class="docs-next button" href="/docs/en/odata_query"><span>查询</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#session-token">Session Token</a></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/" class="nav-home"><img src="/img/icon_blue.png" alt="Steedos 低代码开发平台" width="66" height="58"/></a><div><h5>Steedos “低代码”开发平台</h5><a href="/docs/en/overview">什么是“低代码”开发平台？</a><a href="/docs/en/getting_started">快速向导</a><a href="https://www-steedos-com.oss-cn-beijing.aliyuncs.com/videos/creator/contracts-demo.mp4" target="_blank">视频演示</a></div><div><h5>案例</h5><a href="https://github.com/steedos/steedos-contracts-app" target="_blank">合同管理</a><a href="https://github.com/steedos/steedos-meeting-app" target="_blank">会议管理</a><a href="https://github.com/steedos/steedos-records-app" target="_blank">档案管理</a></div><div><h5>更多</h5><a href="tel:4008201612">商务热线：400-820-1612</a><a href="/docs/assets/support_qq.jpg" target="_blank" rel="noreferrer noopener">技术支持QQ群：797469729</a><a href="https://github.com/steedos/object-server">GitHub</a><a class="github-button" href="https://github.com/steedos/object-server" data-icon="octicon-star" data-count-href="/steedos/object-server/stargazers" data-show-count="true" data-count-aria-label="# stargazers on GitHub" aria-label="Star this project on GitHub">Star</a></div></section><section class="copyright">Copyright © 2019 上海华炎软件科技有限公司</section></footer></div><script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script><script>
+<h3><a class="anchor" aria-hidden="true" id="请求参数-1"></a><a href="#请求参数-1" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>请求参数</h3>
+<p>通过Header传入X-Space-Token。</p>
+<pre><code class="hljs css language-shell">Authorization: Bearer i6thCRrKWYmdjxpzt,392mkylUmFyNTRLR3aSTbsyM287On8bTULh-GDO1sH_
+</code></pre>
+<p>如果验证通过，可以正常返回API的结果。</p>
+</span></div></article></div><div class="docLastUpdate"><em>Last updated on 2019-7-31 by 庄建国</em></div><div class="docs-prevnext"><a class="docs-prev button" href="/docs/en/api"><span class="arrow-prev">← </span><span>简介</span></a><a class="docs-next button" href="/docs/en/odata_query"><span>查询</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#获取-token">获取 Token</a><ul class="toc-headings"><li><a href="#url">URL</a></li><li><a href="#请求参数">请求参数</a></li><li><a href="#返回结果">返回结果</a></li></ul></li><li><a href="#调用api">调用API</a><ul class="toc-headings"><li><a href="#url-1">URL</a></li><li><a href="#请求参数-1">请求参数</a></li></ul></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/" class="nav-home"><img src="/img/icon_blue.png" alt="Steedos 低代码开发平台" width="66" height="58"/></a><div><h5>Steedos “低代码”开发平台</h5><a href="/docs/en/overview">什么是“低代码”开发平台？</a><a href="/docs/en/getting_started">快速向导</a><a href="https://www-steedos-com.oss-cn-beijing.aliyuncs.com/videos/creator/contracts-demo.mp4" target="_blank">视频演示</a></div><div><h5>案例</h5><a href="https://github.com/steedos/steedos-contracts-app" target="_blank">合同管理</a><a href="https://github.com/steedos/steedos-meeting-app" target="_blank">会议管理</a><a href="https://github.com/steedos/steedos-records-app" target="_blank">档案管理</a></div><div><h5>更多</h5><a href="tel:4008201612">商务热线：400-820-1612</a><a href="/docs/assets/support_qq.jpg" target="_blank" rel="noreferrer noopener">技术支持QQ群：797469729</a><a href="https://github.com/steedos/object-server">GitHub</a><a class="github-button" href="https://github.com/steedos/object-server" data-icon="octicon-star" data-count-href="/steedos/object-server/stargazers" data-show-count="true" data-count-aria-label="# stargazers on GitHub" aria-label="Star this project on GitHub">Star</a></div></section><section class="copyright">Copyright © 2019 上海华炎软件科技有限公司</section></footer></div><script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script><script>
                 document.addEventListener('keyup', function(e) {
                   if (e.target !== document.body) {
                     return;
