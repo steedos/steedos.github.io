@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0">
     <channel>
-        <title>Steedos 低代码开发平台 Blog</title>
+        <title>华炎开发 Blog</title>
         <link>https://steedos.github.io//blog</link>
-        <description>The best place to stay up-to-date with the latest Steedos 低代码开发平台 news and events.</description>
+        <description>The best place to stay up-to-date with the latest 华炎开发 news and events.</description>
         <lastBuildDate>Thu, 01 Jan 1970 00:00:00 GMT</lastBuildDate>
         <docs>http://blogs.law.harvard.edu/tech/rss</docs>
         <generator>Feed for Node.js</generator>
         <image>
-            <title>Steedos 低代码开发平台 Blog</title>
+            <title>华炎开发 Blog</title>
             <url>https://steedos.github.io//img/icon_blue.png</url>
             <link>https://steedos.github.io//blog</link>
         </image>
