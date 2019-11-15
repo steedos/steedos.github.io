@@ -1,11 +1,167 @@
-<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>华炎开发 · 只需编写少量代码，就能构建功能强大的企业应用。</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="只需编写少量代码，就能构建功能强大的企业应用。"/><meta property="og:title" content="华炎开发 · 只需编写少量代码，就能构建功能强大的企业应用。"/><meta property="og:type" content="website"/><meta property="og:url" content="https://steedos.github.io//index.html"/><meta property="og:description" content="只需编写少量代码，就能构建功能强大的企业应用。"/><meta property="og:image" content="https://steedos.github.io/img/docusaurus.png"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://steedos.github.io/img/docusaurus.png"/><meta http-equiv="refresh" content="0; URL=/docs/en/api_auth"/><link rel="shortcut icon" href="/img/icon_blue.png"/><link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><script src="https://unpkg.com/vanilla-back-to-top@7.1.14/dist/vanilla-back-to-top.min.js"></script><script>
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>身份验证 · 华炎开发</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="有多种方式可以和 Steedos API 进行身份验证。"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="身份验证 · 华炎开发"/><meta property="og:type" content="website"/><meta property="og:url" content="https://steedos.github.io//"/><meta property="og:description" content="有多种方式可以和 Steedos API 进行身份验证。"/><meta property="og:image" content="https://steedos.github.io/img/docusaurus.png"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://steedos.github.io/img/docusaurus.png"/><link rel="shortcut icon" href="/img/icon_blue.png"/><link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><script src="https://unpkg.com/vanilla-back-to-top@7.1.14/dist/vanilla-back-to-top.min.js"></script><script>
         document.addEventListener('DOMContentLoaded', function() {
           addBackToTop(
             {"zIndex":100}
           )
         });
-        </script><link rel="stylesheet" href="/css/main.css"/><script src="/js/codetabs.js"></script></head><body><script>
-                <!--
-                window.location.href = "/docs/en/api_auth";
-                // -->
-                </script></body></html>
+        </script><script src="/js/scrollSpy.js"></script><link rel="stylesheet" href="/css/main.css"/><script src="/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/"><img class="logo" src="/img/icon_blue.png" alt="华炎开发"/><h2 class="headerTitleWithLogo">华炎开发</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class=""><a href="/docs/overview" target="_self">特色</a></li><li class="siteNavGroupActive"><a href="/docs/getting_started" target="_self">文档</a></li><li class=""><a href="/docs/projects" target="_self">案例</a></li><li class="navSearchWrapper reactNavSearchWrapper"><input type="text" id="search_input_react" placeholder="Search" title="Search"/></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><div class="hamburger-menu"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div></div><h2><i>›</i><span>OData</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">项目<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docs/getting_started">创建项目</a></li><li class="navListItem"><a class="navItem" href="/docs/steedos_config">steedos-config</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">数据源<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docs/datasource">定义数据源</a></li><li class="navListItem"><a class="navItem" href="/docs/datasource_options">数据源参数</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">业务对象<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docs/object">业务对象</a></li><li class="navListItem"><a class="navItem" href="/docs/object_field">字段</a></li><li class="navListItem"><a class="navItem" href="/docs/object_listview">列表视图</a></li><li class="navListItem"><a class="navItem" href="/docs/object_trigger">触发器</a></li><li class="navListItem"><a class="navItem" href="/docs/object_action">操作按钮</a></li><li class="navListItem"><a class="navItem" href="/docs/object_form">表单事件</a></li><li class="navListItem"><a class="navItem" href="/docs/standard_objects">标准业务对象</a></li><li class="navListItem"><a class="navItem" href="/docs/object_filter_conditions">筛选条件</a></li><li class="navListItem"><a class="navItem" href="/docs/object_field_formula">字段公式</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">权限<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docs/permission_set">权限组</a></li><li class="navListItem"><a class="navItem" href="/docs/object_permission">对象权限</a></li><li class="navListItem"><a class="navItem" href="/docs/permission_share">记录级权限</a></li><li class="navListItem"><a class="navItem" href="/docs/organization">组织结构</a></li><li class="navListItem"><a class="navItem" href="/docs/space_user">人员信息</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">审批<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docs/workflow_overview">业务审批</a></li><li class="navListItem"><a class="navItem" href="/docs/workflow_submit">发起审批</a></li><li class="navListItem"><a class="navItem" href="/docs/workflow_archive">审批归档</a></li><li class="navListItem"><a class="navItem" href="/docs/object_workflow">对象流程映射</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">统计<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docs/reports">统计报表</a></li><li class="navListItem"><a class="navItem" href="/docs/report_jsreport">JsReport报表</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">台账<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docs/app">应用</a></li><li class="navListItem"><a class="navItem" href="/docs/record_list">列表视图</a></li><li class="navListItem"><a class="navItem" href="/docs/record_view">记录查看视图</a></li><li class="navListItem"><a class="navItem" href="/docs/record_edit">编辑视图</a></li><li class="navListItem"><a class="navItem" href="/docs/record_search">搜索</a></li><li class="navListItem"><a class="navItem" href="/docs/record_attachment">附件</a></li><li class="navListItem"><a class="navItem" href="/docs/record_chatter">讨论</a></li><li class="navListItem"><a class="navItem" href="/docs/app_mobile">手机客户端</a></li><li class="navListItem"><a class="navItem" href="/docs/notifications">推送通知</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">插件<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docs/plugins">快速向导</a></li><li class="navListItem"><a class="navItem" href="/docs/plugin_server">服务端插件</a></li><li class="navListItem"><a class="navItem" href="/docs/plugin_webapp">Web App 插件</a></li><li class="navListItem"><a class="navItem" href="/docs/plugin_config">插件配置</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">ObjectQL<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docs/objectql_connection">Connection</a></li><li class="navListItem"><a class="navItem" href="/docs/objectql_object">Object</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">OData<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docs/api">简介</a></li><li class="navListItem navListItemActive"><a class="navItem" href="/docs/api_auth">身份验证</a></li><li class="navListItem"><a class="navItem" href="/docs/odata_query">查询</a></li><li class="navListItem"><a class="navItem" href="/docs/odata_get">读取</a></li><li class="navListItem"><a class="navItem" href="/docs/odata_add">插入</a></li><li class="navListItem"><a class="navItem" href="/docs/odata_edit">更新</a></li><li class="navListItem"><a class="navItem" href="/docs/odata_delete">删除</a></li><li class="navListItem"><a class="navItem" href="/docs/odata_functions">自定义函数</a></li><li class="navListItem"><a class="navItem" href="/docs/odata_metadata">数据字典</a></li><li class="navListItem"><a class="navItem" href="/docs/api_jwt">JWT</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">GraphQL<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docs/graphql">GraphQL API</a></li><li class="navListItem"><a class="navItem" href="/docs/graphql_auth">认证</a></li><li class="navListItem"><a class="navItem" href="/docs/graphql_query">查询</a></li><li class="navListItem"><a class="navItem" href="/docs/graphql_add">新增</a></li><li class="navListItem"><a class="navItem" href="/docs/graphql_edit">编辑</a></li><li class="navListItem"><a class="navItem" href="/docs/graphql_delete">删除</a></li></ul></div></div></section></div><script>
+            var coll = document.getElementsByClassName('collapsible');
+            var checkActiveCategory = true;
+            for (var i = 0; i < coll.length; i++) {
+              var links = coll[i].nextElementSibling.getElementsByTagName('*');
+              if (checkActiveCategory){
+                for (var j = 0; j < links.length; j++) {
+                  if (links[j].classList.contains('navListItemActive')){
+                    coll[i].nextElementSibling.classList.toggle('hide');
+                    coll[i].childNodes[1].classList.toggle('rotate');
+                    checkActiveCategory = false;
+                    break;
+                  }
+                }
+              }
+
+              coll[i].addEventListener('click', function() {
+                var arrow = this.childNodes[1];
+                arrow.classList.toggle('rotate');
+                var content = this.nextElementSibling;
+                content.classList.toggle('hide');
+              });
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              var headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                var el = event.target;
+                while(el !== headings){
+                  if (el.tagName === 'A') {
+                    document.body.classList.remove('tocActive');
+                    break;
+                  } else{
+                    el = el.parentNode;
+                  }
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer"><div class="wrapper"><div class="post"><header class="postHeader"><a class="edit-page-link button" href="https://github.com/steedos/object-server/edit/develop/docs/api_auth.md" target="_blank" rel="noreferrer noopener">Edit</a><h1 class="postHeaderTitle">身份验证</h1></header><article><div><span><p>有多种方式可以和 Steedos API 进行身份验证。</p>
+<p>以下示例需确认 Steedos服务 运行于 <a href="http://localhost:5000">http://localhost:5000</a> 。</p>
+<h2><a class="anchor" aria-hidden="true" id="获取-token"></a><a href="#获取-token" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>获取 Token</h2>
+<p>调用用户登录接口，获取用户登录Token</p>
+<h3><a class="anchor" aria-hidden="true" id="url"></a><a href="#url" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>URL</h3>
+<pre><code class="hljs css language-js">POST <span class="hljs-string">'http://localhost:5000/api/v4/users/login'</span> 
+</code></pre>
+<h3><a class="anchor" aria-hidden="true" id="请求参数"></a><a href="#请求参数" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>请求参数</h3>
+<p>以JSON格式传入请求参数。</p>
+<table>
+<thead>
+<tr><th style="text-align:left">Param</th><th style="text-align:left">Required</th><th style="text-align:left">Type</th><th>Description</th></tr>
+</thead>
+<tbody>
+<tr><td style="text-align:left">username</td><td style="text-align:left">true</td><td style="text-align:left">string</td><td>可传入用户名、邮箱或手机号。</td></tr>
+<tr><td style="text-align:left">password</td><td style="text-align:left">true</td><td style="text-align:left">string</td><td>用户密码。</td></tr>
+<tr><td style="text-align:left">spaceId</td><td style="text-align:left">false</td><td style="text-align:left">string</td><td>需要登录的工作区Id，如果不传入，自动选中第一个工作区。</td></tr>
+</tbody>
+</table>
+<pre><code class="hljs css language-json">{
+    <span class="hljs-attr">"username"</span>: <span class="hljs-string">"jack"</span>,
+    <span class="hljs-attr">"password"</span>: <span class="hljs-string">"iloveu"</span>,
+    <span class="hljs-attr">"spaceId"</span>: <span class="hljs-string">"i6thCRrKWYmdjxpzt"</span>
+}
+</code></pre>
+<h3><a class="anchor" aria-hidden="true" id="body-返回结果"></a><a href="#body-返回结果" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Body 返回结果</h3>
+<p>如果登录成功，Body返回 userContext 对象。</p>
+<pre><code class="hljs css language-yaml"><span class="hljs-attr">userId:</span> <span class="hljs-string">dL4KFkLSqqGAozZ6C</span>     <span class="hljs-comment"># 用户Id</span>
+<span class="hljs-attr">spaceId:</span> <span class="hljs-string">i6thCRrKWYmdjxpzt</span>    <span class="hljs-comment"># 当前工作区Id</span>
+<span class="hljs-attr">name:</span> <span class="hljs-string">Jack</span> <span class="hljs-string">Zhuang</span>             <span class="hljs-comment"># 用户姓名</span>
+<span class="hljs-attr">username:</span> <span class="hljs-string">jack</span>                <span class="hljs-comment"># 用户名</span>
+<span class="hljs-attr">mobile:</span> <span class="hljs-number">1865201314</span>            <span class="hljs-comment"># 用户手机号</span>
+<span class="hljs-attr">email:</span> <span class="hljs-number">1865201314</span><span class="hljs-string">@qq.com</span>      <span class="hljs-comment"># 用户邮箱</span>
+<span class="hljs-attr">utcOffset:</span> <span class="hljs-number">8</span>                  <span class="hljs-comment"># 时区差，以小时为单位，北京时间为8</span>
+<span class="hljs-attr">roles:</span>  <span class="hljs-string">["role_name"]</span>         <span class="hljs-comment"># 用户属于的所有权限组</span>
+<span class="hljs-attr">space:</span>
+  <span class="hljs-attr">_id:</span> <span class="hljs-string">i6thCRrKWYmdjxpzt</span>      <span class="hljs-comment"># 当前工作区Id</span>
+  <span class="hljs-attr">name:</span> <span class="hljs-string">Apple</span>                 <span class="hljs-comment"># 当前工作区名称</span>
+<span class="hljs-attr">is_space_admin:</span> <span class="hljs-literal">true</span>          <span class="hljs-comment"># 是否是当前工作区管理员</span>
+<span class="hljs-attr">spaces:</span> <span class="hljs-string">[space]</span>               <span class="hljs-comment"># 数组，用户所属的所有工作区 </span>
+<span class="hljs-attr">company:</span>                   
+  <span class="hljs-attr">_id:</span> <span class="hljs-string">i6thCRrKWYmdjxpzt</span>      <span class="hljs-comment"># 用户所属主单位 </span>
+  <span class="hljs-attr">name:</span> <span class="hljs-string">Apple</span> <span class="hljs-string">China</span>           <span class="hljs-comment"># 用户所属主单位名称</span>
+  <span class="hljs-attr">organization:</span> <span class="hljs-string">xxx</span>           <span class="hljs-comment"># 用户所属主单位关联组织id</span>
+<span class="hljs-attr">companies:</span> <span class="hljs-string">[company]</span>          <span class="hljs-comment"># 数组，用户所属的所有单位</span>
+<span class="hljs-attr">company_id:</span> <span class="hljs-string">"xxx"</span>             <span class="hljs-comment"># 用户所属主单位id值</span>
+<span class="hljs-attr">company_ids:</span> <span class="hljs-string">["xxx"]</span>          <span class="hljs-comment"># 数组，用户所属的所有单位id值</span>
+<span class="hljs-attr">organization:</span>
+  <span class="hljs-attr">_id:</span> <span class="hljs-string">i6thCRrKWYmdjxpzt</span>
+  <span class="hljs-attr">name:</span> <span class="hljs-string">Sales</span>                 <span class="hljs-comment"># 用户所属部门</span>
+  <span class="hljs-attr">fullname:</span> <span class="hljs-string">Apple</span> <span class="hljs-string">China/Sales</span> <span class="hljs-comment"># 用户所属部门的全称</span>
+  <span class="hljs-attr">company_id:</span> <span class="hljs-string">xxx</span>             <span class="hljs-comment"># 用户所属部门关联单位id</span>
+<span class="hljs-attr">organizations:</span> <span class="hljs-string">[organization]</span> <span class="hljs-comment"># 数组，用户所属的所有部门</span>
+</code></pre>
+<h3><a class="anchor" aria-hidden="true" id="header-返回结果"></a><a href="#header-返回结果" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Header 返回结果</h3>
+<p>Header返回X-Space-Token。</p>
+<pre><code class="hljs css language-shell">X-Space-Token: i6thCRrKWYmdjxpzt,392mkylUmFyNTRLR3aSTbsyM287On8bTULh-GDO1sH_
+</code></pre>
+<h3><a class="anchor" aria-hidden="true" id="cookie-返回结果"></a><a href="#cookie-返回结果" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Cookie 返回结果</h3>
+<p>如果从浏览器登录，自动为浏览器设置以下Cookie。</p>
+<pre><code class="hljs css language-shell">X-User-Id: dL4KFkLSqqGAozZ6C
+X-Auth-Token: 392mkylUmFyNTRLR3aSTbsyM287On8bTULh-GDO1sH_
+X-Space-Id: i6thCRrKWYmdjxpzt
+X-Space-Token: i6thCRrKWYmdjxpzt,392mkylUmFyNTRLR3aSTbsyM287On8bTULh-GDO1sH_
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="验证登录状态"></a><a href="#验证登录状态" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>验证登录状态</h2>
+<p>这里测试调用validate接口，验证用户是否登录，如果用户已登录，则返回用户基本信息。</p>
+<h3><a class="anchor" aria-hidden="true" id="url-1"></a><a href="#url-1" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>URL</h3>
+<pre><code class="hljs css language-js">POST <span class="hljs-string">'http://localhost:5000/api/v4/users/validate'</span> 
+</code></pre>
+<h3><a class="anchor" aria-hidden="true" id="请求参数-1"></a><a href="#请求参数-1" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>请求参数</h3>
+<p>通过Header传入X-Space-Token。</p>
+<pre><code class="hljs css language-shell">Authorization: Bearer i6thCRrKWYmdjxpzt,392mkylUmFyNTRLR3aSTbsyM287On8bTULh-GDO1sH_
+</code></pre>
+<h3><a class="anchor" aria-hidden="true" id="返回结果"></a><a href="#返回结果" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>返回结果</h3>
+<p>如果当前用户已登录，则返回userContext。</p>
+<h2><a class="anchor" aria-hidden="true" id="注销"></a><a href="#注销" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>注销</h2>
+<p>注销当前登录的用户。</p>
+<h3><a class="anchor" aria-hidden="true" id="url-2"></a><a href="#url-2" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>URL</h3>
+<pre><code class="hljs css language-js">POST <span class="hljs-string">'http://localhost:5000/accounts/logout'</span> 
+</code></pre>
+<h3><a class="anchor" aria-hidden="true" id="请求参数-2"></a><a href="#请求参数-2" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>请求参数</h3>
+<p>无</p>
+<h3><a class="anchor" aria-hidden="true" id="返回结果-1"></a><a href="#返回结果-1" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>返回结果</h3>
+<p>无</p>
+</span></div></article></div><div class="docLastUpdate"><em>Last updated on 2019-10-14 by 殷亮辉</em></div><div class="docs-prevnext"><a class="docs-prev button" href="/docs/api"><span class="arrow-prev">← </span><span>简介</span></a><a class="docs-next button" href="/docs/odata_query"><span>查询</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#获取-token">获取 Token</a><ul class="toc-headings"><li><a href="#url">URL</a></li><li><a href="#请求参数">请求参数</a></li><li><a href="#body-返回结果">Body 返回结果</a></li><li><a href="#header-返回结果">Header 返回结果</a></li><li><a href="#cookie-返回结果">Cookie 返回结果</a></li></ul></li><li><a href="#验证登录状态">验证登录状态</a><ul class="toc-headings"><li><a href="#url-1">URL</a></li><li><a href="#请求参数-1">请求参数</a></li><li><a href="#返回结果">返回结果</a></li></ul></li><li><a href="#注销">注销</a><ul class="toc-headings"><li><a href="#url-2">URL</a></li><li><a href="#请求参数-2">请求参数</a></li><li><a href="#返回结果-1">返回结果</a></li></ul></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/" class="nav-home"><img src="/img/icon_blue.png" alt="华炎开发" width="66" height="58"/></a><div><h5>Steedos “低代码”开发平台</h5><a href="/docs/en/overview">什么是“低代码”开发平台？</a><a href="/docs/en/getting_started">快速向导</a><a href="https://www-steedos-com.oss-cn-beijing.aliyuncs.com/videos/creator/contracts-demo.mp4" target="_blank">视频演示</a></div><div><h5>案例</h5><a href="https://github.com/steedos/steedos-contracts-app" target="_blank">合同管理</a><a href="https://github.com/steedos/steedos-meeting-app" target="_blank">会议管理</a><a href="https://github.com/steedos/steedos-records-app" target="_blank">档案管理</a></div><div><h5>更多</h5><a href="tel:4008201612">商务热线：400-820-1612</a><a href="/docs/assets/support_qq.jpg" target="_blank" rel="noreferrer noopener">技术支持QQ群：797469729</a><a href="https://github.com/steedos/object-server">GitHub</a><a class="github-button" href="https://github.com/steedos/object-server" data-icon="octicon-star" data-count-href="/steedos/object-server/stargazers" data-show-count="true" data-count-aria-label="# stargazers on GitHub" aria-label="Star this project on GitHub">Star</a></div></section><section class="copyright">Copyright © 2019 上海华炎软件科技有限公司</section></footer></div><script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script><script>
+                document.addEventListener('keyup', function(e) {
+                  if (e.target !== document.body) {
+                    return;
+                  }
+                  // keyCode for '/' (slash)
+                  if (e.keyCode === 191) {
+                    const search = document.getElementById('search_input_react');
+                    search && search.focus();
+                  }
+                });
+              </script><script>
+              var search = docsearch({
+                
+                apiKey: 'eaa8e1c86ac084b5cac664d9d996856c',
+                indexName: 'steedos',
+                inputSelector: '#search_input_react',
+                algoliaOptions: {}
+              });
+            </script></body></html>
