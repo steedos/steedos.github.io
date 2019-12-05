@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[8],{99:function(a){a.exports=JSON.parse('{"id":"api/odata_standard_api","title":"odata_standard_api","description":"## \u63d0\u4f9b\u7ed9\u7528\u6237\u4f7f\u7528\u7684odata\u6807\u51c6\u51fd\u6570","source":"@site/../docs/api/odata_standard_api.md","permalink":"/docs/api/odata_standard_api"}')}}]);

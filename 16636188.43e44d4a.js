@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[23],{114:function(o){o.exports=JSON.parse('{"id":"cloud/login","title":"\u5ba2\u6237\u767b\u5f55 / Customer Login","description":"\u8bf7\u9009\u62e9\u670d\u52a1\u5668 / Please select your region","source":"@site/../docs/cloud/login.md","permalink":"/docs/cloud/login"}')}}]);
