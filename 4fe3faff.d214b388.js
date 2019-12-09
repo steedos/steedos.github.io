@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[70],{165:function(s){s.exports=JSON.parse('{"id":"platform/space_user","title":"\u4eba\u5458\u4fe1\u606f","description":"\u5de5\u4f5c\u533a\u7ba1\u7406\u5458\u53ef\u4ee5\u8bbe\u5b9a\u4eba\u5458\u4fe1\u606f\u3002","source":"@site/../docs/platform/space_user.md","permalink":"/docs/platform/space_user"}')}}]);

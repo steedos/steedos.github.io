@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[162],{258:function(e){e.exports=JSON.parse('{"id":"plugins/plugin_webapp_reference","title":"Web App Reference","description":"## PluginClass\\r","source":"@site/../docs/plugins/plugin_webapp_reference.md","permalink":"/docs/plugins/plugin_webapp_reference"}')}}]);

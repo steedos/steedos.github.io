@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[161],{257:function(i){i.exports=JSON.parse('{"id":"api/api_jwt","title":"JWT","description":"### \u5173\u4e8eJWT","source":"@site/../docs/api/api_jwt.md","permalink":"/docs/api/api_jwt","sidebar":"API","previous":{"title":"\u5220\u9664","permalink":"/docs/api/graphql_delete"}}')}}]);

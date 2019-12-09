@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[50],{145:function(o){o.exports=JSON.parse('{"id":"object_audit","title":"object_audit","description":"# \u5bf9\u8c61\u5ba1\u8ba1\u65e5\u5fd7","source":"@site/../docs/object_audit.md","permalink":"/docs/object_audit"}')}}]);
