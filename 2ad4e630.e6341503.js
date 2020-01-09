@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[42],{137:function(s){s.exports=JSON.parse('{"id":"statistics","title":"statistics","description":"## \u529f\u80fd\u8bf4\u660e","source":"@site/../docs/statistics.md","permalink":"/docs/statistics"}')}}]);
