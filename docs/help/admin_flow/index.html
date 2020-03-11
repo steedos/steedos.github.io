@@ -13,28 +13,28 @@
 <link data-react-helmet="true" rel="shortcut icon" href="/img/icon_blue.png">
 
 
-<link rel="stylesheet" href="/styles.64d5494c.css">
+<link rel="stylesheet" href="/styles.e4710daf.css">
 
 
-<link rel="preload" href="/styles.27096938.js" as="script">
+<link rel="preload" href="/styles.229f7d78.js" as="script">
 
-<link rel="preload" href="/runtime~main.fdea25b7.js" as="script">
+<link rel="preload" href="/runtime~main.742a8dd3.js" as="script">
 
-<link rel="preload" href="/main.b3721043.js" as="script">
+<link rel="preload" href="/main.405e2f06.js" as="script">
 
-<link rel="preload" href="/1.2f42fdd1.js" as="script">
+<link rel="preload" href="/1.00f8e083.js" as="script">
 
-<link rel="preload" href="/2.48a292c6.js" as="script">
+<link rel="preload" href="/2.afe955ed.js" as="script">
 
-<link rel="preload" href="/4.1738c1aa.js" as="script">
+<link rel="preload" href="/4.d8d56bbf.js" as="script">
 
-<link rel="preload" href="/1be78505.41984fbe.js" as="script">
+<link rel="preload" href="/1be78505.78c832ab.js" as="script">
 
-<link rel="preload" href="/20ac7829.8609f06e.js" as="script">
+<link rel="preload" href="/20ac7829.7af4ba79.js" as="script">
 
-<link rel="preload" href="/17896441.b7b25fa9.js" as="script">
+<link rel="preload" href="/17896441.f3914a73.js" as="script">
 
-<link rel="preload" href="/53074462.6f522682.js" as="script">
+<link rel="preload" href="/53074462.54a0e031.js" as="script">
 
 </head>
 <body>
@@ -46,25 +46,25 @@
 <img src="/assets/workflow/autonumber_3.png" alt="流程编号"></p></li><li><p>进入“设置”，选择“流程编号”。</p><p><img src="/assets/workflow/autonumber_4.png" alt="流程编号"></p><p>点击进入到编号设置规则界面后，点击“新建”来新建用户编号规则。</p><ul><li>名称：即表单标头字段的可取值。</li><li>年份：文件编号中涉及到年份需设置好编号开始年份。</li><li>起始序号：文件编号中文件的开始的编号。</li><li>序号：文件当前在系统中待编号的序号。</li><li>编号规则：需要配置好的公式会根据此规则格式来进行自动编号。</li></ul><p><img src="/assets/workflow/autonumber_5.png" alt="流程编号"></p><p>以上图为例子简要说明目前编号规则情况:</p><ul><li>[{YYYY}]：代表自动生成的年份。即取值“年份”。</li><li>{NUMBER}：代表文件需要显示的编号，即取值“序号”。</li></ul><p>编号规则：河北港口党办字[{YYYY}]{NUMBER}号，在表单上显示的标号样式为：河北港口党办字[2017]392号。</p></li></ol><h4><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="流程脚本"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#流程脚本" title="Direct link to heading">#</a>流程脚本</h4><p>管理员在流程脚本中可以对该工作区中所有的流程进行配置“打印模板”、“表单模板”、“自定义脚本”、“字段关系”的脚本，以及“流程导出”，还可将其他的流程导入到该工作区.</p><p>具体的操作流程如下：</p><ul><li>在“设置”界面，点击“审批”下的“流程”，流程列表只显示流程状态为启用的流程；</li><li>点击流程名称，就会弹出流程详情信息界面；点击“编辑”按钮即可对该流程添加流程脚本。</li></ul><p><img src="/assets/workflow/%E6%B5%81%E7%A8%8B%E8%84%9A%E6%9C%AC.png" alt="流程脚本"></p><h2><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="条件节点规则"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#条件节点规则" title="Direct link to heading">#</a>条件节点规则</h2><ul><li>条件中引用字段需使用字段名+{}，如：{请假天数}；</li><li>条件中使用的符号必须是半角符号；</li><li>条件中嵌套条件时，用()；</li><li>条件中可以使用公式和函数。</li></ul><h3><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="条件中的判断项目"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#条件中的判断项目" title="Direct link to heading">#</a>条件中的判断项目</h3><ul><li><p>数值类型常量：直接使用数值，如：1000</p></li><li><p>字符类型常量：使用“&quot;”(注意是半角)将字符串扩起来，如：&quot;北京&quot;</p></li><li><p>表单字段变量：使用“{”和“}” (注意都是半角)将字段名扩起来，如：{请假天数}</p></li><li><p>基于提交人的系统变量：包括姓名、角色、部门等</p></li><li><p>提交人的所在部门（全路径）： {applicant.organization.fullname}</p></li><li><p>提交人的所在部门（最底层部门名）： {applicant.organization.name}</p></li><li><p>提交人的角色名： {applicant.roles}</p></li><li><p>提交人的姓名：{applicant.name}</p></li><li><p>基于姓名表单字段的系统变量：包括姓名、角色、部门等</p><ul><li>“报销人”的所在部门（全路径）： {报销人}.organization.fullname</li><li>“报销人”的所在部门（最底层部门名）： {报销人}.organization.name</li><li>“报销人”的角色名： {报销人}.roles</li><li>“报销人”的姓名： {报销人}.name</li></ul></li><li><p>基于数值字段的函数：</p><ul><li>加：{字段名1}+{字段名2}</li><li>减：{字段名1}-{字段名2}</li><li>乘：{单价}*{数量}</li><li>除：{总金额}/{数量}</li></ul></li><li><p>基于表格（子表）中的数值字段的函数：</p><ul><li>合计:sum({费用})</li><li>平均值：average({费用})</li><li>计数：count({物品})</li><li>最大值：max({费用})</li><li>最小值：min({费用})</li></ul></li><li><p>统计多选项中有几项被选中了：length({交通工具})</p></li><li><p>数值类型的判断，允许使用以下符号：</p><ul><li>等于，如：{借款金额}=1000</li><li>大于，如：{借款金额}&gt;1000</li><li>小于，如：{借款金额}&lt;1000</li><li>大于等于，如：sum({报销费用合计})&gt;=1000</li><li>小于等于，如：max({单笔费用金额})&lt;=1000</li><li>!等于，如：sum({借款金额})!=1000</li><li>不等于，如：sum({借款金额})&lt; &gt;1000</li></ul></li><li><p>字符类型的判断，允许使用以下符号/函数：</p><p>=：是，如：{项目}=&quot;北京&quot;</p><p>!=：非，如：{项目}!=&quot;北京&quot;</p><p><em>.contains()：包含,如：</em>.contains({applicant.roles},&#x27;部门经理&#x27;) 提交人是部门经理。请注意：由于一个人可能承担了多个审批岗位，所以应该用_.contains（包含）来判断，而不能用“=”。</p></li><li><p>一个条件判断如果不够，可以多个条件判断组合使用。允许组合关系包括：</p><ul><li>||：或，如：{借款金额}&lt;1000 ||{项目}=&quot;北京&quot;</li><li>&amp;&amp;： 与，如：{借款金额}&lt;1000 &amp;&amp;{项目}=&quot;北京&quot;</li><li>!:  非，如：!({借款金额}&lt;1000)</li></ul></li></ul><h3><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="条件判断的实际运用"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#条件判断的实际运用" title="Direct link to heading">#</a>条件判断的实际运用</h3><ul><li><p>对数值进行判断</p><p>如请假天数大于三天需要总经理审批，小于等于三天只需要人事部审核。这类型的判断还用于金额等。</p></li><li><p>对提交人进行判断</p></li></ul><p>如提交人是Tony则由总经理直接审批，若不是则需要部门经理审批。如何取得提交人是谁，则通过公式的编写。</p><ul><li>对提交人岗位进行判断</li></ul><p>如当提交人是部门员工，则由部门经理审批；而当提交人是部门经理，则由总经理审批。条件中，首先要使用系统提供的函数来获取相关的信息。如：{applicant.roles}获取提交人的角色。</p><ul><li>组合条件进行判断</li></ul><p>运用或、与的关系进行多个条件组合判断。如是部门经理或者是办公室人员由办公室审批，而不是部门经理且不是办公室人员的由部门经理审批。</p></div></article><div class="margin-vert--lg"><nav class="pagination-nav"><div class="pagination-nav__item"><a class="pagination-nav__link" href="/docs/help/admin_form"><h5 class="pagination-nav__link--sublabel">Previous</h5><h4 class="pagination-nav__link--label">« 表单设计</h4></a></div><div class="pagination-nav__item pagination-nav__item--next"><a class="pagination-nav__link" href="/docs/help/organization"><h5 class="pagination-nav__link--sublabel">Next</h5><h4 class="pagination-nav__link--label">组织机构 »</h4></a></div></nav></div></div></div><div class="col col--3"><div class="tableOfContents_tVyB"><ul class="contents contents__left-border"><li><a href="#如何设计流程" class="contents__link">如何设计流程</a><ul><li><a href="#流程设计" class="contents__link">流程设计</a></li><li><a href="#条件节点" class="contents__link">条件节点</a></li><li><a href="#流程分类" class="contents__link">流程分类</a></li><li><a href="#流程导入导出" class="contents__link">流程导入导出</a></li></ul></li><li><a href="#流程设置" class="contents__link">流程设置</a><ul><li><a href="#表单字段" class="contents__link">表单字段</a></li><li><a href="#节点处理人" class="contents__link">节点处理人</a></li><li><a href="#流程权限设置" class="contents__link">流程权限设置</a></li><li><a href="#流程编号设置" class="contents__link">流程编号设置</a></li></ul></li><li><a href="#条件节点规则" class="contents__link">条件节点规则</a><ul><li><a href="#条件中的判断项目" class="contents__link">条件中的判断项目</a></li><li><a href="#条件判断的实际运用" class="contents__link">条件判断的实际运用</a></li></ul></li></ul></div></div></div></div></div></main></div></div><footer class="footer footer--dark"><div class="container"><div class="row footer__links"><div class="col footer__col"><h4 class="footer__title">华炎产品</h4><ul class="footer__items"><li class="footer__item"><a class="footer__link-item" href="/docs/workflow/home">审批王</a></li><li class="footer__item"><a class="footer__link-item" href="/docs/platform/home">华炎开发平台</a></li><li class="footer__item"><a class="footer__link-item" href="/docs/products/messenger">华信</a></li></ul></div><div class="col footer__col"><h4 class="footer__title">应用案例</h4><ul class="footer__items"><li class="footer__item"><a class="footer__link-item" target="_blank" rel="noopener noreferrer" href="https://github.com/steedos/steedos-contracts-app">合同管理</a></li><li class="footer__item"><a class="footer__link-item" target="_blank" rel="noopener noreferrer" href="https://github.com/steedos/steedos-meeting-app">会议管理</a></li><li class="footer__item"><a class="footer__link-item" target="_blank" rel="noopener noreferrer" href="https://github.com/steedos/steedos-project-saas">华炎云</a></li></ul></div><div class="col footer__col"><h4 class="footer__title">技术支持</h4><ul class="footer__items"><li class="footer__item"><a class="footer__link-item">销售热线：400-820-1612</a></li><li class="footer__item"><a class="footer__link-item" to="https://messenger.steedos.cn/" href="https://messenger.steedos.cn/">在线客服</a></li><li class="footer__item"><a class="footer__link-item" href="/blog">最新动态</a></li></ul></div></div><div class="text--center">Copyright © 2020 上海华炎软件科技有限公司.</div></div></footer>
 </div>
 
-<script src="/styles.27096938.js"></script>
+<script src="/styles.229f7d78.js"></script>
 
-<script src="/runtime~main.fdea25b7.js"></script>
+<script src="/runtime~main.742a8dd3.js"></script>
 
-<script src="/main.b3721043.js"></script>
+<script src="/main.405e2f06.js"></script>
 
-<script src="/1.2f42fdd1.js"></script>
+<script src="/1.00f8e083.js"></script>
 
-<script src="/2.48a292c6.js"></script>
+<script src="/2.afe955ed.js"></script>
 
-<script src="/4.1738c1aa.js"></script>
+<script src="/4.d8d56bbf.js"></script>
 
-<script src="/1be78505.41984fbe.js"></script>
+<script src="/1be78505.78c832ab.js"></script>
 
-<script src="/20ac7829.8609f06e.js"></script>
+<script src="/20ac7829.7af4ba79.js"></script>
 
-<script src="/17896441.b7b25fa9.js"></script>
+<script src="/17896441.f3914a73.js"></script>
 
-<script src="/53074462.6f522682.js"></script>
+<script src="/53074462.54a0e031.js"></script>
 
 
 </body>
