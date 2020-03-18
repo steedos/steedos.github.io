@@ -13,55 +13,55 @@
 <link data-react-helmet="true" rel="shortcut icon" href="/img/icon_blue.png">
 
 
-<link rel="stylesheet" href="/styles.ba2569d1.css">
+<link rel="stylesheet" href="/styles.cec49231.css">
 
 
-<link rel="preload" href="/styles.3f97336a.js" as="script">
+<link rel="preload" href="/styles.63f002d5.js" as="script">
 
-<link rel="preload" href="/runtime~main.722f311b.js" as="script">
+<link rel="preload" href="/runtime~main.aef6993f.js" as="script">
 
-<link rel="preload" href="/main.cc114243.js" as="script">
+<link rel="preload" href="/main.6e230b12.js" as="script">
 
-<link rel="preload" href="/1.8a396e74.js" as="script">
+<link rel="preload" href="/1.d4b453fb.js" as="script">
 
-<link rel="preload" href="/2.33cebf31.js" as="script">
+<link rel="preload" href="/2.3508f8f0.js" as="script">
 
-<link rel="preload" href="/3.a0318b92.js" as="script">
+<link rel="preload" href="/3.0c9be36d.js" as="script">
 
-<link rel="preload" href="/1be78505.ad9c36a6.js" as="script">
+<link rel="preload" href="/1be78505.c4fbf7bb.js" as="script">
 
-<link rel="preload" href="/20ac7829.2ac9f11a.js" as="script">
+<link rel="preload" href="/20ac7829.1e4767ee.js" as="script">
 
-<link rel="preload" href="/17896441.5c668e07.js" as="script">
+<link rel="preload" href="/17896441.b9bc0004.js" as="script">
 
-<link rel="preload" href="/5848d504.4fd72495.js" as="script">
+<link rel="preload" href="/5848d504.3566df60.js" as="script">
 
 </head>
 <body>
 
 <div id="__docusaurus">
-<nav class="navbar navbar--light navbar--fixed-top"><div class="navbar__inner"><div class="navbar__items"><div aria-label="Navigation bar toggle" class="navbar__toggle" role="button" tabindex="0"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" role="img" focusable="false"><title>Menu</title><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></div><a aria-current="page" class="navbar__brand active" href="/"><img class="navbar__logo" src="/img/icon_blue.png" alt="华炎"><strong class="navbar__title">华炎云</strong></a><a class="navbar__item navbar__link" href="/docs/workflow/home">审批</a><a class="navbar__item navbar__link" href="/docs/solutions/contract">合同</a><a class="navbar__item navbar__link" href="/docs/platform/home">开发</a></div><div class="navbar__items navbar__items--right"><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/docs/help/home">帮助</a><a class="navbar__item navbar__link" target="_blank" rel="noopener noreferrer" href="https://cn.steedos.com">登录</a><div class="navbar__search"><span aria-label="expand searchbar" role="button" class="search-icon" tabindex="0"></span><input type="search" id="search_input_react" placeholder="Search" aria-label="Search" class="navbar__search-input search-bar"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div><div class="navbar-sidebar"><div class="navbar-sidebar__brand"><a aria-current="page" class="navbar__brand active" href="/"><img class="navbar__logo" src="/img/icon_blue.png" alt="华炎"><strong class="navbar__title">华炎云</strong></a></div><div class="navbar-sidebar__items"><div class="menu"><ul class="menu__list"><li class="menu__list-item"><a class="menu__link" href="/docs/workflow/home">审批</a></li><li class="menu__list-item"><a class="menu__link" href="/docs/solutions/contract">合同</a></li><li class="menu__list-item"><a class="menu__link" href="/docs/platform/home">开发</a></li><li class="menu__list-item"><a aria-current="page" class="menu__link navbar__link--active" href="/docs/help/home">帮助</a></li><li class="menu__list-item"><a class="menu__link" target="_blank" rel="noopener noreferrer" href="https://cn.steedos.com">登录</a></li></ul></div></div></div></nav><div class="main-wrapper"><div class="docPage_1jis"><main class="docMainContainer_3j_A"><div class="padding-vert--lg docItemWrapper_1Hme" style="background-image:url(/img/banner/sales-cloud-overview-lg.png)"><div class="container"><div class="row"><div class="col docItemCol_2AGf"><div class="docItemContainer_1tAC"><article><header><h1 class="docTitle_cWlf">假删除</h1></header><div class="markdown"><p>当用户在界面上删除记录时，并非物理删除，而是打上“已删除”的标记。用户在系统里查看对象记录时，不会显示这些“已删除”的记录。</p><p>假删除功能需要在对象定义中进行设置。否则，执行删除操作，仍然是物理删除，无法恢复数据。</p><ul><li>定义对象时，添加开关enable_trash，并置为true</li></ul><p>用户执行“删除”操作后</p><ul><li>如果对象的enable_trash为false或没有定义，则执行物理删除，在数据库中删除本记录</li><li>如果对象的enable_trash为true，则执行假删除，给本记录的相关字段赋值<ul><li>已删除(is_deleted)：赋值为true</li><li>删除日期(deleted)：赋值为当前日期</li><li>删除人(deleted_by)：赋值为当前操作用户</li></ul></li></ul><p>用户在系统里查看对象记录时，只会显示is_deleted为空的记录，而不会显示is_deleted为true的记录。</p><p>如果要恢复误删除的记录，可由管理员在数据库中将此记录的is_deleted置为空。</p></div></article><div class="margin-vert--lg"><nav class="pagination-nav"><div class="pagination-nav__item"></div><div class="pagination-nav__item pagination-nav__item--next"></div></nav></div></div></div><div class="col col--3"><div class="tableOfContents_tVyB"></div></div></div></div></div></main></div></div><footer class="footer footer--dark"><div class="container"><div class="row footer__links"><div class="col footer__col"><h4 class="footer__title">华炎产品</h4><ul class="footer__items"><li class="footer__item"><a class="footer__link-item" href="/docs/workflow/home">审批王</a></li><li class="footer__item"><a class="footer__link-item" href="/docs/platform/home">开发平台</a></li><li class="footer__item"><a class="footer__link-item" href="/docs/products/messenger">华信</a></li></ul></div><div class="col footer__col"><h4 class="footer__title">应用案例</h4><ul class="footer__items"><li class="footer__item"><a class="footer__link-item" target="_blank" rel="noopener noreferrer" href="https://github.com/steedos/steedos-contracts-app">合同管理</a></li><li class="footer__item"><a class="footer__link-item" target="_blank" rel="noopener noreferrer" href="https://github.com/steedos/steedos-meeting-app">会议管理</a></li><li class="footer__item"><a class="footer__link-item" target="_blank" rel="noopener noreferrer" href="https://github.com/steedos/steedos-project-saas">华炎云</a></li></ul></div><div class="col footer__col"><h4 class="footer__title">技术支持</h4><ul class="footer__items"><li class="footer__item"><a class="footer__link-item">销售热线：400-820-1612</a></li><li class="footer__item"><a class="footer__link-item" to="https://messenger.steedos.cn/" href="https://messenger.steedos.cn/">在线客服</a></li><li class="footer__item"><a class="footer__link-item" href="/blog">最新动态</a></li></ul></div></div><div class="text--center">Copyright © 2020 上海华炎软件科技有限公司.</div></div></footer>
+<nav class="navbar navbar--light navbar--fixed-top"><div class="navbar__inner"><div class="navbar__items"><div aria-label="Navigation bar toggle" class="navbar__toggle" role="button" tabindex="0"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" role="img" focusable="false"><title>Menu</title><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></div><a aria-current="page" class="navbar__brand active" href="/"><img class="navbar__logo" src="/img/icon_blue.png" alt="华炎"><strong class="navbar__title">华炎云</strong></a><div class="dropdown dropdown--hoverable"><a class="navbar__item navbar__link" activeclassname="navbar__link--active" to="" items="[object Object],[object Object]">产品</a><ul class="dropdown__menu"><a class="navbar__item navbar__link" href="/docs/workflow/home">流程审批</a><a class="navbar__item navbar__link" href="/docs/platform/home">开发平台</a></ul></div><div class="dropdown dropdown--hoverable"><a class="navbar__item navbar__link" activeclassname="navbar__link--active" to="" items="[object Object],[object Object]">解决方案</a><ul class="dropdown__menu"><a class="navbar__item navbar__link" href="/docs/group_management/home">集团管控</a><a class="navbar__item navbar__link" href="/docs/cost_control/home">费控管理</a></ul></div><div class="dropdown dropdown--hoverable"><a class="navbar__item navbar__link" activeclassname="navbar__link--active" to="" items="[object Object],[object Object],[object Object]">技术支持</a><ul class="dropdown__menu"><a class="navbar__item navbar__link" target="_blank" rel="noopener noreferrer" href="tel://4008201612">400-820-1612</a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/docs/help/home">帮助文档</a><a class="navbar__item navbar__link" target="_blank" rel="noopener noreferrer" href="http://messenger.steedos.cn">在线客服</a></ul></div></div><div class="navbar__items navbar__items--right"><a class="navbar__item navbar__link" target="_blank" rel="noopener noreferrer" href="https://cn.steedos.com">登录</a><div class="navbar__search"><span aria-label="expand searchbar" role="button" class="search-icon" tabindex="0"></span><input type="search" id="search_input_react" placeholder="Search" aria-label="Search" class="navbar__search-input search-bar"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div><div class="navbar-sidebar"><div class="navbar-sidebar__brand"><a aria-current="page" class="navbar__brand active" href="/"><img class="navbar__logo" src="/img/icon_blue.png" alt="华炎"><strong class="navbar__title">华炎云</strong></a></div><div class="navbar-sidebar__items"><div class="menu"><ul class="menu__list"><li class="menu__list-item"><a class="menu__link" activeclassname="navbar__link--active" to="" items="[object Object],[object Object]">产品</a></li><li class="menu__list-item"><a class="menu__link" style="padding-left:3rem" href="/docs/workflow/home">流程审批</a></li><li class="menu__list-item"><a class="menu__link" style="padding-left:3rem" href="/docs/platform/home">开发平台</a></li><li class="menu__list-item"><a class="menu__link" activeclassname="navbar__link--active" to="" items="[object Object],[object Object]">解决方案</a></li><li class="menu__list-item"><a class="menu__link" style="padding-left:3rem" href="/docs/group_management/home">集团管控</a></li><li class="menu__list-item"><a class="menu__link" style="padding-left:3rem" href="/docs/cost_control/home">费控管理</a></li><li class="menu__list-item"><a class="menu__link" activeclassname="navbar__link--active" to="" items="[object Object],[object Object],[object Object]">技术支持</a></li><li class="menu__list-item"><a class="menu__link" target="_blank" rel="noopener noreferrer" href="tel://4008201612" style="padding-left:3rem">400-820-1612</a></li><li class="menu__list-item"><a aria-current="page" class="menu__link navbar__link--active" style="padding-left:3rem" href="/docs/help/home">帮助文档</a></li><li class="menu__list-item"><a class="menu__link" target="_blank" rel="noopener noreferrer" href="http://messenger.steedos.cn" style="padding-left:3rem">在线客服</a></li><li class="menu__list-item"><a class="menu__link" target="_blank" rel="noopener noreferrer" href="https://cn.steedos.com">登录</a></li></ul></div></div></div></nav><div class="main-wrapper"><div class="docPage_1jis"><main class="docMainContainer_3j_A"><div class="padding-vert--lg docItemWrapper_1Hme" style="background-image:url(/img/banner/sales-cloud-overview-lg.png)"><div class="container"><div class="row"><div class="col docItemCol_2AGf"><div class="docItemContainer_1tAC"><article><header><h1 class="docTitle_cWlf">假删除</h1></header><div class="markdown"><p>当用户在界面上删除记录时，并非物理删除，而是打上“已删除”的标记。用户在系统里查看对象记录时，不会显示这些“已删除”的记录。</p><p>假删除功能需要在对象定义中进行设置。否则，执行删除操作，仍然是物理删除，无法恢复数据。</p><ul><li>定义对象时，添加开关enable_trash，并置为true</li></ul><p>用户执行“删除”操作后</p><ul><li>如果对象的enable_trash为false或没有定义，则执行物理删除，在数据库中删除本记录</li><li>如果对象的enable_trash为true，则执行假删除，给本记录的相关字段赋值<ul><li>已删除(is_deleted)：赋值为true</li><li>删除日期(deleted)：赋值为当前日期</li><li>删除人(deleted_by)：赋值为当前操作用户</li></ul></li></ul><p>用户在系统里查看对象记录时，只会显示is_deleted为空的记录，而不会显示is_deleted为true的记录。</p><p>如果要恢复误删除的记录，可由管理员在数据库中将此记录的is_deleted置为空。</p></div></article><div class="margin-vert--lg"><nav class="pagination-nav"><div class="pagination-nav__item"></div><div class="pagination-nav__item pagination-nav__item--next"></div></nav></div></div></div><div class="col col--3"><div class="tableOfContents_tVyB"></div></div></div></div></div></main></div></div><footer class="footer footer--dark"><div class="container"><div class="row footer__links"><div class="col footer__col"><h4 class="footer__title">华炎产品</h4><ul class="footer__items"><li class="footer__item"><a class="footer__link-item" href="/docs/workflow/home">审批王</a></li><li class="footer__item"><a class="footer__link-item" href="/docs/platform/home">开发平台</a></li><li class="footer__item"><a class="footer__link-item" href="/docs/products/messenger">华信</a></li></ul></div><div class="col footer__col"><h4 class="footer__title">开源项目</h4><ul class="footer__items"><li class="footer__item"><a class="footer__link-item" target="_blank" rel="noopener noreferrer" href="https://github.com/steedos/steedos-contracts-app">合同管理</a></li><li class="footer__item"><a class="footer__link-item" target="_blank" rel="noopener noreferrer" href="https://github.com/steedos/steedos-meeting-app">会议管理</a></li><li class="footer__item"><a class="footer__link-item" target="_blank" rel="noopener noreferrer" href="https://github.com/steedos/steedos-project-saas">华炎云</a></li></ul></div><div class="col footer__col"><h4 class="footer__title">技术支持</h4><ul class="footer__items"><li class="footer__item"><a class="footer__link-item">销售热线：400-820-1612</a></li><li class="footer__item"><a class="footer__link-item" target="_blank" rel="noopener noreferrer" href="https://messenger.steedos.cn/">在线客服</a></li><li class="footer__item"><a class="footer__link-item" href="/blog">最新动态</a></li></ul></div></div><div class="text--center">Copyright © 2020 上海华炎软件科技有限公司.</div></div></footer>
 </div>
 
-<script src="/styles.3f97336a.js"></script>
+<script src="/styles.63f002d5.js"></script>
 
-<script src="/runtime~main.722f311b.js"></script>
+<script src="/runtime~main.aef6993f.js"></script>
 
-<script src="/main.cc114243.js"></script>
+<script src="/main.6e230b12.js"></script>
 
-<script src="/1.8a396e74.js"></script>
+<script src="/1.d4b453fb.js"></script>
 
-<script src="/2.33cebf31.js"></script>
+<script src="/2.3508f8f0.js"></script>
 
-<script src="/3.a0318b92.js"></script>
+<script src="/3.0c9be36d.js"></script>
 
-<script src="/1be78505.ad9c36a6.js"></script>
+<script src="/1be78505.c4fbf7bb.js"></script>
 
-<script src="/20ac7829.2ac9f11a.js"></script>
+<script src="/20ac7829.1e4767ee.js"></script>
 
-<script src="/17896441.5c668e07.js"></script>
+<script src="/17896441.b9bc0004.js"></script>
 
-<script src="/5848d504.4fd72495.js"></script>
+<script src="/5848d504.3566df60.js"></script>
 
 
 </body>

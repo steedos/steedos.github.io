@@ -13,55 +13,55 @@
 <link data-react-helmet="true" rel="shortcut icon" href="/img/icon_blue.png">
 
 
-<link rel="stylesheet" href="/styles.ba2569d1.css">
+<link rel="stylesheet" href="/styles.cec49231.css">
 
 
-<link rel="preload" href="/styles.3f97336a.js" as="script">
+<link rel="preload" href="/styles.63f002d5.js" as="script">
 
-<link rel="preload" href="/runtime~main.722f311b.js" as="script">
+<link rel="preload" href="/runtime~main.aef6993f.js" as="script">
 
-<link rel="preload" href="/main.cc114243.js" as="script">
+<link rel="preload" href="/main.6e230b12.js" as="script">
 
-<link rel="preload" href="/1.8a396e74.js" as="script">
+<link rel="preload" href="/1.d4b453fb.js" as="script">
 
-<link rel="preload" href="/2.33cebf31.js" as="script">
+<link rel="preload" href="/2.3508f8f0.js" as="script">
 
-<link rel="preload" href="/3.a0318b92.js" as="script">
+<link rel="preload" href="/3.0c9be36d.js" as="script">
 
-<link rel="preload" href="/1be78505.ad9c36a6.js" as="script">
+<link rel="preload" href="/1be78505.c4fbf7bb.js" as="script">
 
-<link rel="preload" href="/20ac7829.2ac9f11a.js" as="script">
+<link rel="preload" href="/20ac7829.1e4767ee.js" as="script">
 
-<link rel="preload" href="/17896441.5c668e07.js" as="script">
+<link rel="preload" href="/17896441.b9bc0004.js" as="script">
 
-<link rel="preload" href="/29d8b09c.a09e9535.js" as="script">
+<link rel="preload" href="/29d8b09c.54eba30b.js" as="script">
 
 </head>
 <body>
 
 <div id="__docusaurus">
-<nav class="navbar navbar--light navbar--fixed-top"><div class="navbar__inner"><div class="navbar__items"><div aria-label="Navigation bar toggle" class="navbar__toggle" role="button" tabindex="0"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" role="img" focusable="false"><title>Menu</title><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></div><a aria-current="page" class="navbar__brand active" href="/"><img class="navbar__logo" src="/img/icon_blue.png" alt="华炎"><strong class="navbar__title">华炎云</strong></a><a class="navbar__item navbar__link" href="/docs/workflow/home">审批</a><a class="navbar__item navbar__link" href="/docs/solutions/contract">合同</a><a class="navbar__item navbar__link" href="/docs/platform/home">开发</a></div><div class="navbar__items navbar__items--right"><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/docs/help/home">帮助</a><a class="navbar__item navbar__link" target="_blank" rel="noopener noreferrer" href="https://cn.steedos.com">登录</a><div class="navbar__search"><span aria-label="expand searchbar" role="button" class="search-icon" tabindex="0"></span><input type="search" id="search_input_react" placeholder="Search" aria-label="Search" class="navbar__search-input search-bar"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div><div class="navbar-sidebar"><div class="navbar-sidebar__brand"><a aria-current="page" class="navbar__brand active" href="/"><img class="navbar__logo" src="/img/icon_blue.png" alt="华炎"><strong class="navbar__title">华炎云</strong></a></div><div class="navbar-sidebar__items"><div class="menu"><ul class="menu__list"><li class="menu__list-item"><a class="menu__link" href="/docs/workflow/home">审批</a></li><li class="menu__list-item"><a class="menu__link" href="/docs/solutions/contract">合同</a></li><li class="menu__list-item"><a class="menu__link" href="/docs/platform/home">开发</a></li><li class="menu__list-item"><a aria-current="page" class="menu__link navbar__link--active" href="/docs/help/home">帮助</a></li><li class="menu__list-item"><a class="menu__link" target="_blank" rel="noopener noreferrer" href="https://cn.steedos.com">登录</a></li></ul></div></div></div></nav><div class="main-wrapper"><div class="docPage_1jis"><main class="docMainContainer_3j_A"><div class="padding-vert--lg docItemWrapper_1Hme" style="background-image:url(/img/banner/sales-cloud-overview-lg.png)"><div class="container"><div class="row"><div class="col docItemCol_2AGf"><div class="docItemContainer_1tAC"><article><header><h1 class="docTitle_cWlf">申请单上，如何自动得到几个数值字段的和？</h1></header><div class="markdown"><p>申请单经常会有数值型的字段，例如下图表单上的的餐费、办公费、业务费、其他费用、合计等都是数值。其中，合计应为餐费等费用的数值之和。</p><p><img src="/assets/workflow/sum.png" alt="自动求和"></p><p>合计的数由系统自动计算得出，既简化了填单的工作，数值也会更加准确。</p><p>如上图所示，当餐费金额为1000、业务费为500、其他费用为300时，合计应自动计算为1800，无须单独填写。</p><p>通过设置“合计”字段的公式，可实现自动求和的想法。具体操作如下：</p><ul><li><p>管理员进入系统后，切换“设置-审批-流程”，点击“流程设计器”按钮，进入到流程设计界面。</p></li><li><p>切换进入“表单”设计，点击这个数值型的字段“合计”，并在右侧栏里切换到“属性”栏。</p></li></ul><p><img src="/assets/workflow/cal_value.png" alt="累加计算值"></p><ul><li>“公式”栏里输入：{train_fee}+{traffic_fee}+{vehicle_fee}+{stay_fee}+{meals}+{office_fee}+{business_fee}+{o_fee}，所有费用字段累加，保存即可。其中的“train_fee”等分别是交通费字段的字段名。</li></ul><p>设置字段公式时，除了数值型的加减乘除，您还可以使用其他函数，具体使用方法，可参考 <a href="/docs/workflow/help/admin_form/#%E5%AD%97%E6%AE%B5%E5%85%AC%E5%BC%8F">审批王表单设计-字段公式</a></p></div></article><div class="margin-vert--lg"><nav class="pagination-nav"><div class="pagination-nav__item"></div><div class="pagination-nav__item pagination-nav__item--next"></div></nav></div></div></div></div></div></div></main></div></div><footer class="footer footer--dark"><div class="container"><div class="row footer__links"><div class="col footer__col"><h4 class="footer__title">华炎产品</h4><ul class="footer__items"><li class="footer__item"><a class="footer__link-item" href="/docs/workflow/home">审批王</a></li><li class="footer__item"><a class="footer__link-item" href="/docs/platform/home">开发平台</a></li><li class="footer__item"><a class="footer__link-item" href="/docs/products/messenger">华信</a></li></ul></div><div class="col footer__col"><h4 class="footer__title">应用案例</h4><ul class="footer__items"><li class="footer__item"><a class="footer__link-item" target="_blank" rel="noopener noreferrer" href="https://github.com/steedos/steedos-contracts-app">合同管理</a></li><li class="footer__item"><a class="footer__link-item" target="_blank" rel="noopener noreferrer" href="https://github.com/steedos/steedos-meeting-app">会议管理</a></li><li class="footer__item"><a class="footer__link-item" target="_blank" rel="noopener noreferrer" href="https://github.com/steedos/steedos-project-saas">华炎云</a></li></ul></div><div class="col footer__col"><h4 class="footer__title">技术支持</h4><ul class="footer__items"><li class="footer__item"><a class="footer__link-item">销售热线：400-820-1612</a></li><li class="footer__item"><a class="footer__link-item" to="https://messenger.steedos.cn/" href="https://messenger.steedos.cn/">在线客服</a></li><li class="footer__item"><a class="footer__link-item" href="/blog">最新动态</a></li></ul></div></div><div class="text--center">Copyright © 2020 上海华炎软件科技有限公司.</div></div></footer>
+<nav class="navbar navbar--light navbar--fixed-top"><div class="navbar__inner"><div class="navbar__items"><div aria-label="Navigation bar toggle" class="navbar__toggle" role="button" tabindex="0"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" role="img" focusable="false"><title>Menu</title><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></div><a aria-current="page" class="navbar__brand active" href="/"><img class="navbar__logo" src="/img/icon_blue.png" alt="华炎"><strong class="navbar__title">华炎云</strong></a><div class="dropdown dropdown--hoverable"><a class="navbar__item navbar__link" activeclassname="navbar__link--active" to="" items="[object Object],[object Object]">产品</a><ul class="dropdown__menu"><a class="navbar__item navbar__link" href="/docs/workflow/home">流程审批</a><a class="navbar__item navbar__link" href="/docs/platform/home">开发平台</a></ul></div><div class="dropdown dropdown--hoverable"><a class="navbar__item navbar__link" activeclassname="navbar__link--active" to="" items="[object Object],[object Object]">解决方案</a><ul class="dropdown__menu"><a class="navbar__item navbar__link" href="/docs/group_management/home">集团管控</a><a class="navbar__item navbar__link" href="/docs/cost_control/home">费控管理</a></ul></div><div class="dropdown dropdown--hoverable"><a class="navbar__item navbar__link" activeclassname="navbar__link--active" to="" items="[object Object],[object Object],[object Object]">技术支持</a><ul class="dropdown__menu"><a class="navbar__item navbar__link" target="_blank" rel="noopener noreferrer" href="tel://4008201612">400-820-1612</a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/docs/help/home">帮助文档</a><a class="navbar__item navbar__link" target="_blank" rel="noopener noreferrer" href="http://messenger.steedos.cn">在线客服</a></ul></div></div><div class="navbar__items navbar__items--right"><a class="navbar__item navbar__link" target="_blank" rel="noopener noreferrer" href="https://cn.steedos.com">登录</a><div class="navbar__search"><span aria-label="expand searchbar" role="button" class="search-icon" tabindex="0"></span><input type="search" id="search_input_react" placeholder="Search" aria-label="Search" class="navbar__search-input search-bar"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div><div class="navbar-sidebar"><div class="navbar-sidebar__brand"><a aria-current="page" class="navbar__brand active" href="/"><img class="navbar__logo" src="/img/icon_blue.png" alt="华炎"><strong class="navbar__title">华炎云</strong></a></div><div class="navbar-sidebar__items"><div class="menu"><ul class="menu__list"><li class="menu__list-item"><a class="menu__link" activeclassname="navbar__link--active" to="" items="[object Object],[object Object]">产品</a></li><li class="menu__list-item"><a class="menu__link" style="padding-left:3rem" href="/docs/workflow/home">流程审批</a></li><li class="menu__list-item"><a class="menu__link" style="padding-left:3rem" href="/docs/platform/home">开发平台</a></li><li class="menu__list-item"><a class="menu__link" activeclassname="navbar__link--active" to="" items="[object Object],[object Object]">解决方案</a></li><li class="menu__list-item"><a class="menu__link" style="padding-left:3rem" href="/docs/group_management/home">集团管控</a></li><li class="menu__list-item"><a class="menu__link" style="padding-left:3rem" href="/docs/cost_control/home">费控管理</a></li><li class="menu__list-item"><a class="menu__link" activeclassname="navbar__link--active" to="" items="[object Object],[object Object],[object Object]">技术支持</a></li><li class="menu__list-item"><a class="menu__link" target="_blank" rel="noopener noreferrer" href="tel://4008201612" style="padding-left:3rem">400-820-1612</a></li><li class="menu__list-item"><a aria-current="page" class="menu__link navbar__link--active" style="padding-left:3rem" href="/docs/help/home">帮助文档</a></li><li class="menu__list-item"><a class="menu__link" target="_blank" rel="noopener noreferrer" href="http://messenger.steedos.cn" style="padding-left:3rem">在线客服</a></li><li class="menu__list-item"><a class="menu__link" target="_blank" rel="noopener noreferrer" href="https://cn.steedos.com">登录</a></li></ul></div></div></div></nav><div class="main-wrapper"><div class="docPage_1jis"><main class="docMainContainer_3j_A"><div class="padding-vert--lg docItemWrapper_1Hme" style="background-image:url(/img/banner/sales-cloud-overview-lg.png)"><div class="container"><div class="row"><div class="col docItemCol_2AGf"><div class="docItemContainer_1tAC"><article><header><h1 class="docTitle_cWlf">申请单上，如何自动得到几个数值字段的和？</h1></header><div class="markdown"><p>申请单经常会有数值型的字段，例如下图表单上的的餐费、办公费、业务费、其他费用、合计等都是数值。其中，合计应为餐费等费用的数值之和。</p><p><img src="/assets/workflow/sum.png" alt="自动求和"></p><p>合计的数由系统自动计算得出，既简化了填单的工作，数值也会更加准确。</p><p>如上图所示，当餐费金额为1000、业务费为500、其他费用为300时，合计应自动计算为1800，无须单独填写。</p><p>通过设置“合计”字段的公式，可实现自动求和的想法。具体操作如下：</p><ul><li><p>管理员进入系统后，切换“设置-审批-流程”，点击“流程设计器”按钮，进入到流程设计界面。</p></li><li><p>切换进入“表单”设计，点击这个数值型的字段“合计”，并在右侧栏里切换到“属性”栏。</p></li></ul><p><img src="/assets/workflow/cal_value.png" alt="累加计算值"></p><ul><li>“公式”栏里输入：{train_fee}+{traffic_fee}+{vehicle_fee}+{stay_fee}+{meals}+{office_fee}+{business_fee}+{o_fee}，所有费用字段累加，保存即可。其中的“train_fee”等分别是交通费字段的字段名。</li></ul><p>设置字段公式时，除了数值型的加减乘除，您还可以使用其他函数，具体使用方法，可参考 <a href="/docs/workflow/help/admin_form/#%E5%AD%97%E6%AE%B5%E5%85%AC%E5%BC%8F">审批王表单设计-字段公式</a></p></div></article><div class="margin-vert--lg"><nav class="pagination-nav"><div class="pagination-nav__item"></div><div class="pagination-nav__item pagination-nav__item--next"></div></nav></div></div></div></div></div></div></main></div></div><footer class="footer footer--dark"><div class="container"><div class="row footer__links"><div class="col footer__col"><h4 class="footer__title">华炎产品</h4><ul class="footer__items"><li class="footer__item"><a class="footer__link-item" href="/docs/workflow/home">审批王</a></li><li class="footer__item"><a class="footer__link-item" href="/docs/platform/home">开发平台</a></li><li class="footer__item"><a class="footer__link-item" href="/docs/products/messenger">华信</a></li></ul></div><div class="col footer__col"><h4 class="footer__title">开源项目</h4><ul class="footer__items"><li class="footer__item"><a class="footer__link-item" target="_blank" rel="noopener noreferrer" href="https://github.com/steedos/steedos-contracts-app">合同管理</a></li><li class="footer__item"><a class="footer__link-item" target="_blank" rel="noopener noreferrer" href="https://github.com/steedos/steedos-meeting-app">会议管理</a></li><li class="footer__item"><a class="footer__link-item" target="_blank" rel="noopener noreferrer" href="https://github.com/steedos/steedos-project-saas">华炎云</a></li></ul></div><div class="col footer__col"><h4 class="footer__title">技术支持</h4><ul class="footer__items"><li class="footer__item"><a class="footer__link-item">销售热线：400-820-1612</a></li><li class="footer__item"><a class="footer__link-item" target="_blank" rel="noopener noreferrer" href="https://messenger.steedos.cn/">在线客服</a></li><li class="footer__item"><a class="footer__link-item" href="/blog">最新动态</a></li></ul></div></div><div class="text--center">Copyright © 2020 上海华炎软件科技有限公司.</div></div></footer>
 </div>
 
-<script src="/styles.3f97336a.js"></script>
+<script src="/styles.63f002d5.js"></script>
 
-<script src="/runtime~main.722f311b.js"></script>
+<script src="/runtime~main.aef6993f.js"></script>
 
-<script src="/main.cc114243.js"></script>
+<script src="/main.6e230b12.js"></script>
 
-<script src="/1.8a396e74.js"></script>
+<script src="/1.d4b453fb.js"></script>
 
-<script src="/2.33cebf31.js"></script>
+<script src="/2.3508f8f0.js"></script>
 
-<script src="/3.a0318b92.js"></script>
+<script src="/3.0c9be36d.js"></script>
 
-<script src="/1be78505.ad9c36a6.js"></script>
+<script src="/1be78505.c4fbf7bb.js"></script>
 
-<script src="/20ac7829.2ac9f11a.js"></script>
+<script src="/20ac7829.1e4767ee.js"></script>
 
-<script src="/17896441.5c668e07.js"></script>
+<script src="/17896441.b9bc0004.js"></script>
 
-<script src="/29d8b09c.a09e9535.js"></script>
+<script src="/29d8b09c.54eba30b.js"></script>
 
 
 </body>
