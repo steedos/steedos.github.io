@@ -16,23 +16,23 @@
 <link rel="stylesheet" href="/styles.c94e39e3.css">
 
 
-<link rel="preload" href="/styles.c1328444.js" as="script">
+<link rel="preload" href="/styles.99f9aa5e.js" as="script">
 
-<link rel="preload" href="/runtime~main.09534ad7.js" as="script">
+<link rel="preload" href="/runtime~main.5b225f57.js" as="script">
 
-<link rel="preload" href="/main.b6c48bb2.js" as="script">
+<link rel="preload" href="/main.7e307915.js" as="script">
 
 <link rel="preload" href="/1.a01154e4.js" as="script">
 
-<link rel="preload" href="/2.70fb7998.js" as="script">
+<link rel="preload" href="/2.33b4fd9b.js" as="script">
 
-<link rel="preload" href="/3.662f2abd.js" as="script">
+<link rel="preload" href="/3.7e0068f3.js" as="script">
 
-<link rel="preload" href="/1be78505.3b57c632.js" as="script">
+<link rel="preload" href="/1be78505.9250c0bb.js" as="script">
 
-<link rel="preload" href="/ec1ed54d.35d8395f.js" as="script">
+<link rel="preload" href="/ec1ed54d.5c0bb9b2.js" as="script">
 
-<link rel="preload" href="/17896441.8769f5dd.js" as="script">
+<link rel="preload" href="/17896441.aec1daff.js" as="script">
 
 <link rel="preload" href="/ddb5e0c7.4a292125.js" as="script">
 
@@ -56,23 +56,23 @@
 In Steedos Workflow, a node represents a step , and all nodes are connected with straight lines. A node can concatenate one or more nodes according to following approval process. The flowing nodes can be decided by assigned by approver or by conditions automatically.</p><h4><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="flow-design"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#flow-design" title="Direct link to heading">#</a>Flow design</h4><p>We set “Daily Reimbursement” as an example to demonstrate the flow design process. Detailed steps are listed below.</p><ul><li>Login in Steedos, and then click “Workflow Designer” in “Settings”.</li><li>Select “No Category” in pop-up interface and then click “Daily Reimbursement”.</li><li>In the workflow interface, “Flow Info”, “Draw”, “Properties” are displayed in the panel at the right side.<ul><li>Flow name and flow description can be modified in “Flow Info”.</li><li>Click “Draw” to add different nodes, including “Approve Request”, “CounterSign”, “Provide Input”, “Condition”. Here is a brief introduction for different nodes.</li></ul></li></ul><p><img src="/assets/us/workflow/17.png"></p><div class="mdxCodeBlock_iHAB"><pre class="prism-code language-undefined codeBlock_19pQ"><button type="button" aria-label="Copy code to clipboard" class="copyButton_1BYj">Copy</button><code class="codeBlockLines_2n9r" style="color:#bfc7d5;background-color:#292d3e"><div class="token-line" style="color:#bfc7d5"><span class="token plain">- **Approve Request**: Approvers must select “Approve” or “Reject”.</span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">- **CounterSign**: In the node, several users can approve applications. Then applications flow to next step automatically according to system conditions.</span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">- **Provide Input**：Users can input comments or submit requests immediately, but can not select “Approve” or “Reject”.</span></div></code></pre></div><ul><li>Select one node in “Draw” and move it to the left panel of the page. </li><li>And then place the mouse cursor over this node. Next，click “+” icon to add lines to connect nodes. </li><li>Of course，you can click “-” to delete the lines. </li><li>Click the specific node and then “Flow Info”,  “Draw”， “Properties” and “Permissions” are displayed in the panel.<ul><li><strong>Properties</strong>: Admins can modify “Step Name”, “Assign to” and “Deadline for the step” in properties. For more details, please refer to “<a href="/us/help/workflow/flow_step_user">Approver settings</a>”.</li><li><strong>Permissions</strong>: Except for the start step, all fields are read-only by default. Admins can tick editable fields in the step according to actual situations.</li></ul></li><li>Turn on the switch in “Workflow List” to run the flow.</li></ul><h4><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="notice："></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#notice：" title="Direct link to heading">#</a>Notice：</h4><p>Requests submitted before the modification of form and flow design will run according to previous settings. The requests submitted after modifications will flow in new steps.</p></div></article><div class="margin-vert--lg"><nav class="pagination-nav"><div class="pagination-nav__item"><a class="pagination-nav__link" href="/us/help/workflow/form_scripts"><h5 class="pagination-nav__link--sublabel">Previous</h5><h4 class="pagination-nav__link--label">« Form scripts</h4></a></div><div class="pagination-nav__item pagination-nav__item--next"><a class="pagination-nav__link" href="/us/help/workflow/flow_permissions"><h5 class="pagination-nav__link--sublabel">Next</h5><h4 class="pagination-nav__link--label">Flow permissions »</h4></a></div></nav></div></div></div><div class="col col--3"><div class="tableOfContents_tVyB"></div></div></div></div></div></main></div></div><footer class="footer footer--dark"><div class="container"><div class="row footer__links"><div class="col footer__col"><h4 class="footer__title">华炎产品</h4><ul class="footer__items"><li class="footer__item"><a class="footer__link-item" href="/workflow/home">审批王</a></li><li class="footer__item"><a class="footer__link-item" href="/platform/">开发平台</a></li><li class="footer__item"><a class="footer__link-item" href="/products/messenger">华信</a></li></ul></div><div class="col footer__col"><h4 class="footer__title">开源项目</h4><ul class="footer__items"><li class="footer__item"><a class="footer__link-item" target="_blank" rel="noopener noreferrer" href="https://github.com/steedos/steedos-contracts-app">合同管理</a></li><li class="footer__item"><a class="footer__link-item" target="_blank" rel="noopener noreferrer" href="https://github.com/steedos/steedos-meeting-app">会议管理</a></li><li class="footer__item"><a class="footer__link-item" target="_blank" rel="noopener noreferrer" href="https://github.com/steedos/steedos-project-saas">华炎云</a></li></ul></div><div class="col footer__col"><h4 class="footer__title">技术支持</h4><ul class="footer__items"><li class="footer__item"><a class="footer__link-item">销售热线：400-820-1612</a></li><li class="footer__item"><a class="footer__link-item" href="/contact_us">在线咨询</a></li><li class="footer__item"><a class="footer__link-item" href="/blog">最新动态</a></li></ul></div></div><div class="text--center">Copyright © 2020 上海华炎软件科技有限公司.</div></div></footer>
 </div>
 
-<script src="/styles.c1328444.js"></script>
+<script src="/styles.99f9aa5e.js"></script>
 
-<script src="/runtime~main.09534ad7.js"></script>
+<script src="/runtime~main.5b225f57.js"></script>
 
-<script src="/main.b6c48bb2.js"></script>
+<script src="/main.7e307915.js"></script>
 
 <script src="/1.a01154e4.js"></script>
 
-<script src="/2.70fb7998.js"></script>
+<script src="/2.33b4fd9b.js"></script>
 
-<script src="/3.662f2abd.js"></script>
+<script src="/3.7e0068f3.js"></script>
 
-<script src="/1be78505.3b57c632.js"></script>
+<script src="/1be78505.9250c0bb.js"></script>
 
-<script src="/ec1ed54d.35d8395f.js"></script>
+<script src="/ec1ed54d.5c0bb9b2.js"></script>
 
-<script src="/17896441.8769f5dd.js"></script>
+<script src="/17896441.aec1daff.js"></script>
 
 <script src="/ddb5e0c7.4a292125.js"></script>
 
