@@ -13,28 +13,28 @@
 <link data-react-helmet="true" rel="shortcut icon" href="/img/icon_blue.png">
 
 
-<link rel="stylesheet" href="/styles.f3552ae3.css">
+<link rel="stylesheet" href="/styles.eef2a787.css">
 
 
-<link rel="preload" href="/styles.4c26febc.js" as="script">
+<link rel="preload" href="/styles.a50a2c4e.js" as="script">
 
-<link rel="preload" href="/runtime~main.96fd9f08.js" as="script">
+<link rel="preload" href="/runtime~main.c4c15bc3.js" as="script">
 
-<link rel="preload" href="/main.2499d8b6.js" as="script">
+<link rel="preload" href="/main.fb8d5f16.js" as="script">
 
-<link rel="preload" href="/1.861ab090.js" as="script">
+<link rel="preload" href="/1.37cd035d.js" as="script">
 
-<link rel="preload" href="/2.160d3dd8.js" as="script">
+<link rel="preload" href="/2.b83f5e3b.js" as="script">
 
-<link rel="preload" href="/3.8bb6a85a.js" as="script">
+<link rel="preload" href="/3.1401e3c6.js" as="script">
 
-<link rel="preload" href="/1be78505.d458bd24.js" as="script">
+<link rel="preload" href="/1be78505.04d8081a.js" as="script">
 
-<link rel="preload" href="/ec1ed54d.88059679.js" as="script">
+<link rel="preload" href="/ec1ed54d.5cb3d479.js" as="script">
 
-<link rel="preload" href="/17896441.7c2c9b6a.js" as="script">
+<link rel="preload" href="/17896441.efa71590.js" as="script">
 
-<link rel="preload" href="/69593dbd.d8f45f8c.js" as="script">
+<link rel="preload" href="/69593dbd.c5be68f7.js" as="script">
 
 </head>
 <body>
@@ -55,25 +55,25 @@
         </style><div class="padding-vert--lg"><div class="container"><div class="row"><div class="col"><div class="docItemContainer_1tAC"><article><header><h1 class="docTitle_cWlf">表单事件</h1></header><div class="markdown"><h2><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="表单触发器"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#表单触发器" title="Direct link to heading">#</a>表单触发器</h2><h3><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="initialvalues"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#initialvalues" title="Direct link to heading">#</a>initialValues</h3><p>表单初始化数据时执行。</p><p>initialValues 可以定义为同步函数或是异步函数。</p><div class="mdxCodeBlock_iHAB"><pre class="prism-code language-yml codeBlock_19pQ"><button type="button" aria-label="Copy code to clipboard" class="copyButton_1BYj">Copy</button><code class="codeBlockLines_2n9r" style="color:#bfc7d5;background-color:#292d3e"><div class="token-line" style="color:#bfc7d5"><span class="token key atrule">form</span><span class="token punctuation" style="color:rgb(199, 146, 234)">:</span><span class="token plain"></span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">  </span><span class="token key atrule">initialValues</span><span class="token punctuation" style="color:rgb(199, 146, 234)">:</span><span class="token plain"> function () </span><span class="token punctuation" style="color:rgb(199, 146, 234)">{</span><span class="token plain"></span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">      return </span><span class="token punctuation" style="color:rgb(199, 146, 234)">{</span><span class="token plain"></span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">          </span><span class="token key atrule">name</span><span class="token punctuation" style="color:rgb(199, 146, 234)">:</span><span class="token plain"> </span><span class="token string" style="color:rgb(195, 232, 141)">&quot;Hello World&quot;</span><span class="token punctuation" style="color:rgb(199, 146, 234)">,</span><span class="token plain"></span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">          </span><span class="token key atrule">code</span><span class="token punctuation" style="color:rgb(199, 146, 234)">:</span><span class="token plain"> &quot;hello_world</span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">      </span><span class="token punctuation" style="color:rgb(199, 146, 234)">}</span><span class="token plain"></span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">  </span><span class="token punctuation" style="color:rgb(199, 146, 234)">}</span></div></code></pre></div><h3><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="onsubmit"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#onsubmit" title="Direct link to heading">#</a>onSubmit</h3><p>表单提交时执行。传入表单中的字段值，如果成功返回undefined，如果失败返回错误数组。</p><p>onSubmit 可以定义为同步函数或是异步函数。</p><div class="mdxCodeBlock_iHAB"><pre class="prism-code language-yml codeBlock_19pQ"><button type="button" aria-label="Copy code to clipboard" class="copyButton_1BYj">Copy</button><code class="codeBlockLines_2n9r" style="color:#bfc7d5;background-color:#292d3e"><div class="token-line" style="color:#bfc7d5"><span class="token key atrule">form</span><span class="token punctuation" style="color:rgb(199, 146, 234)">:</span><span class="token plain"></span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">  </span><span class="token key atrule">onSubmit</span><span class="token punctuation" style="color:rgb(199, 146, 234)">:</span><span class="token plain"> function (formValues) </span><span class="token punctuation" style="color:rgb(199, 146, 234)">{</span><span class="token plain"></span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">      return </span><span class="token punctuation" style="color:rgb(199, 146, 234)">{</span><span class="token plain"></span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">          // 调用 ajax 查询服务端</span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">          </span><span class="token key atrule">code</span><span class="token punctuation" style="color:rgb(199, 146, 234)">:</span><span class="token plain"> </span><span class="token string" style="color:rgb(195, 232, 141)">&quot;code 字段不能重复&quot;</span><span class="token plain"></span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">      </span><span class="token punctuation" style="color:rgb(199, 146, 234)">}</span><span class="token plain"></span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">  </span><span class="token punctuation" style="color:rgb(199, 146, 234)">}</span></div></code></pre></div><h3><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="validate"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#validate" title="Direct link to heading">#</a>validate</h3><p>表单字段修改时执行。传入表单中的字段值，如果成功返回undefined，如果失败返回错误数组。</p><p>validate 可以定义为同步函数或是异步函数。</p><div class="mdxCodeBlock_iHAB"><pre class="prism-code language-yml codeBlock_19pQ"><button type="button" aria-label="Copy code to clipboard" class="copyButton_1BYj">Copy</button><code class="codeBlockLines_2n9r" style="color:#bfc7d5;background-color:#292d3e"><div class="token-line" style="color:#bfc7d5"><span class="token key atrule">form</span><span class="token punctuation" style="color:rgb(199, 146, 234)">:</span><span class="token plain"></span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">  </span><span class="token key atrule">validate</span><span class="token punctuation" style="color:rgb(199, 146, 234)">:</span><span class="token plain"> function (formValues) </span><span class="token punctuation" style="color:rgb(199, 146, 234)">{</span><span class="token plain"></span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">      return </span><span class="token punctuation" style="color:rgb(199, 146, 234)">{</span><span class="token plain"></span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">          // 调用 ajax 查询服务端</span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">          </span><span class="token key atrule">code</span><span class="token punctuation" style="color:rgb(199, 146, 234)">:</span><span class="token plain"> </span><span class="token string" style="color:rgb(195, 232, 141)">&quot;code 字段不能重复&quot;</span><span class="token plain"></span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">      </span><span class="token punctuation" style="color:rgb(199, 146, 234)">}</span><span class="token plain"></span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">  </span><span class="token punctuation" style="color:rgb(199, 146, 234)">}</span></div></code></pre></div></div></article><div class="margin-vert--lg"><nav class="pagination-nav"><div class="pagination-nav__item"><a class="pagination-nav__link" href="/developer/object_action"><h5 class="pagination-nav__link--sublabel">Previous</h5><h4 class="pagination-nav__link--label">« 操作按钮</h4></a></div><div class="pagination-nav__item pagination-nav__item--next"><a class="pagination-nav__link" href="/developer/objectql_connection"><h5 class="pagination-nav__link--sublabel">Next</h5><h4 class="pagination-nav__link--label">Connection »</h4></a></div></nav></div></div></div><div class="col col--3"><div class="tableOfContents_tVyB"><ul class="contents contents__left-border"><li><a href="#表单触发器" class="contents__link">表单触发器</a><ul><li><a href="#initialvalues" class="contents__link">initialValues</a></li><li><a href="#onsubmit" class="contents__link">onSubmit</a></li><li><a href="#validate" class="contents__link">validate</a></li></ul></li></ul></div></div></div></div></div></main></div></div><footer class="footer footer--dark"><div class="container"><div class="row footer__links"><div class="col footer__col"><h4 class="footer__title">华炎产品</h4><ul class="footer__items"><li class="footer__item"><a class="footer__link-item" href="/oa/">华炎办公</a></li><li class="footer__item"><a class="footer__link-item" href="/platform/">华炎云平台</a></li></ul></div><div class="col footer__col"><h4 class="footer__title">解决方案</h4><ul class="footer__items"><li class="footer__item"><a class="footer__link-item" target="_blank" rel="noopener noreferrer" href="/solutions/group/">集团管控</a></li><li class="footer__item"><a class="footer__link-item" target="_blank" rel="noopener noreferrer" href="/solutions/cost/">费控管理</a></li><li class="footer__item"><a class="footer__link-item" target="_blank" rel="noopener noreferrer" href="/solutions/workflow/">流程审批</a></li></ul></div><div class="col footer__col"><h4 class="footer__title">技术支持</h4><ul class="footer__items"><li class="footer__item"><a class="footer__link-item">销售热线：400-820-1612</a></li><li class="footer__item"><a class="footer__link-item" href="/company/contact-us">在线咨询</a></li><li class="footer__item"><a class="footer__link-item" href="/blog">最新动态</a></li></ul></div></div><div class="text--center">Copyright © 2020 上海华炎软件科技有限公司.</div></div></footer>
 </div>
 
-<script src="/styles.4c26febc.js"></script>
+<script src="/styles.a50a2c4e.js"></script>
 
-<script src="/runtime~main.96fd9f08.js"></script>
+<script src="/runtime~main.c4c15bc3.js"></script>
 
-<script src="/main.2499d8b6.js"></script>
+<script src="/main.fb8d5f16.js"></script>
 
-<script src="/1.861ab090.js"></script>
+<script src="/1.37cd035d.js"></script>
 
-<script src="/2.160d3dd8.js"></script>
+<script src="/2.b83f5e3b.js"></script>
 
-<script src="/3.8bb6a85a.js"></script>
+<script src="/3.1401e3c6.js"></script>
 
-<script src="/1be78505.d458bd24.js"></script>
+<script src="/1be78505.04d8081a.js"></script>
 
-<script src="/ec1ed54d.88059679.js"></script>
+<script src="/ec1ed54d.5cb3d479.js"></script>
 
-<script src="/17896441.7c2c9b6a.js"></script>
+<script src="/17896441.efa71590.js"></script>
 
-<script src="/69593dbd.d8f45f8c.js"></script>
+<script src="/69593dbd.c5be68f7.js"></script>
 
 
 </body>
