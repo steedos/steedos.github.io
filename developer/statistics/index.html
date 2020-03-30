@@ -8,33 +8,33 @@
 
 <title data-react-helmet="true">statistics - 华炎云</title>
 
-<meta data-react-helmet="true" http-equiv="x-ua-compatible" content="ie=edge"><meta data-react-helmet="true" name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta data-react-helmet="true" property="og:title" content="华炎云"><meta data-react-helmet="true" name="twitter:card" content="summary"><meta data-react-helmet="true" name="description" content="## 功能说明"><meta data-react-helmet="true" property="og:description" content="## 功能说明"><meta data-react-helmet="true" property="og:url" content="https://www.steedos.com//developer/statistics">
+<meta data-react-helmet="true" http-equiv="x-ua-compatible" content="ie=edge"><meta data-react-helmet="true" name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta data-react-helmet="true" property="og:title" content="华炎云"><meta data-react-helmet="true" name="twitter:card" content="summary"><meta data-react-helmet="true" name="description" content="## 功能说明"><meta data-react-helmet="true" property="og:description" content="## 功能说明"><meta data-react-helmet="true" property="og:url" content="https://www.steedos.com/developer/statistics">
 
 <link data-react-helmet="true" rel="shortcut icon" href="/img/icon_blue.png">
 
 
-<link rel="stylesheet" href="/styles.3dec2edf.css">
+<link rel="stylesheet" href="/styles.036a8c59.css">
 
 
-<link rel="preload" href="/styles.a50a2c4e.js" as="script">
+<link rel="preload" href="/styles.16b4b2a4.js" as="script">
 
-<link rel="preload" href="/runtime~main.47e9dfe2.js" as="script">
+<link rel="preload" href="/runtime~main.01df8d5b.js" as="script">
 
-<link rel="preload" href="/main.fb8d5f16.js" as="script">
+<link rel="preload" href="/main.1375ce7e.js" as="script">
 
-<link rel="preload" href="/1.37cd035d.js" as="script">
+<link rel="preload" href="/1.e1551414.js" as="script">
 
-<link rel="preload" href="/2.b83f5e3b.js" as="script">
+<link rel="preload" href="/2.8eddb37b.js" as="script">
 
-<link rel="preload" href="/3.1401e3c6.js" as="script">
+<link rel="preload" href="/3.9c7c654d.js" as="script">
 
-<link rel="preload" href="/1be78505.04d8081a.js" as="script">
+<link rel="preload" href="/1be78505.67503396.js" as="script">
 
-<link rel="preload" href="/ec1ed54d.5cb3d479.js" as="script">
+<link rel="preload" href="/ec1ed54d.5841dbeb.js" as="script">
 
-<link rel="preload" href="/17896441.efa71590.js" as="script">
+<link rel="preload" href="/17896441.5c28106c.js" as="script">
 
-<link rel="preload" href="/7456f7c5.35f14e13.js" as="script">
+<link rel="preload" href="/7456f7c5.47f9be51.js" as="script">
 
 </head>
 <body>
@@ -55,25 +55,25 @@
         </style><div class="padding-vert--lg"><div class="container"><div class="row"><div class="col"><div class="docItemContainer_1tAC"><article><header><h1 class="docTitle_cWlf">statistics</h1></header><div class="markdown"><h2><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="功能说明"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#功能说明" title="Direct link to heading">#</a>功能说明</h2><p>效率统计，作为衡量企业员工工作量和工作效率的统计工具，也是企业明确人力资本使用情况的分析工具。</p><p>Steedos效率统计，与审批王的公文处理相结合，通过接口定时抓取用户工作的业务数据，并根据原始数据计算用户的工作量和工作效率。</p><h2><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="功能介绍"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#功能介绍" title="Direct link to heading">#</a>功能介绍</h2><h3><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="抓取数据整合"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#抓取数据整合" title="Direct link to heading">#</a>抓取数据整合</h3><p>通过配置定时任务，Steedos后台定时从审批王系统抓取用户处理公文的相关数据，包括用户处理公文数量、处理每个公文的耗时，以及截止统计时刻用户的待办数量等原始数据。</p><p>Steedos获取原始数据后进行统计计算，根据处理每个公文的耗时计算出用户的处理文件总耗时，并根据截至统计时刻用户待办数量计算出公文停留的总耗时。并根据总耗时，计算出平均耗时。最终，计算出每个用户的工作效率数据，记录在效率统计表中。</p><h3><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="统计表格"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#统计表格" title="Direct link to heading">#</a>统计表格</h3><p>Steedos平台将整合的效率统计数据，按用户以表格的形式展示的页面上。表格各列字段说明：</p><ul><li><p>用户：统计用户</p></li><li><p>年度：统计年度</p></li><li><p>月度：统计月度</p></li><li><p>已处理总数：用户当月已处理文件的数量</p></li><li><p>已处理总耗时(小时)：用户当月已处理文件的耗时总和</p></li><li><p>已处理平均耗时(小时)：用户当月处理文件的平均耗时 (已处理总耗时 / 已处理总数)</p></li><li><p>待审核总数：截止统计时刻，用户待办文件的总数量</p></li><li><p>待审核总耗时(小时)：截止统计时刻，用户接收待办文件后滞留时长的总和</p></li><li><p>待审核平均耗时(小时)：截止统计时刻，用户所有待办文件的平均滞留时长 (待审核总耗时 / 待审核总数)</p></li><li><p>总平均耗时(小时)：(已处理总耗时 + 待审核总耗时) / (已处理总数 + 待审核总数)</p></li></ul><p><img src="/assets/stat1.png"></p><h3><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="筛选器"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#筛选器" title="Direct link to heading">#</a>筛选器</h3><p>Steedos平台提供了灵活的筛选器功能，通过筛选器，用户可根据不同参数过滤数据。比如，用户可按照部门筛选，也可按照年度月度进行筛选。</p><p><img src="/assets/stat3.png"></p><h3><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="权限管理"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#权限管理" title="Direct link to heading">#</a>权限管理</h3><p>对于统计数据，不同的用户查看的范围也不同。默认情况下，普通用户仅可查看本人各月度的统计数据，系统管理员则可以查看全部用户的统计数据。</p><p>同时，系统管理员也可配置相应的权限组，权限组中的用户可配置更多不同的权限。</p><p><img src="/assets/stat2.png"></p><h3><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="统计分析报表"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#统计分析报表" title="Direct link to heading">#</a>统计分析报表</h3><p>Steedos平台的报表功能，能够将审批效率数据转化为各种直观的统计报表，便于企业多维度的对员工工作效率进行了解。</p><p><img src="/assets/stat4.png"></p></div></article><div class="margin-vert--lg"><nav class="pagination-nav"><div class="pagination-nav__item"></div><div class="pagination-nav__item pagination-nav__item--next"></div></nav></div></div></div><div class="col col--3"><div class="tableOfContents_tVyB"><ul class="contents contents__left-border"><li><a href="#功能说明" class="contents__link">功能说明</a></li><li><a href="#功能介绍" class="contents__link">功能介绍</a><ul><li><a href="#抓取数据整合" class="contents__link">抓取数据整合</a></li><li><a href="#统计表格" class="contents__link">统计表格</a></li><li><a href="#筛选器" class="contents__link">筛选器</a></li><li><a href="#权限管理" class="contents__link">权限管理</a></li><li><a href="#统计分析报表" class="contents__link">统计分析报表</a></li></ul></li></ul></div></div></div></div></div></main></div></div><footer class="footer footer--dark"><div class="container"><div class="row footer__links"><div class="col footer__col"><h4 class="footer__title">华炎产品</h4><ul class="footer__items"><li class="footer__item"><a class="footer__link-item" href="/oa/">华炎办公</a></li><li class="footer__item"><a class="footer__link-item" href="/platform/">华炎云平台</a></li></ul></div><div class="col footer__col"><h4 class="footer__title">解决方案</h4><ul class="footer__items"><li class="footer__item"><a class="footer__link-item" target="_blank" rel="noopener noreferrer" href="/solutions/group/">集团管控</a></li><li class="footer__item"><a class="footer__link-item" target="_blank" rel="noopener noreferrer" href="/solutions/cost/">费控管理</a></li><li class="footer__item"><a class="footer__link-item" target="_blank" rel="noopener noreferrer" href="/solutions/workflow/">流程审批</a></li></ul></div><div class="col footer__col"><h4 class="footer__title">技术支持</h4><ul class="footer__items"><li class="footer__item"><a class="footer__link-item">销售热线：400-820-1612</a></li><li class="footer__item"><a class="footer__link-item" href="/company/contact-us">在线咨询</a></li><li class="footer__item"><a class="footer__link-item" href="/blog">最新动态</a></li></ul></div></div><div class="text--center">Copyright © 2020 上海华炎软件科技有限公司.</div></div></footer>
 </div>
 
-<script src="/styles.a50a2c4e.js"></script>
+<script src="/styles.16b4b2a4.js"></script>
 
-<script src="/runtime~main.47e9dfe2.js"></script>
+<script src="/runtime~main.01df8d5b.js"></script>
 
-<script src="/main.fb8d5f16.js"></script>
+<script src="/main.1375ce7e.js"></script>
 
-<script src="/1.37cd035d.js"></script>
+<script src="/1.e1551414.js"></script>
 
-<script src="/2.b83f5e3b.js"></script>
+<script src="/2.8eddb37b.js"></script>
 
-<script src="/3.1401e3c6.js"></script>
+<script src="/3.9c7c654d.js"></script>
 
-<script src="/1be78505.04d8081a.js"></script>
+<script src="/1be78505.67503396.js"></script>
 
-<script src="/ec1ed54d.5cb3d479.js"></script>
+<script src="/ec1ed54d.5841dbeb.js"></script>
 
-<script src="/17896441.efa71590.js"></script>
+<script src="/17896441.5c28106c.js"></script>
 
-<script src="/7456f7c5.35f14e13.js"></script>
+<script src="/7456f7c5.47f9be51.js"></script>
 
 
 </body>
