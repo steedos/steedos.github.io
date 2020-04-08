@@ -18,7 +18,7 @@
 
 <link rel="preload" href="/styles.2c2b9e1f.js" as="script">
 
-<link rel="preload" href="/runtime~main.4fadc90c.js" as="script">
+<link rel="preload" href="/runtime~main.96831639.js" as="script">
 
 <link rel="preload" href="/main.191f15ea.js" as="script">
 
@@ -28,13 +28,13 @@
 
 <link rel="preload" href="/3.0621af89.js" as="script">
 
-<link rel="preload" href="/1be78505.62ec0e6a.js" as="script">
+<link rel="preload" href="/1be78505.6a184c49.js" as="script">
 
-<link rel="preload" href="/ec1ed54d.28fd604b.js" as="script">
+<link rel="preload" href="/ec1ed54d.4b390fd8.js" as="script">
 
 <link rel="preload" href="/17896441.e2be97d0.js" as="script">
 
-<link rel="preload" href="/e97e3cbe.ebbc32a9.js" as="script">
+<link rel="preload" href="/e97e3cbe.9bceae3b.js" as="script">
 
 </head>
 <body>
@@ -52,12 +52,12 @@
               background-size: auto;
             }
           }
-        </style><div class="padding-vert--lg"><div class="container"><div class="row"><div class="col"><div class="docItemContainer_1tAC"><article><header><h1 class="docTitle_cWlf">不同部门的员工有不同的部门经理，审批时如何按提交者的不同自动发给对应的部门经理？</h1></header><div class="markdown"><p>每个组织由多个部门组成，每个部门除成员外会有1个部门经理。下图为组织内的2个部门组成人员的简单例子。</p><p><img src="/assets/workflow/departs.png" alt="部门成员"></p><p>员工提交差旅费用报销时，先发给“部门经理”。如果是技术部的员工，则发给技术部经理；如果是行政部的员工，则应发给行政部经理。这里的“部门经理”，在系统中的对应概念就是“审批岗位”。</p><p>不同的员工提交后，自动发给自己的部门经理，需要预先做好的工作包括：</p><ul><li>设置：每个部门对应的“部门经理”是谁？</li></ul><p>这里的主要工作，是新建一个名叫“部门经理”的“审批岗位”，并给每个部门指定好谁是这个部门的“部门经理”。</p><ul><li>设置：差旅费用报销流程中的“部门审批”节点的处理人是这样的“部门经理”。</li></ul><p>就是把流程的这个步骤的“处理人”设为“指定审批岗位”，“审批岗位”则设为“部门经理”。这样，系统就会根据申请人所在部门，自动定位到对应的“部门经理”。</p><p>具体操作如下：</p><ul><li>管理员进入系统后，切换“设置-审批-审批岗位”，点击“新建”按钮。</li></ul><p><img src="/assets/workflow/role_set1.png" alt="审批岗位"></p><ul><li>岗位名称中录入“部门经理”。</li></ul><p><img src="/assets/workflow/role_set2.png" alt="审批岗位"></p><ul><li><p>点击“保存”按钮，即新建岗位成功。</p></li><li><p>切换到“设置-审批-岗位成员”，点击“新建”按钮。</p></li></ul><p><img src="/assets/workflow/role_set3.png" alt="岗位成员"></p><ul><li>岗位选择“部门经理”、岗位成员选择“王武兹”、审批范围选择“技术部”。</li></ul><p><img src="/assets/workflow/role_set4.png" alt="岗位成员"></p><ul><li><p>点击“保存”按钮，即制定技术部的部门经理成功。然后再依次制定其他部门的部门经理。</p></li><li><p>切换“设置-审批-流程”，点击“流程设计器”按钮，进入到流程设计界面。</p></li><li><p>点击流程“差旅费用报销”，切换进入“流程”设计。</p></li><li><p>点击的流程审批环节“部门审批”，“处理人”选择“指定审批岗位”，“审批岗位”设置为“部门经理”即可。</p></li></ul><p><img src="/assets/workflow/manager.png" alt="部门经理"></p><p>关于审批岗位，具体可参考 <a href="/workflow/help/admin_positions">审批王审批岗位</a> 。</p></div></article><div class="margin-vert--lg"><nav class="pagination-nav"><div class="pagination-nav__item"></div><div class="pagination-nav__item pagination-nav__item--next"></div></nav></div></div></div></div></div></div></main></div></div><footer class="footer footer--dark"><div class="container"><div class="row footer__links"><div class="col footer__col"><h4 class="footer__title">初识华炎？</h4><ul class="footer__items"><li class="footer__item"><a class="footer__link-item" href="/oa/what-is-oa/">什么是OA?</a></li><li class="footer__item"><a class="footer__link-item" href="/oa/">华炎办公</a></li><li class="footer__item"><a class="footer__link-item" href="/platform/">华炎魔方</a></li></ul></div><div class="col footer__col"><h4 class="footer__title">解决方案</h4><ul class="footer__items"><li class="footer__item"><a class="footer__link-item" target="_blank" rel="noopener noreferrer" href="/solutions/group/">集团管控</a></li><li class="footer__item"><a class="footer__link-item" target="_blank" rel="noopener noreferrer" href="/solutions/cost/">费控管理</a></li><li class="footer__item"><a class="footer__link-item" target="_blank" rel="noopener noreferrer" href="/solutions/workflow/">流程审批</a></li></ul></div><div class="col footer__col"><h4 class="footer__title">技术支持</h4><ul class="footer__items"><li class="footer__item"><a class="footer__link-item">销售热线：400-820-1612</a></li><li class="footer__item"><a class="footer__link-item" href="/company/contact-us">在线咨询</a></li><li class="footer__item"><a class="footer__link-item" href="/blog">最新动态</a></li></ul></div></div><div class="text--center">Copyright © 2020 上海华炎软件科技有限公司.</div></div></footer>
+        </style><div class="padding-vert--lg"><div class="container"><div class="row"><div class="col"><div class="docItemContainer_1tAC"><article><header><h1 class="docTitle_cWlf">不同部门的员工有不同的部门经理，审批时如何按提交者的不同自动发给对应的部门经理？</h1></header><div class="markdown"><p>每个组织由多个部门组成，每个部门除成员外会有1个部门经理。下图为组织内的2个部门组成人员的简单例子。</p><p><img src="/assets/workflow/departs.png" alt="部门成员"></p><p>员工提交差旅费用报销时，先发给“部门经理”。如果是技术部的员工，则发给技术部经理；如果是行政部的员工，则应发给行政部经理。这里的“部门经理”，在系统中的对应概念就是“审批岗位”。</p><p>不同的员工提交后，自动发给自己的部门经理，需要预先做好的工作包括：</p><ul><li>设置：每个部门对应的“部门经理”是谁？</li></ul><p>这里的主要工作，是新建一个名叫“部门经理”的“审批岗位”，并给每个部门指定好谁是这个部门的“部门经理”。</p><ul><li>设置：差旅费用报销流程中的“部门审批”节点的处理人是这样的“部门经理”。</li></ul><p>就是把流程的这个步骤的“处理人”设为“指定审批岗位”，“审批岗位”则设为“部门经理”。这样，系统就会根据申请人所在部门，自动定位到对应的“部门经理”。</p><p>具体操作如下：</p><ul><li>管理员进入系统后，切换“设置-审批-审批岗位”，点击“新建”按钮。</li></ul><p><img src="/assets/workflow/role_set1.png" alt="审批岗位"></p><ul><li>岗位名称中录入“部门经理”。</li></ul><p><img src="/assets/workflow/role_set2.png" alt="审批岗位"></p><ul><li><p>点击“保存”按钮，即新建岗位成功。</p></li><li><p>切换到“设置-审批-岗位成员”，点击“新建”按钮。</p></li></ul><p><img src="/assets/workflow/role_set3.png" alt="岗位成员"></p><ul><li>岗位选择“部门经理”、岗位成员选择“王武兹”、审批范围选择“技术部”。</li></ul><p><img src="/assets/workflow/role_set4.png" alt="岗位成员"></p><ul><li><p>点击“保存”按钮，即制定技术部的部门经理成功。然后再依次制定其他部门的部门经理。</p></li><li><p>切换“设置-审批-流程”，点击“流程设计器”按钮，进入到流程设计界面。</p></li><li><p>点击流程“差旅费用报销”，切换进入“流程”设计。</p></li><li><p>点击的流程审批环节“部门审批”，“处理人”选择“指定审批岗位”，“审批岗位”设置为“部门经理”即可。</p></li></ul><p><img src="/assets/workflow/manager.png" alt="部门经理"></p><p>关于审批岗位，具体可参考 <a href="/help/workflow/admin_positions">审批王审批岗位</a> 。</p></div></article><div class="margin-vert--lg"><nav class="pagination-nav"><div class="pagination-nav__item"></div><div class="pagination-nav__item pagination-nav__item--next"></div></nav></div></div></div></div></div></div></main></div></div><footer class="footer footer--dark"><div class="container"><div class="row footer__links"><div class="col footer__col"><h4 class="footer__title">初识华炎？</h4><ul class="footer__items"><li class="footer__item"><a class="footer__link-item" href="/oa/what-is-oa/">什么是OA?</a></li><li class="footer__item"><a class="footer__link-item" href="/oa/">华炎办公</a></li><li class="footer__item"><a class="footer__link-item" href="/platform/">华炎魔方</a></li></ul></div><div class="col footer__col"><h4 class="footer__title">解决方案</h4><ul class="footer__items"><li class="footer__item"><a class="footer__link-item" target="_blank" rel="noopener noreferrer" href="/solutions/group/">集团管控</a></li><li class="footer__item"><a class="footer__link-item" target="_blank" rel="noopener noreferrer" href="/solutions/cost/">费控管理</a></li><li class="footer__item"><a class="footer__link-item" target="_blank" rel="noopener noreferrer" href="/solutions/workflow/">流程审批</a></li></ul></div><div class="col footer__col"><h4 class="footer__title">技术支持</h4><ul class="footer__items"><li class="footer__item"><a class="footer__link-item">销售热线：400-820-1612</a></li><li class="footer__item"><a class="footer__link-item" href="/company/contact-us">在线咨询</a></li><li class="footer__item"><a class="footer__link-item" href="/blog">最新动态</a></li></ul></div></div><div class="text--center">Copyright © 2020 上海华炎软件科技有限公司.</div></div></footer>
 </div>
 
 <script src="/styles.2c2b9e1f.js"></script>
 
-<script src="/runtime~main.4fadc90c.js"></script>
+<script src="/runtime~main.96831639.js"></script>
 
 <script src="/main.191f15ea.js"></script>
 
@@ -67,13 +67,13 @@
 
 <script src="/3.0621af89.js"></script>
 
-<script src="/1be78505.62ec0e6a.js"></script>
+<script src="/1be78505.6a184c49.js"></script>
 
-<script src="/ec1ed54d.28fd604b.js"></script>
+<script src="/ec1ed54d.4b390fd8.js"></script>
 
 <script src="/17896441.e2be97d0.js"></script>
 
-<script src="/e97e3cbe.ebbc32a9.js"></script>
+<script src="/e97e3cbe.9bceae3b.js"></script>
 
 
 </body>

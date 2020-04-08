@@ -18,7 +18,7 @@
 
 <link rel="preload" href="/styles.2c2b9e1f.js" as="script">
 
-<link rel="preload" href="/runtime~main.4fadc90c.js" as="script">
+<link rel="preload" href="/runtime~main.96831639.js" as="script">
 
 <link rel="preload" href="/main.191f15ea.js" as="script">
 
@@ -28,13 +28,13 @@
 
 <link rel="preload" href="/3.0621af89.js" as="script">
 
-<link rel="preload" href="/1be78505.62ec0e6a.js" as="script">
+<link rel="preload" href="/1be78505.6a184c49.js" as="script">
 
-<link rel="preload" href="/ec1ed54d.28fd604b.js" as="script">
+<link rel="preload" href="/ec1ed54d.4b390fd8.js" as="script">
 
 <link rel="preload" href="/17896441.e2be97d0.js" as="script">
 
-<link rel="preload" href="/29d8b09c.ae0cb2f6.js" as="script">
+<link rel="preload" href="/29d8b09c.251a53b2.js" as="script">
 
 </head>
 <body>
@@ -52,12 +52,12 @@
               background-size: auto;
             }
           }
-        </style><div class="padding-vert--lg"><div class="container"><div class="row"><div class="col"><div class="docItemContainer_1tAC"><article><header><h1 class="docTitle_cWlf">申请单上，如何自动得到几个数值字段的和？</h1></header><div class="markdown"><p>申请单经常会有数值型的字段，例如下图表单上的的餐费、办公费、业务费、其他费用、合计等都是数值。其中，合计应为餐费等费用的数值之和。</p><p><img src="/assets/workflow/sum.png" alt="自动求和"></p><p>合计的数由系统自动计算得出，既简化了填单的工作，数值也会更加准确。</p><p>如上图所示，当餐费金额为1000、业务费为500、其他费用为300时，合计应自动计算为1800，无须单独填写。</p><p>通过设置“合计”字段的公式，可实现自动求和的想法。具体操作如下：</p><ul><li><p>管理员进入系统后，切换“设置-审批-流程”，点击“流程设计器”按钮，进入到流程设计界面。</p></li><li><p>切换进入“表单”设计，点击这个数值型的字段“合计”，并在右侧栏里切换到“属性”栏。</p></li></ul><p><img src="/assets/workflow/cal_value.png" alt="累加计算值"></p><ul><li>“公式”栏里输入：{train_fee}+{traffic_fee}+{vehicle_fee}+{stay_fee}+{meals}+{office_fee}+{business_fee}+{o_fee}，所有费用字段累加，保存即可。其中的“train_fee”等分别是交通费字段的字段名。</li></ul><p>设置字段公式时，除了数值型的加减乘除，您还可以使用其他函数，具体使用方法，可参考 <a href="/workflow/help/admin_form/#%E5%AD%97%E6%AE%B5%E5%85%AC%E5%BC%8F">审批王表单设计-字段公式</a></p></div></article><div class="margin-vert--lg"><nav class="pagination-nav"><div class="pagination-nav__item"></div><div class="pagination-nav__item pagination-nav__item--next"></div></nav></div></div></div></div></div></div></main></div></div><footer class="footer footer--dark"><div class="container"><div class="row footer__links"><div class="col footer__col"><h4 class="footer__title">初识华炎？</h4><ul class="footer__items"><li class="footer__item"><a class="footer__link-item" href="/oa/what-is-oa/">什么是OA?</a></li><li class="footer__item"><a class="footer__link-item" href="/oa/">华炎办公</a></li><li class="footer__item"><a class="footer__link-item" href="/platform/">华炎魔方</a></li></ul></div><div class="col footer__col"><h4 class="footer__title">解决方案</h4><ul class="footer__items"><li class="footer__item"><a class="footer__link-item" target="_blank" rel="noopener noreferrer" href="/solutions/group/">集团管控</a></li><li class="footer__item"><a class="footer__link-item" target="_blank" rel="noopener noreferrer" href="/solutions/cost/">费控管理</a></li><li class="footer__item"><a class="footer__link-item" target="_blank" rel="noopener noreferrer" href="/solutions/workflow/">流程审批</a></li></ul></div><div class="col footer__col"><h4 class="footer__title">技术支持</h4><ul class="footer__items"><li class="footer__item"><a class="footer__link-item">销售热线：400-820-1612</a></li><li class="footer__item"><a class="footer__link-item" href="/company/contact-us">在线咨询</a></li><li class="footer__item"><a class="footer__link-item" href="/blog">最新动态</a></li></ul></div></div><div class="text--center">Copyright © 2020 上海华炎软件科技有限公司.</div></div></footer>
+        </style><div class="padding-vert--lg"><div class="container"><div class="row"><div class="col"><div class="docItemContainer_1tAC"><article><header><h1 class="docTitle_cWlf">申请单上，如何自动得到几个数值字段的和？</h1></header><div class="markdown"><p>申请单经常会有数值型的字段，例如下图表单上的的餐费、办公费、业务费、其他费用、合计等都是数值。其中，合计应为餐费等费用的数值之和。</p><p><img src="/assets/workflow/sum.png" alt="自动求和"></p><p>合计的数由系统自动计算得出，既简化了填单的工作，数值也会更加准确。</p><p>如上图所示，当餐费金额为1000、业务费为500、其他费用为300时，合计应自动计算为1800，无须单独填写。</p><p>通过设置“合计”字段的公式，可实现自动求和的想法。具体操作如下：</p><ul><li><p>管理员进入系统后，切换“设置-审批-流程”，点击“流程设计器”按钮，进入到流程设计界面。</p></li><li><p>切换进入“表单”设计，点击这个数值型的字段“合计”，并在右侧栏里切换到“属性”栏。</p></li></ul><p><img src="/assets/workflow/cal_value.png" alt="累加计算值"></p><ul><li>“公式”栏里输入：{train_fee}+{traffic_fee}+{vehicle_fee}+{stay_fee}+{meals}+{office_fee}+{business_fee}+{o_fee}，所有费用字段累加，保存即可。其中的“train_fee”等分别是交通费字段的字段名。</li></ul><p>设置字段公式时，除了数值型的加减乘除，您还可以使用其他函数，具体使用方法，可参考 <a href="/help/workflow/admin_form/#%E5%AD%97%E6%AE%B5%E5%85%AC%E5%BC%8F">审批王表单设计-字段公式</a></p></div></article><div class="margin-vert--lg"><nav class="pagination-nav"><div class="pagination-nav__item"></div><div class="pagination-nav__item pagination-nav__item--next"></div></nav></div></div></div></div></div></div></main></div></div><footer class="footer footer--dark"><div class="container"><div class="row footer__links"><div class="col footer__col"><h4 class="footer__title">初识华炎？</h4><ul class="footer__items"><li class="footer__item"><a class="footer__link-item" href="/oa/what-is-oa/">什么是OA?</a></li><li class="footer__item"><a class="footer__link-item" href="/oa/">华炎办公</a></li><li class="footer__item"><a class="footer__link-item" href="/platform/">华炎魔方</a></li></ul></div><div class="col footer__col"><h4 class="footer__title">解决方案</h4><ul class="footer__items"><li class="footer__item"><a class="footer__link-item" target="_blank" rel="noopener noreferrer" href="/solutions/group/">集团管控</a></li><li class="footer__item"><a class="footer__link-item" target="_blank" rel="noopener noreferrer" href="/solutions/cost/">费控管理</a></li><li class="footer__item"><a class="footer__link-item" target="_blank" rel="noopener noreferrer" href="/solutions/workflow/">流程审批</a></li></ul></div><div class="col footer__col"><h4 class="footer__title">技术支持</h4><ul class="footer__items"><li class="footer__item"><a class="footer__link-item">销售热线：400-820-1612</a></li><li class="footer__item"><a class="footer__link-item" href="/company/contact-us">在线咨询</a></li><li class="footer__item"><a class="footer__link-item" href="/blog">最新动态</a></li></ul></div></div><div class="text--center">Copyright © 2020 上海华炎软件科技有限公司.</div></div></footer>
 </div>
 
 <script src="/styles.2c2b9e1f.js"></script>
 
-<script src="/runtime~main.4fadc90c.js"></script>
+<script src="/runtime~main.96831639.js"></script>
 
 <script src="/main.191f15ea.js"></script>
 
@@ -67,13 +67,13 @@
 
 <script src="/3.0621af89.js"></script>
 
-<script src="/1be78505.62ec0e6a.js"></script>
+<script src="/1be78505.6a184c49.js"></script>
 
-<script src="/ec1ed54d.28fd604b.js"></script>
+<script src="/ec1ed54d.4b390fd8.js"></script>
 
 <script src="/17896441.e2be97d0.js"></script>
 
-<script src="/29d8b09c.ae0cb2f6.js"></script>
+<script src="/29d8b09c.251a53b2.js"></script>
 
 
 </body>
