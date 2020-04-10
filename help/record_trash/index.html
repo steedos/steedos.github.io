@@ -3,38 +3,38 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width">
-<meta name="generator" content="Docusaurus">
+<meta name="generator" content="Docusaurus v2.0.0-alpha.50">
 
 
-<title data-react-helmet="true">假删除 - 华炎</title>
+<title data-react-helmet="true">假删除 | 华炎</title>
 
-<meta data-react-helmet="true" http-equiv="x-ua-compatible" content="ie=edge"><meta data-react-helmet="true" name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta data-react-helmet="true" property="og:title" content="华炎"><meta data-react-helmet="true" name="twitter:card" content="summary"><meta data-react-helmet="true" name="description" content="当用户在界面上删除记录时，并非物理删除，而是打上“已删除”的标记。用户在系统里查看对象记录时，不会显示这些“已删除”的记录。"><meta data-react-helmet="true" property="og:description" content="当用户在界面上删除记录时，并非物理删除，而是打上“已删除”的标记。用户在系统里查看对象记录时，不会显示这些“已删除”的记录。"><meta data-react-helmet="true" name="keywords" content="steedos,oa,华炎"><meta data-react-helmet="true" property="og:url" content="https://www.steedos.com/help/record_trash">
+<meta data-react-helmet="true" http-equiv="x-ua-compatible" content="ie=edge"><meta data-react-helmet="true" name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta data-react-helmet="true" property="og:image" content="https://www.steedos.com/img/icon_blue.png"><meta data-react-helmet="true" property="twitter:image" content="https://www.steedos.com/img/icon_blue.png"><meta data-react-helmet="true" name="twitter:image:alt" content="Image for 华炎"><meta data-react-helmet="true" name="twitter:card" content="summary"><meta data-react-helmet="true" property="og:title" content="假删除 | 华炎"><meta data-react-helmet="true" name="description" content="当用户在界面上删除记录时，并非物理删除，而是打上“已删除”的标记。用户在系统里查看对象记录时，不会显示这些“已删除”的记录。"><meta data-react-helmet="true" property="og:description" content="当用户在界面上删除记录时，并非物理删除，而是打上“已删除”的标记。用户在系统里查看对象记录时，不会显示这些“已删除”的记录。"><meta data-react-helmet="true" name="keywords" content="steedos,oa,华炎"><meta data-react-helmet="true" property="og:url" content="https://www.steedos.com/help/record_trash">
 
 <link data-react-helmet="true" rel="shortcut icon" href="/img/icon_blue.png">
 
 
-<link rel="stylesheet" href="/styles.c4eafa9a.css">
+<link rel="stylesheet" href="/styles.09dc7954.css">
 
 
-<link rel="preload" href="/styles.2c2b9e1f.js" as="script">
+<link rel="preload" href="/styles.31bd83a7.js" as="script">
 
-<link rel="preload" href="/runtime~main.8dcb838e.js" as="script">
+<link rel="preload" href="/runtime~main.3a60cf5a.js" as="script">
 
-<link rel="preload" href="/main.7caa171f.js" as="script">
+<link rel="preload" href="/main.f5517f68.js" as="script">
 
-<link rel="preload" href="/1.7abdd476.js" as="script">
+<link rel="preload" href="/1.a964e5c2.js" as="script">
 
-<link rel="preload" href="/2.d753386c.js" as="script">
+<link rel="preload" href="/2.1fc75c57.js" as="script">
 
-<link rel="preload" href="/3.66c20a3d.js" as="script">
+<link rel="preload" href="/3.79f638b9.js" as="script">
 
-<link rel="preload" href="/1be78505.f85a3792.js" as="script">
+<link rel="preload" href="/1be78505.cfd03a75.js" as="script">
 
-<link rel="preload" href="/ec1ed54d.5545ec18.js" as="script">
+<link rel="preload" href="/ec1ed54d.9eef0ae7.js" as="script">
 
-<link rel="preload" href="/17896441.88cbfcc3.js" as="script">
+<link rel="preload" href="/17896441.9158097e.js" as="script">
 
-<link rel="preload" href="/5848d504.9d9719e6.js" as="script">
+<link rel="preload" href="/5848d504.db91e2d7.js" as="script">
 
 </head>
 <body>
@@ -55,25 +55,25 @@
         </style><div class="padding-vert--lg"><div class="container"><div class="row"><div class="col"><div class="docItemContainer_1tAC"><article><header><h1 class="docTitle_cWlf">假删除</h1></header><div class="markdown"><p>当用户在界面上删除记录时，并非物理删除，而是打上“已删除”的标记。用户在系统里查看对象记录时，不会显示这些“已删除”的记录。</p><p>假删除功能需要在对象定义中进行设置。否则，执行删除操作，仍然是物理删除，无法恢复数据。</p><ul><li>定义对象时，添加开关enable_trash，并置为true</li></ul><p>用户执行“删除”操作后</p><ul><li>如果对象的enable_trash为false或没有定义，则执行物理删除，在数据库中删除本记录</li><li>如果对象的enable_trash为true，则执行假删除，给本记录的相关字段赋值<ul><li>已删除(is_deleted)：赋值为true</li><li>删除日期(deleted)：赋值为当前日期</li><li>删除人(deleted_by)：赋值为当前操作用户</li></ul></li></ul><p>用户在系统里查看对象记录时，只会显示is_deleted为空的记录，而不会显示is_deleted为true的记录。</p><p>如果要恢复误删除的记录，可由管理员在数据库中将此记录的is_deleted置为空。</p></div></article><div class="margin-vert--lg"><nav class="pagination-nav"><div class="pagination-nav__item"></div><div class="pagination-nav__item pagination-nav__item--next"></div></nav></div></div></div><div class="col col--3"><div class="tableOfContents_tVyB"></div></div></div></div></div></main></div></div><footer class="footer footer--dark"><div class="container"><div class="row footer__links"><div class="col footer__col"><h4 class="footer__title">初识华炎？</h4><ul class="footer__items"><li class="footer__item"><a class="footer__link-item" href="/oa/what-is-oa/">什么是OA?</a></li><li class="footer__item"><a class="footer__link-item" href="/oa/">华炎办公</a></li><li class="footer__item"><a class="footer__link-item" href="/platform/">华炎魔方</a></li></ul></div><div class="col footer__col"><h4 class="footer__title">解决方案</h4><ul class="footer__items"><li class="footer__item"><a class="footer__link-item" target="_blank" rel="noopener noreferrer" href="/solutions/group/">集团管控</a></li><li class="footer__item"><a class="footer__link-item" target="_blank" rel="noopener noreferrer" href="/solutions/cost/">费控管理</a></li><li class="footer__item"><a class="footer__link-item" target="_blank" rel="noopener noreferrer" href="/solutions/workflow/">流程审批</a></li></ul></div><div class="col footer__col"><h4 class="footer__title">技术支持</h4><ul class="footer__items"><li class="footer__item"><a class="footer__link-item">销售热线：400-820-1612</a></li><li class="footer__item"><a class="footer__link-item" href="/company/contact-us">在线咨询</a></li><li class="footer__item"><a class="footer__link-item" href="/blog">最新动态</a></li></ul></div></div><div class="text--center">Copyright © 2020 上海华炎软件科技有限公司.</div></div></footer>
 </div>
 
-<script src="/styles.2c2b9e1f.js"></script>
+<script src="/styles.31bd83a7.js"></script>
 
-<script src="/runtime~main.8dcb838e.js"></script>
+<script src="/runtime~main.3a60cf5a.js"></script>
 
-<script src="/main.7caa171f.js"></script>
+<script src="/main.f5517f68.js"></script>
 
-<script src="/1.7abdd476.js"></script>
+<script src="/1.a964e5c2.js"></script>
 
-<script src="/2.d753386c.js"></script>
+<script src="/2.1fc75c57.js"></script>
 
-<script src="/3.66c20a3d.js"></script>
+<script src="/3.79f638b9.js"></script>
 
-<script src="/1be78505.f85a3792.js"></script>
+<script src="/1be78505.cfd03a75.js"></script>
 
-<script src="/ec1ed54d.5545ec18.js"></script>
+<script src="/ec1ed54d.9eef0ae7.js"></script>
 
-<script src="/17896441.88cbfcc3.js"></script>
+<script src="/17896441.9158097e.js"></script>
 
-<script src="/5848d504.9d9719e6.js"></script>
+<script src="/5848d504.db91e2d7.js"></script>
 
 
 </body>
