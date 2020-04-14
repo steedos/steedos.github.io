@@ -18,7 +18,7 @@
 
 <link rel="preload" href="/styles.1dbd8be1.js" as="script">
 
-<link rel="preload" href="/runtime~main.1edff853.js" as="script">
+<link rel="preload" href="/runtime~main.8aa2fb08.js" as="script">
 
 <link rel="preload" href="/main.0fe5f9d6.js" as="script">
 
@@ -32,7 +32,7 @@
 
 <link rel="preload" href="/ec1ed54d.06845fd4.js" as="script">
 
-<link rel="preload" href="/17896441.aef47c59.js" as="script">
+<link rel="preload" href="/17896441.995633d4.js" as="script">
 
 <link rel="preload" href="/dba0d4f2.313a2906.js" as="script">
 
@@ -52,7 +52,7 @@
               background-size: auto;
             }
           }
-        </style><div class="padding-vert--lg"><div class="container"><div class="row"><div class="col"><div class="docItemContainer_1tAC"><article><header><h1 class="docTitle_cWlf">Connection</h1></header><div class="markdown"><h2><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="什么是connection"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#什么是connection" title="Direct link to heading">#</a>什么是<code>Connection</code></h2><p>只有在建立连接后才能与数据库进行交互。
+        </style><div class="padding-vert--lg"><div class="container"><div class="row"><div class="col col--9"><div class="docItemContainer_1tAC"><article><header><h1 class="docTitle_cWlf">Connection</h1></header><div class="markdown"><h2><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="什么是connection"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#什么是connection" title="Direct link to heading">#</a>什么是<code>Connection</code></h2><p>只有在建立连接后才能与数据库进行交互。
 ObjectQL 的<code>Connection</code>不会像看起来那样设置单个数据库连接，而是设置连接池。
 如果使用<code>createConnection</code>函数设置连接，则会自动调用<code>connect</code>方法。调用<code>close</code>时会断开连接（关闭池中的所有连接）。
 通常情况下，你只能在应用程序启动时创建一次连接，并在完全使用数据库后关闭它。实际上，如果要为站点构建后端，并且后端服务器始终保持运行,则不需要关闭连接。</p><h2><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="创建新的连接"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#创建新的连接" title="Direct link to heading">#</a>创建新的连接</h2><p>有多种方法可以创建连接。但是最简单和最常用的方法是使用<code>createConnection</code>和<code>createConnections</code>函数。</p><p><code>createConnection</code> 创建单个连接：</p><div class="mdxCodeBlock_iHAB"><div class="codeBlockContent_3RXF"><button type="button" aria-label="Copy code to clipboard" class="copyButton_1PCb">Copy</button><pre class="prism-code language-typescript codeBlock_1wn8"><div class="codeBlockLines_3HrO" style="color:#bfc7d5;background-color:#292d3e"><div class="token-line" style="color:#bfc7d5"><span class="token keyword" style="font-style:italic">import</span><span class="token plain"> </span><span class="token punctuation" style="color:rgb(199, 146, 234)">{</span><span class="token plain"> createConnection</span><span class="token punctuation" style="color:rgb(199, 146, 234)">,</span><span class="token plain"> </span><span class="token maybe-class-name">Connection</span><span class="token plain"> </span><span class="token punctuation" style="color:rgb(199, 146, 234)">}</span><span class="token plain"> </span><span class="token keyword" style="font-style:italic">from</span><span class="token plain"> </span><span class="token string" style="color:rgb(195, 232, 141)">&quot;@steedos/objectql&quot;</span><span class="token punctuation" style="color:rgb(199, 146, 234)">;</span><span class="token plain"></span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain" style="display:inline-block">
@@ -70,7 +70,7 @@ ObjectQL 的<code>Connection</code>不会像看起来那样设置单个数据库
 
 <script src="/styles.1dbd8be1.js"></script>
 
-<script src="/runtime~main.1edff853.js"></script>
+<script src="/runtime~main.8aa2fb08.js"></script>
 
 <script src="/main.0fe5f9d6.js"></script>
 
@@ -84,7 +84,7 @@ ObjectQL 的<code>Connection</code>不会像看起来那样设置单个数据库
 
 <script src="/ec1ed54d.06845fd4.js"></script>
 
-<script src="/17896441.aef47c59.js"></script>
+<script src="/17896441.995633d4.js"></script>
 
 <script src="/dba0d4f2.313a2906.js"></script>
 
