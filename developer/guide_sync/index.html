@@ -16,23 +16,23 @@
 <link rel="stylesheet" href="/styles.d25f6bab.css">
 
 
-<link rel="preload" href="/styles.13ea130e.js" as="script">
+<link rel="preload" href="/styles.8c3c3a81.js" as="script">
 
-<link rel="preload" href="/runtime~main.703fe9dc.js" as="script">
+<link rel="preload" href="/runtime~main.28cd1101.js" as="script">
 
-<link rel="preload" href="/main.0cc310c9.js" as="script">
+<link rel="preload" href="/main.8cd5adaf.js" as="script">
 
-<link rel="preload" href="/1.89e1c34a.js" as="script">
+<link rel="preload" href="/1.c0c6bf17.js" as="script">
 
-<link rel="preload" href="/2.c852a565.js" as="script">
+<link rel="preload" href="/2.cf7a4277.js" as="script">
 
 <link rel="preload" href="/3.e6c2126c.js" as="script">
 
-<link rel="preload" href="/1be78505.79388443.js" as="script">
+<link rel="preload" href="/1be78505.858d86a2.js" as="script">
 
-<link rel="preload" href="/ec1ed54d.3074b437.js" as="script">
+<link rel="preload" href="/ec1ed54d.3e766ca0.js" as="script">
 
-<link rel="preload" href="/17896441.e9445de4.js" as="script">
+<link rel="preload" href="/17896441.1d659e7d.js" as="script">
 
 <link rel="preload" href="/15f26f03.6b1209ae.js" as="script">
 
@@ -55,23 +55,23 @@
         </style><div class="padding-vert--lg"><div class="container"><div class="row"><div class="col col--9"><div class="docItemContainer_1tAC"><article><header><h1 class="docTitle_cWlf">合同审批自动进入合同台账</h1></header><div class="markdown"><p>在华炎云平台中定义的业务对象，可以与华炎云平台中定义的审批流程进行集成。这样的信息同步包括两种方式：</p><ul><li>从业务对象台账中发起业务审批流程；</li><li>将华炎云平台中的业务流程归档到业务对象台账中。</li></ul><p>在之前的培训教程中，我们学会了配置合同台账，可以在系统中增加和编辑合同记录；我们也配置了合同审批流程，在正式签署合同之前，可以由相关部门审批并决定是否签署合同。如果在合同审批流转时，自动在合同台账中增加这样的合同记录、并附上最新的合同文本，不但能有效降低信息录入的工作量，也使得合同台账记录更加及时、准确。</p><p>下面，我们就来看下，如何使得合同审批单能自动进入合同台账？</p><h2><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="修改表单"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#修改表单" title="Direct link to heading">#</a>修改表单</h2><p>对照合同审批单和合同台账，我们发现，表单上的“合作伙伴”字段需要作调整。目前的合同审批单上的“合作伙伴”是自己填写的，而台账里有“合作伙伴”这个对象，用于记录所有的合作伙伴。所以，合同审批单上的字段“合作伙伴”需调整为从“合作伙伴”这个对象来读取数据。</p><h3><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="读取合作伙伴数据"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#读取合作伙伴数据" title="Direct link to heading">#</a>读取合作伙伴数据</h3><p>进入合同审批流程的“表单设计器”，删去原来的字段“对方单位”，并重建一个Odata类型的字段“对方单位”</p><p><img src="/assets/guide_sc_field.png" alt="表单设计器"></p><p>图中的Odata API为 <a href="http://localhost:5000/api/odata/v4/5dfde903c57fd41abc81496d/accounts?%24top=50&amp;%24select=name&amp;%24count=true%EF%BC%8C">http://localhost:5000/api/odata/v4/5dfde903c57fd41abc81496d/accounts?%24top=50&amp;%24select=name&amp;%24count=true，</a> 其中的“5dfde903c57fd41abc81496d”需替换为当前的工作区的spaceID</p><h2><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="修改系统配置"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#修改系统配置" title="Direct link to heading">#</a>修改系统配置</h2><p>在根目录下的steedos-config.yml中，给系统增加一配置项，设置对象流程的同步频率instancerecordqueue_interval 。</p><div class="mdxCodeBlock_iHAB"><div class="codeBlockContent_3RXF"><button type="button" aria-label="Copy code to clipboard" class="copyButton_1PCb">Copy</button><pre class="prism-code language-bash codeBlock_1wn8"><div class="codeBlockLines_3HrO" style="color:#bfc7d5;background-color:#292d3e"><div class="token-line" style="color:#bfc7d5"><span class="token plain">cron:</span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">  instancerecordqueue_interval: </span><span class="token number" style="color:rgb(247, 140, 108)">10000</span></div></div></pre></div></div><h2><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="修改应用"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#修改应用" title="Direct link to heading">#</a>修改应用</h2><p>业务对象默认不使用配置对象流程，如果要使用，必须打开这一开关。</p><h3><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="打开合同的配置对象流程开关"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#打开合同的配置对象流程开关" title="Direct link to heading">#</a>打开合同的配置对象流程开关</h3><p>在contracts.object.yml中，给合同对象增加一个属性：配置对象流程开关enable_workflow 。</p><div class="mdxCodeBlock_iHAB"><div class="codeBlockContent_3RXF"><button type="button" aria-label="Copy code to clipboard" class="copyButton_1PCb">Copy</button><pre class="prism-code language-bash codeBlock_1wn8"><div class="codeBlockLines_3HrO" style="color:#bfc7d5;background-color:#292d3e"><div class="token-line" style="color:#bfc7d5"><span class="token plain">enable_workflow: </span><span class="token boolean" style="color:rgb(255, 88, 116)">true</span></div></div></pre></div></div><h3><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="修改合同状态字段"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#修改合同状态字段" title="Direct link to heading">#</a>修改合同状态字段</h3><p>在contracts.object.yml中，用默认/自动的审批状态字段instance_state替代手动维护的原合同状态字段contract_state 。这样，流程审批时，审批中、已核准、已驳回、已取消等审批状态就能同步为合同的即时状态。</p><div class="mdxCodeBlock_iHAB"><div class="codeBlockContent_3RXF"><button type="button" aria-label="Copy code to clipboard" class="copyButton_1PCb">Copy</button><pre class="prism-code language-bash codeBlock_1wn8"><div class="codeBlockLines_3HrO" style="color:#bfc7d5;background-color:#292d3e"><div class="token-line" style="color:#bfc7d5"><span class="token plain">  // contract_state:</span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">  instance_state:</span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">    type: </span><span class="token keyword" style="font-style:italic">select</span><span class="token plain"></span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">    label: 合同状态</span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">    searchable: </span><span class="token boolean" style="color:rgb(255, 88, 116)">true</span><span class="token plain"></span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">    omit: </span><span class="token boolean" style="color:rgb(255, 88, 116)">false</span><span class="token plain"></span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">    hidden: </span><span class="token boolean" style="color:rgb(255, 88, 116)">false</span></div></div></pre></div></div><h2><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="重启服务"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#重启服务" title="Direct link to heading">#</a>重启服务</h2><p>重启服务后，系统及合同对象的上述配置修改才会生效。</p><h2><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="配置对象流程"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#配置对象流程" title="Direct link to heading">#</a>配置对象流程</h2><p>在设置里，进行对象流程的配置。新增一个合同审批同步到合同给台账的 对象流程记录，具体设置如下：</p><p><img src="/assets/guide_sc_objectflow.png" alt="对象流程"></p><h2><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="运行合同审批同步"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#运行合同审批同步" title="Direct link to heading">#</a>运行合同审批同步</h2><h3><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="提交合同审批单，确认同步情况"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#提交合同审批单，确认同步情况" title="Direct link to heading">#</a>提交合同审批单，确认同步情况</h3><p>在审批里提交一个合同审批单，并附上合同文本。</p><p><img src="/assets/guide_sc_flow1.png" alt="提交"></p><p>提交后，在合同应用里，可以看到已经自动生成了一条合同台账记录，同时也附上了合同文本。</p><p><img src="/assets/guide_sc_contract1.png" alt="合同记录"></p><p>可以看到，合同状态为“审批中”。</p><h3><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="处理直至核准合同审批单，确认同步情况"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#处理直至核准合同审批单，确认同步情况" title="Direct link to heading">#</a>处理直至核准合同审批单，确认同步情况</h3><p>继续在审批里处理这个合同审批，当总经理核准后，再看合同台账。</p><p><img src="/assets/guide_sc_contract2.png" alt="合同记录"></p><p>可以看到，合同状态已同步为“已核准”了，同时合同文本也是审批过程中的最新版本。</p></div></article><div class="margin-vert--lg"><nav class="pagination-nav"><div class="pagination-nav__item"><a class="pagination-nav__link" href="/developer/guide_flow"><div class="pagination-nav__link--sublabel">Previous</div><div class="pagination-nav__link--label">« 设置合同审批流程</div></a></div><div class="pagination-nav__item pagination-nav__item--next"><a class="pagination-nav__link" href="/developer/guide_companies"><div class="pagination-nav__link--sublabel">Next</div><div class="pagination-nav__link--label">多单位权限控制 »</div></a></div></nav></div></div></div><div class="col col--3"><div class="tableOfContents_tVyB"><ul class="contents contents__left-border"><li><a href="#修改表单" class="contents__link">修改表单</a><ul><li><a href="#读取合作伙伴数据" class="contents__link">读取合作伙伴数据</a></li></ul></li><li><a href="#修改系统配置" class="contents__link">修改系统配置</a></li><li><a href="#修改应用" class="contents__link">修改应用</a><ul><li><a href="#打开合同的配置对象流程开关" class="contents__link">打开合同的配置对象流程开关</a></li><li><a href="#修改合同状态字段" class="contents__link">修改合同状态字段</a></li></ul></li><li><a href="#重启服务" class="contents__link">重启服务</a></li><li><a href="#配置对象流程" class="contents__link">配置对象流程</a></li><li><a href="#运行合同审批同步" class="contents__link">运行合同审批同步</a><ul><li><a href="#提交合同审批单，确认同步情况" class="contents__link">提交合同审批单，确认同步情况</a></li><li><a href="#处理直至核准合同审批单，确认同步情况" class="contents__link">处理直至核准合同审批单，确认同步情况</a></li></ul></li></ul></div></div></div></div></div></main></div></div><footer class="footer footer--dark"><div class="container"><div class="row footer__links"><div class="col footer__col"><h4 class="footer__title">初识华炎？</h4><ul class="footer__items"><li class="footer__item"><a class="footer__link-item" href="/oa/what-is-oa/">什么是OA?</a></li><li class="footer__item"><a class="footer__link-item" href="/oa/">华炎办公</a></li><li class="footer__item"><a class="footer__link-item" href="/platform/lowcode/">什么是低代码?</a></li><li class="footer__item"><a class="footer__link-item" href="/platform/">华炎魔方</a></li></ul></div><div class="col footer__col"><h4 class="footer__title">解决方案</h4><ul class="footer__items"><li class="footer__item"><a class="footer__link-item" target="_blank" rel="noopener noreferrer" href="/solutions/group/">集团管控</a></li><li class="footer__item"><a class="footer__link-item" target="_blank" rel="noopener noreferrer" href="/solutions/cost/">费控管理</a></li><li class="footer__item"><a class="footer__link-item" target="_blank" rel="noopener noreferrer" href="/solutions/workflow/">流程审批</a></li></ul></div><div class="col footer__col"><h4 class="footer__title">技术支持</h4><ul class="footer__items"><li class="footer__item"><a class="footer__link-item">销售热线：400-820-1612</a></li><li class="footer__item"><a class="footer__link-item" href="/company/contact-us">在线咨询</a></li><li class="footer__item"><a class="footer__link-item" href="/blog">最新动态</a></li></ul></div></div><div class="text--center">Copyright © 2020 上海华炎软件科技有限公司.</div></div></footer>
 </div>
 
-<script src="/styles.13ea130e.js"></script>
+<script src="/styles.8c3c3a81.js"></script>
 
-<script src="/runtime~main.703fe9dc.js"></script>
+<script src="/runtime~main.28cd1101.js"></script>
 
-<script src="/main.0cc310c9.js"></script>
+<script src="/main.8cd5adaf.js"></script>
 
-<script src="/1.89e1c34a.js"></script>
+<script src="/1.c0c6bf17.js"></script>
 
-<script src="/2.c852a565.js"></script>
+<script src="/2.cf7a4277.js"></script>
 
 <script src="/3.e6c2126c.js"></script>
 
-<script src="/1be78505.79388443.js"></script>
+<script src="/1be78505.858d86a2.js"></script>
 
-<script src="/ec1ed54d.3074b437.js"></script>
+<script src="/ec1ed54d.3e766ca0.js"></script>
 
-<script src="/17896441.e9445de4.js"></script>
+<script src="/17896441.1d659e7d.js"></script>
 
 <script src="/15f26f03.6b1209ae.js"></script>
 
