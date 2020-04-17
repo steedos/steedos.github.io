@@ -18,9 +18,9 @@
 
 <link rel="preload" href="/styles.cd3cf3a4.js" as="script">
 
-<link rel="preload" href="/runtime~main.b8c46cd7.js" as="script">
+<link rel="preload" href="/runtime~main.e6f015fe.js" as="script">
 
-<link rel="preload" href="/main.9ba182fd.js" as="script">
+<link rel="preload" href="/main.96a9968e.js" as="script">
 
 <link rel="preload" href="/1.126d4ba5.js" as="script">
 
@@ -30,7 +30,7 @@
 
 <link rel="preload" href="/1be78505.82c9bc06.js" as="script">
 
-<link rel="preload" href="/ec1ed54d.3e2bf9b9.js" as="script">
+<link rel="preload" href="/ec1ed54d.58d90e24.js" as="script">
 
 <link rel="preload" href="/17896441.1146d455.js" as="script">
 
@@ -52,14 +52,14 @@
               background-size: auto;
             }
           }
-        </style><div class="padding-vert--lg"><div class="container"><div class="row"><div class="col"><div class="docItemContainer_1tAC"><article><header><h1 class="docTitle_cWlf">请假天数较多时须请总经理审批、较少时无需总经理审批，如何实现？</h1></header><div class="markdown"><p>流程经常涉及到总经理审批这一节点，例如请假流程。但并不是所有的单子都要提请总经理审批。</p><p>比如，典型的请假流程可能是：如果请假天数大于或等于3天，则请假申请单必须提交总经理批准；如果请假天数小于3天，则只需部门经理批准即可、无需提交总经理批准。</p><p>通过在流程中增加“条件节点”，可实现上述智能选择审批路径的需求。</p><p>设置的具体步骤如下：</p><ul><li><p>管理员进入进入到流程设计界面，</p></li><li><p>在“总经理审批”节点之前，增加一个条件节点，相连的后续节点分别为“总经理审批”、“人事部备案”，</p></li></ul><p><img src="/assets/workflow/conditional.png" alt="条件判断"></p><ul><li>给这个条件节点设置连线条件：指向“总经理审批”的连线条件中录入‘{请假天数}&gt;=3’，另一个连线条件则为‘{请假天数}&lt;3’，即完成设置。注意其中的“请假天数”为本表单中的一个字段名。</li></ul><p>这么设置后，当流转到“部门经理审批”这一步时，系统会根据申请单的不同来自动指定下一步骤：如果请假天数大于或等于3天，则下一步为“总经理审批”；如果小于3天，则下一步为“人事部备案”，这就跳过了“总经理审批”这一步。</p><p>关于如何设置条件节点，可参考 <a href="/help/workflow/admin_flow#%E6%9D%A1%E4%BB%B6%E8%8A%82%E7%82%B9">审批王流程设计-条件节点</a> 。</p></div></article><div class="margin-vert--lg"><nav class="pagination-nav"><div class="pagination-nav__item"></div><div class="pagination-nav__item pagination-nav__item--next"></div></nav></div></div></div></div></div></div></main></div></div><footer class="footer footer--dark"><div class="container"><div class="row footer__links"><div class="col footer__col"><h4 class="footer__title">初识华炎？</h4><ul class="footer__items"><li class="footer__item"><a class="footer__link-item" href="/oa/what-is-oa/">什么是OA?</a></li><li class="footer__item"><a class="footer__link-item" href="/platform/lowcode/">什么是低代码?</a></li><li class="footer__item"><a class="footer__link-item" href="/platform/why/">如何选择低代码开发平台?</a></li><li class="footer__item"><a class="footer__link-item" href="/platform/">什么是华炎魔方？</a></li></ul></div><div class="col footer__col"><h4 class="footer__title">解决方案</h4><ul class="footer__items"><li class="footer__item"><a class="footer__link-item" href="/oa/">华炎办公</a></li><li class="footer__item"><a class="footer__link-item" target="_blank" rel="noopener noreferrer" href="/solutions/group/">集团管控</a></li><li class="footer__item"><a class="footer__link-item" target="_blank" rel="noopener noreferrer" href="/solutions/cost/">费控管理</a></li><li class="footer__item"><a class="footer__link-item" target="_blank" rel="noopener noreferrer" href="/solutions/workflow/">流程审批</a></li></ul></div><div class="col footer__col"><h4 class="footer__title">技术支持</h4><ul class="footer__items"><li class="footer__item"><a class="footer__link-item">销售热线：400-820-1612</a></li><li class="footer__item"><a class="footer__link-item" href="/company/contact-us">在线咨询</a></li><li class="footer__item"><a class="footer__link-item" href="/blog">最新动态</a></li></ul></div></div><div class="text--center">Copyright © 2020 上海华炎软件科技有限公司.</div></div></footer>
+        </style><div class="padding-vert--lg"><div class="container"><div class="row"><div class="col"><div class="docItemContainer_1tAC"><article><header><h1 class="docTitle_cWlf">请假天数较多时须请总经理审批、较少时无需总经理审批，如何实现？</h1></header><div class="markdown"><p>流程经常涉及到总经理审批这一节点，例如请假流程。但并不是所有的单子都要提请总经理审批。</p><p>比如，典型的请假流程可能是：如果请假天数大于或等于3天，则请假申请单必须提交总经理批准；如果请假天数小于3天，则只需部门经理批准即可、无需提交总经理批准。</p><p>通过在流程中增加“条件节点”，可实现上述智能选择审批路径的需求。</p><p>设置的具体步骤如下：</p><ul><li><p>管理员进入进入到流程设计界面，</p></li><li><p>在“总经理审批”节点之前，增加一个条件节点，相连的后续节点分别为“总经理审批”、“人事部备案”，</p></li></ul><p><img src="/assets/workflow/conditional.png" alt="条件判断"></p><ul><li>给这个条件节点设置连线条件：指向“总经理审批”的连线条件中录入‘{请假天数}&gt;=3’，另一个连线条件则为‘{请假天数}&lt;3’，即完成设置。注意其中的“请假天数”为本表单中的一个字段名。</li></ul><p>这么设置后，当流转到“部门经理审批”这一步时，系统会根据申请单的不同来自动指定下一步骤：如果请假天数大于或等于3天，则下一步为“总经理审批”；如果小于3天，则下一步为“人事部备案”，这就跳过了“总经理审批”这一步。</p><p>关于如何设置条件节点，可参考 <a href="/help/workflow/admin_flow#%E6%9D%A1%E4%BB%B6%E8%8A%82%E7%82%B9">审批王流程设计-条件节点</a> 。</p></div></article><div class="margin-vert--lg"><nav class="pagination-nav"><div class="pagination-nav__item"></div><div class="pagination-nav__item pagination-nav__item--next"></div></nav></div></div></div></div></div></div></main></div></div><footer class="footer footer--dark"><div class="container"><div class="row footer__links"><div class="col footer__col"><h4 class="footer__title">初识华炎？</h4><ul class="footer__items"><li class="footer__item"><a class="footer__link-item" href="/oa/what-is-oa/">什么是OA?</a></li><li class="footer__item"><a class="footer__link-item" href="/platform/lowcode/">什么是低代码开发平台?</a></li><li class="footer__item"><a class="footer__link-item" href="/platform/why/">如何选择低代码开发平台?</a></li><li class="footer__item"><a class="footer__link-item" href="/platform/">什么是华炎魔方？</a></li></ul></div><div class="col footer__col"><h4 class="footer__title">解决方案</h4><ul class="footer__items"><li class="footer__item"><a class="footer__link-item" href="/oa/">华炎办公</a></li><li class="footer__item"><a class="footer__link-item" target="_blank" rel="noopener noreferrer" href="/solutions/group/">集团管控</a></li><li class="footer__item"><a class="footer__link-item" target="_blank" rel="noopener noreferrer" href="/solutions/cost/">费控管理</a></li><li class="footer__item"><a class="footer__link-item" target="_blank" rel="noopener noreferrer" href="/solutions/workflow/">流程审批</a></li></ul></div><div class="col footer__col"><h4 class="footer__title">技术支持</h4><ul class="footer__items"><li class="footer__item"><a class="footer__link-item">销售热线：400-820-1612</a></li><li class="footer__item"><a class="footer__link-item" href="/company/contact-us">在线咨询</a></li><li class="footer__item"><a class="footer__link-item" href="/blog">最新动态</a></li></ul></div></div><div class="text--center">Copyright © 2020 上海华炎软件科技有限公司.</div></div></footer>
 </div>
 
 <script src="/styles.cd3cf3a4.js"></script>
 
-<script src="/runtime~main.b8c46cd7.js"></script>
+<script src="/runtime~main.e6f015fe.js"></script>
 
-<script src="/main.9ba182fd.js"></script>
+<script src="/main.96a9968e.js"></script>
 
 <script src="/1.126d4ba5.js"></script>
 
@@ -69,7 +69,7 @@
 
 <script src="/1be78505.82c9bc06.js"></script>
 
-<script src="/ec1ed54d.3e2bf9b9.js"></script>
+<script src="/ec1ed54d.58d90e24.js"></script>
 
 <script src="/17896441.1146d455.js"></script>
 

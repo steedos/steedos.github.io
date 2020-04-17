@@ -18,9 +18,9 @@
 
 <link rel="preload" href="/styles.cd3cf3a4.js" as="script">
 
-<link rel="preload" href="/runtime~main.b8c46cd7.js" as="script">
+<link rel="preload" href="/runtime~main.e6f015fe.js" as="script">
 
-<link rel="preload" href="/main.9ba182fd.js" as="script">
+<link rel="preload" href="/main.96a9968e.js" as="script">
 
 <link rel="preload" href="/1.126d4ba5.js" as="script">
 
@@ -30,7 +30,7 @@
 
 <link rel="preload" href="/1be78505.82c9bc06.js" as="script">
 
-<link rel="preload" href="/ec1ed54d.3e2bf9b9.js" as="script">
+<link rel="preload" href="/ec1ed54d.58d90e24.js" as="script">
 
 <link rel="preload" href="/17896441.1146d455.js" as="script">
 
@@ -52,14 +52,14 @@
               background-size: auto;
             }
           }
-        </style><div class="padding-vert--lg"><div class="container"><div class="row"><div class="col"><div class="docItemContainer_1tAC"><article><header><h1 class="docTitle_cWlf">如何设置申请单在列表显示时的标题？</h1></header><div class="markdown"><p>在本系统中，待审核、已审核、监控箱的列表显示时，会显示每个申请单的“标题”。</p><p> <img src="/assets/workflow/Title_compare.png" alt="标题对比"></p><p>申请单的默认标题是“流程名”+序号，如上图中的第2条的“请假申请5”，这样的标题不太直观，如果显示为上图中的第1条的“陈磊申请年假2天”，就会更好。</p><p>那么，如何自定义这样的标题了？具体操作如下：</p><ul><li><p>管理员进入系统后，切换“设置-审批-流程”，点击“流程设计器”按钮，进入到流程设计界面。</p></li><li><p>当选中某个流程，系统默认显示的是流程步骤设计页面，在窗口上方选择“表单”，进入表单编辑页面，在标题公式一栏中可填写标题显示的内容。</p></li></ul><p><img src="/assets/workflow/Title_formulas.png" alt="标题公式"></p><p>如上图，在标题公式里输入：{applicant_name}+&quot;申请&quot;+{请假类别}+{tianshu}+&quot;天&quot; 。这样，当陈磊提交请假申请时，如果请假类别为“年假”、请假天数为2天，则列表显示的标题就是“陈磊申请年假2天”。</p><p>自定义标题，可以选取多个表单字段、系统字段以及默认值组合而成，当然也可以只选取其中之一。</p><ul><li><p>取单个表单字段内容为文件标题：{字段名}。如销售合同申请单需要把合同名称作为文件标题，则为{合同名称}。</p></li><li><p>取多个表单字段组合为文件标题：{字段名1}+{字段名2}。如请假申请单需要把请假类型和请假天数作为文件标题，则为{请假类别}+{请假天数}。</p></li><li><p>默认值加系统字段为文件标题：&quot;默认值&quot;+{字段名}。如用印申请单的文件标题为&quot;申请使用&quot;+{印章类型}。</p></li><li><p>含有系统字段的文件标题：常用的系统字段如提交日期{submit_date},申请人名称{applicant_name}，审批单编号{insname}。如工作周报的文件标题为{applicant.name}+&quot;周报 &quot;+{submit.date}。</p></li></ul><p>关于标题公式的设置，可以参考 <a href="/help/workflow/admin_form/#%E6%A0%87%E9%A2%98%E5%85%AC%E5%BC%8F">审批王表单设计-标题公式</a></p></div></article><div class="margin-vert--lg"><nav class="pagination-nav"><div class="pagination-nav__item"></div><div class="pagination-nav__item pagination-nav__item--next"></div></nav></div></div></div></div></div></div></main></div></div><footer class="footer footer--dark"><div class="container"><div class="row footer__links"><div class="col footer__col"><h4 class="footer__title">初识华炎？</h4><ul class="footer__items"><li class="footer__item"><a class="footer__link-item" href="/oa/what-is-oa/">什么是OA?</a></li><li class="footer__item"><a class="footer__link-item" href="/platform/lowcode/">什么是低代码?</a></li><li class="footer__item"><a class="footer__link-item" href="/platform/why/">如何选择低代码开发平台?</a></li><li class="footer__item"><a class="footer__link-item" href="/platform/">什么是华炎魔方？</a></li></ul></div><div class="col footer__col"><h4 class="footer__title">解决方案</h4><ul class="footer__items"><li class="footer__item"><a class="footer__link-item" href="/oa/">华炎办公</a></li><li class="footer__item"><a class="footer__link-item" target="_blank" rel="noopener noreferrer" href="/solutions/group/">集团管控</a></li><li class="footer__item"><a class="footer__link-item" target="_blank" rel="noopener noreferrer" href="/solutions/cost/">费控管理</a></li><li class="footer__item"><a class="footer__link-item" target="_blank" rel="noopener noreferrer" href="/solutions/workflow/">流程审批</a></li></ul></div><div class="col footer__col"><h4 class="footer__title">技术支持</h4><ul class="footer__items"><li class="footer__item"><a class="footer__link-item">销售热线：400-820-1612</a></li><li class="footer__item"><a class="footer__link-item" href="/company/contact-us">在线咨询</a></li><li class="footer__item"><a class="footer__link-item" href="/blog">最新动态</a></li></ul></div></div><div class="text--center">Copyright © 2020 上海华炎软件科技有限公司.</div></div></footer>
+        </style><div class="padding-vert--lg"><div class="container"><div class="row"><div class="col"><div class="docItemContainer_1tAC"><article><header><h1 class="docTitle_cWlf">如何设置申请单在列表显示时的标题？</h1></header><div class="markdown"><p>在本系统中，待审核、已审核、监控箱的列表显示时，会显示每个申请单的“标题”。</p><p> <img src="/assets/workflow/Title_compare.png" alt="标题对比"></p><p>申请单的默认标题是“流程名”+序号，如上图中的第2条的“请假申请5”，这样的标题不太直观，如果显示为上图中的第1条的“陈磊申请年假2天”，就会更好。</p><p>那么，如何自定义这样的标题了？具体操作如下：</p><ul><li><p>管理员进入系统后，切换“设置-审批-流程”，点击“流程设计器”按钮，进入到流程设计界面。</p></li><li><p>当选中某个流程，系统默认显示的是流程步骤设计页面，在窗口上方选择“表单”，进入表单编辑页面，在标题公式一栏中可填写标题显示的内容。</p></li></ul><p><img src="/assets/workflow/Title_formulas.png" alt="标题公式"></p><p>如上图，在标题公式里输入：{applicant_name}+&quot;申请&quot;+{请假类别}+{tianshu}+&quot;天&quot; 。这样，当陈磊提交请假申请时，如果请假类别为“年假”、请假天数为2天，则列表显示的标题就是“陈磊申请年假2天”。</p><p>自定义标题，可以选取多个表单字段、系统字段以及默认值组合而成，当然也可以只选取其中之一。</p><ul><li><p>取单个表单字段内容为文件标题：{字段名}。如销售合同申请单需要把合同名称作为文件标题，则为{合同名称}。</p></li><li><p>取多个表单字段组合为文件标题：{字段名1}+{字段名2}。如请假申请单需要把请假类型和请假天数作为文件标题，则为{请假类别}+{请假天数}。</p></li><li><p>默认值加系统字段为文件标题：&quot;默认值&quot;+{字段名}。如用印申请单的文件标题为&quot;申请使用&quot;+{印章类型}。</p></li><li><p>含有系统字段的文件标题：常用的系统字段如提交日期{submit_date},申请人名称{applicant_name}，审批单编号{insname}。如工作周报的文件标题为{applicant.name}+&quot;周报 &quot;+{submit.date}。</p></li></ul><p>关于标题公式的设置，可以参考 <a href="/help/workflow/admin_form/#%E6%A0%87%E9%A2%98%E5%85%AC%E5%BC%8F">审批王表单设计-标题公式</a></p></div></article><div class="margin-vert--lg"><nav class="pagination-nav"><div class="pagination-nav__item"></div><div class="pagination-nav__item pagination-nav__item--next"></div></nav></div></div></div></div></div></div></main></div></div><footer class="footer footer--dark"><div class="container"><div class="row footer__links"><div class="col footer__col"><h4 class="footer__title">初识华炎？</h4><ul class="footer__items"><li class="footer__item"><a class="footer__link-item" href="/oa/what-is-oa/">什么是OA?</a></li><li class="footer__item"><a class="footer__link-item" href="/platform/lowcode/">什么是低代码开发平台?</a></li><li class="footer__item"><a class="footer__link-item" href="/platform/why/">如何选择低代码开发平台?</a></li><li class="footer__item"><a class="footer__link-item" href="/platform/">什么是华炎魔方？</a></li></ul></div><div class="col footer__col"><h4 class="footer__title">解决方案</h4><ul class="footer__items"><li class="footer__item"><a class="footer__link-item" href="/oa/">华炎办公</a></li><li class="footer__item"><a class="footer__link-item" target="_blank" rel="noopener noreferrer" href="/solutions/group/">集团管控</a></li><li class="footer__item"><a class="footer__link-item" target="_blank" rel="noopener noreferrer" href="/solutions/cost/">费控管理</a></li><li class="footer__item"><a class="footer__link-item" target="_blank" rel="noopener noreferrer" href="/solutions/workflow/">流程审批</a></li></ul></div><div class="col footer__col"><h4 class="footer__title">技术支持</h4><ul class="footer__items"><li class="footer__item"><a class="footer__link-item">销售热线：400-820-1612</a></li><li class="footer__item"><a class="footer__link-item" href="/company/contact-us">在线咨询</a></li><li class="footer__item"><a class="footer__link-item" href="/blog">最新动态</a></li></ul></div></div><div class="text--center">Copyright © 2020 上海华炎软件科技有限公司.</div></div></footer>
 </div>
 
 <script src="/styles.cd3cf3a4.js"></script>
 
-<script src="/runtime~main.b8c46cd7.js"></script>
+<script src="/runtime~main.e6f015fe.js"></script>
 
-<script src="/main.9ba182fd.js"></script>
+<script src="/main.96a9968e.js"></script>
 
 <script src="/1.126d4ba5.js"></script>
 
@@ -69,7 +69,7 @@
 
 <script src="/1be78505.82c9bc06.js"></script>
 
-<script src="/ec1ed54d.3e2bf9b9.js"></script>
+<script src="/ec1ed54d.58d90e24.js"></script>
 
 <script src="/17896441.1146d455.js"></script>
 
