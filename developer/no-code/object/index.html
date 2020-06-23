@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="generator" content="Docusaurus v2.0.0-alpha.54">
+<script>var _hmt=_hmt||[];!function(){var e=document.createElement("script");e.src="https://hm.baidu.com/hm.js?8e30e1c152eed21154e2090d348e7dec";var t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t)}()</script>
+
+<title data-react-helmet="true">零代码 - 业务对象 | 华炎</title>
+
+<meta data-react-helmet="true" http-equiv="x-ua-compatible" content="ie=edge"><meta data-react-helmet="true" name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta data-react-helmet="true" property="og:image" content="https://www.steedos.com/img/icon_blue.png"><meta data-react-helmet="true" property="twitter:image" content="https://www.steedos.com/img/icon_blue.png"><meta data-react-helmet="true" name="twitter:image:alt" content="Image for 华炎"><meta data-react-helmet="true" name="twitter:card" content="summary"><meta data-react-helmet="true" property="og:title" content="零代码 - 业务对象 | 华炎"><meta data-react-helmet="true" name="description" content="华炎魔方除了是开源低代码开发工具，更是一款零代码开发工具。"><meta data-react-helmet="true" property="og:description" content="华炎魔方除了是开源低代码开发工具，更是一款零代码开发工具。"><meta data-react-helmet="true" name="keywords" content="oa,开发平台,开发工具,低代码,快速开发平台,开源"><meta data-react-helmet="true" property="og:url" content="https://www.steedos.com/developer/no-code/object">
+
+<link data-react-helmet="true" rel="shortcut icon" href="/img/icon_blue.png">
+
+
+<link rel="stylesheet" href="/styles.dc459ae6.css">
+
+
+<link rel="preload" href="/styles.4a502711.js" as="script">
+
+<link rel="preload" href="/runtime~main.68cfeda8.js" as="script">
+
+<link rel="preload" href="/main.4d210e50.js" as="script">
+
+<link rel="preload" href="/1.a0300fcc.js" as="script">
+
+<link rel="preload" href="/2.b04f4b04.js" as="script">
+
+<link rel="preload" href="/3.fbf4d3c1.js" as="script">
+
+<link rel="preload" href="/1be78505.33200b9b.js" as="script">
+
+<link rel="preload" href="/ec1ed54d.803447f1.js" as="script">
+
+<link rel="preload" href="/17896441.ce527b70.js" as="script">
+
+<link rel="preload" href="/d037b4de.7c15f9e5.js" as="script">
+
+</head>
+<body>
+
+<div id="__docusaurus">
+<nav class="navbar navbar--light navbar--fixed-top"><div class="navbar__inner"><div class="navbar__items"><div aria-label="Navigation bar toggle" class="navbar__toggle" role="button" tabindex="0"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" role="img" focusable="false"><title>Menu</title><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></div><a class="navbar__brand" href="/cn/"><img class="navbar__logo" src="/img/icon_blue.png" alt="华炎魔方"><strong class="navbar__title">华炎</strong></a><a class="navbar__item navbar__link" href="/platform/">华炎魔方</a><a class="navbar__item navbar__link" href="/oa/">华炎办公</a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/developer/">技术支持</a><div class="navbar__item dropdown dropdown--hoverable dropdown--left"><a class="navbar__item navbar__link" href="/company/about-us/">关于我们</a><ul class="dropdown__menu"><li><a class="dropdown__link" href="/company/about-us/">关于华炎</a></li><li><a class="dropdown__link" href="/company/customers/">成功案例</a></li><li><a class="dropdown__link" href="/company/contact-us/">联系我们</a></li></ul></div></div><div class="navbar__items navbar__items--right"><a class="navbar__item navbar__link" href="/us/">English</a><a target="_blank" rel="noopener noreferrer" href="https://cn.steedos.com" class="navbar__item navbar__link">登录</a><div class="navbar__search"><span aria-label="expand searchbar" role="button" class="search-icon" tabindex="0"></span><input type="search" id="search_input_react" placeholder="Search" aria-label="Search" class="navbar__search-input search-bar"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div><div class="navbar-sidebar"><div class="navbar-sidebar__brand"><a class="navbar__brand" href="/cn/"><img class="navbar__logo" src="/img/icon_blue.png" alt="华炎魔方"><strong class="navbar__title">华炎</strong></a></div><div class="navbar-sidebar__items"><div class="menu"><ul class="menu__list"><li class="menu__list-item"><a class="menu__link" position="left" href="/platform/">华炎魔方</a></li><li class="menu__list-item"><a class="menu__link" position="left" href="/oa/">华炎办公</a></li><li class="menu__list-item"><a aria-current="page" class="menu__link navbar__link--active" position="left" href="/developer/">技术支持</a></li><li class="menu__list-item"><a class="menu__link menu__link--sublist" position="left" href="/company/about-us/">关于我们</a><ul class="menu__list"><li class="menu__list-item"><a class="menu__link" href="/company/about-us/">关于华炎</a></li><li class="menu__list-item"><a class="menu__link" href="/company/customers/">成功案例</a></li><li class="menu__list-item"><a class="menu__link" href="/company/contact-us/">联系我们</a></li></ul></li><li class="menu__list-item"><a class="menu__link" position="right" href="/us/">English</a></li><li class="menu__list-item"><a target="_blank" rel="noopener noreferrer" href="https://cn.steedos.com" class="menu__link" position="right">登录</a></li></ul></div></div></div></nav><div class="main-wrapper"><div class="docPage_1jis"><main class="docMainContainer_3j_A"><style>
+          .main-wrapper {
+            background: url(/img/banner/default.png);  
+            background-repeat: no-repeat;
+            background-position: top;
+            background-size: contain;
+          }
+          @media (max-width: 996px) {
+            .main-wrapper {
+              background-size: auto;
+            }
+          }
+        </style><div class="padding-vert--lg"><div class="container"><div class="row"><div class="col col--9"><div class="docItemContainer_1tAC"><article><header><h1 class="docTitle_cWlf">零代码 - 业务对象</h1></header><div class="markdown"><p>华炎魔方除了是开源低代码开发工具，更是一款零代码开发工具。</p><p>Steedos 的神奇之处正在于此，如果你对代码开发不够熟练，那华炎魔方零代码同样能够满足你的需要。只需在前端做一些简单的配置，就能创建一个简单功能的新系统。</p><p>下面，以资产台账为例，使用零代码开发，无需编写yml文件即可完成业务对象的创建。</p><h2><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="创建业务对象：资产"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#创建业务对象：资产" title="Direct link to heading">#</a>创建业务对象：资产</h2><p>启动服务运行，管理员登录进入系统后，点击“设置”，选择“业务对象”-“对象管理”，进入零代码配置页面。</p><p><img src="/assets/no-code/objects.png" alt="零代码"></p><p>点击右侧“新建”按钮，打开新建对象弹窗，输入必填项对象名“assets”，显示名称“资产”，选择图标“product_item”，并勾选以下属性：已启用、允许搜索、允许添加任务、允许添加备注、允许添加事件、记录字段历史、允许添加评论，保存即完成资产对象的创建。</p><p><img src="/assets/no-code/assets_new.png" alt="零代码-新建"></p><p><img src="/assets/no-code/assets_1.png" alt="零代码-资产"></p><h2><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="新建字段：资产编号"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#新建字段：资产编号" title="Direct link to heading">#</a>新建字段：资产编号</h2><p>新建的对象，默认只有5个字段，即“名称”、“创建时间”、“创建人”、“修改时间”、“修改人”。新增资产相关字段“资产编号”，点击字段右侧的“新建”，打开新建字段弹窗，输入必填项字段名“asset_number”，显示名称“资产编号”，字段类型选择“文本”类型，排序号改为110并保存即可。</p><p><img src="/assets/no-code/assets_2.png" alt="零代码-字段"></p><h2><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="添加应用：资产管理"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#添加应用：资产管理" title="Direct link to heading">#</a>添加应用：资产管理</h2><p>完成资产对象的创建后，需要将对象添加到应用，才能在前台访问使用。返回“设置”，选择“公司设置”-“应用程序”，进入应用配置页面。</p><p><img src="/assets/no-code/apps.png" alt="应用"></p><p>点击右侧“新建”按钮，打开新建应用程序弹窗，输入必填项名称“资产管理”，API名称“asset”，选择图标“product_item”，描述填写“管理资产、审批”，主菜单项选择“资产”、“审批”、“报表”，保存即完成资产管理的创建。</p></div></article><div class="margin-vert--lg"><nav class="pagination-nav"><div class="pagination-nav__item"></div><div class="pagination-nav__item pagination-nav__item--next"></div></nav></div></div></div><div class="col col--3"><div class="tableOfContents_tVyB"><ul class="contents contents__left-border"><li><a href="#创建业务对象：资产" class="contents__link">创建业务对象：资产</a></li><li><a href="#新建字段：资产编号" class="contents__link">新建字段：资产编号</a></li><li><a href="#添加应用：资产管理" class="contents__link">添加应用：资产管理</a></li></ul></div></div></div></div></div></main></div></div><footer class="footer footer--dark"><div class="container"><div class="row footer__links"><div class="col footer__col"><h4 class="footer__title">初识华炎？</h4><ul class="footer__items"><li class="footer__item"><a class="footer__link-item" href="/platform/lowcode/">低代码</a></li><li class="footer__item"><a class="footer__link-item" href="/platform/no-code/">零代码/无代码</a></li><li class="footer__item"><a class="footer__link-item" href="/platform/">开源低代码开发平台</a></li><li class="footer__item"><a class="footer__link-item" target="_blank" rel="noopener noreferrer" href="/platform/cases/">数字化转型</a></li></ul></div><div class="col footer__col"><h4 class="footer__title">解决方案</h4><ul class="footer__items"><li class="footer__item"><a class="footer__link-item" href="/oa/">OA办公系统</a></li><li class="footer__item"><a class="footer__link-item" target="_blank" rel="noopener noreferrer" href="/solutions/group/">集团管控</a></li><li class="footer__item"><a class="footer__link-item" target="_blank" rel="noopener noreferrer" href="/products/contract/">合同管理</a></li><li class="footer__item"><a class="footer__link-item" target="_blank" rel="noopener noreferrer" href="/solutions/workflow/">流程审批</a></li></ul></div><div class="col footer__col"><h4 class="footer__title">技术支持</h4><ul class="footer__items"><li class="footer__item"><a class="footer__link-item">销售热线：400-820-1612</a></li><li class="footer__item"><a class="footer__link-item" href="/company/contact-us">在线咨询</a></li><li class="footer__item"><a class="footer__link-item" href="/blog">最新动态</a></li></ul></div></div><div class="text--center">Copyright © 2020 上海华炎软件科技有限公司. <a href="http://www.beian.miit.gov.cn/" target="_blank" class="footer__link-item"> 沪ICP备09089283号</a></div></div></footer>
+</div>
+
+<script src="/styles.4a502711.js"></script>
+
+<script src="/runtime~main.68cfeda8.js"></script>
+
+<script src="/main.4d210e50.js"></script>
+
+<script src="/1.a0300fcc.js"></script>
+
+<script src="/2.b04f4b04.js"></script>
+
+<script src="/3.fbf4d3c1.js"></script>
+
+<script src="/1be78505.33200b9b.js"></script>
+
+<script src="/ec1ed54d.803447f1.js"></script>
+
+<script src="/17896441.ce527b70.js"></script>
+
+<script src="/d037b4de.7c15f9e5.js"></script>
+
+
+</body>
+</html>
