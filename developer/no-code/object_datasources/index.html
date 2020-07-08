@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="generator" content="Docusaurus v2.0.0-alpha.54">
+<script>var _hmt=_hmt||[];!function(){var e=document.createElement("script");e.src="https://hm.baidu.com/hm.js?8e30e1c152eed21154e2090d348e7dec";var t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t)}()</script>
+
+<title data-react-helmet="true">零代码 - 外部数据源 | 华炎</title>
+
+<meta data-react-helmet="true" http-equiv="x-ua-compatible" content="ie=edge"><meta data-react-helmet="true" name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta data-react-helmet="true" property="og:image" content="https://www.steedos.com/img/icon_blue.png"><meta data-react-helmet="true" property="twitter:image" content="https://www.steedos.com/img/icon_blue.png"><meta data-react-helmet="true" name="twitter:image:alt" content="Image for 华炎"><meta data-react-helmet="true" name="twitter:card" content="summary"><meta data-react-helmet="true" property="og:title" content="零代码 - 外部数据源 | 华炎"><meta data-react-helmet="true" name="description" content="数据源用于定义数据库连接方式，业务对象通过对应的数据源保存数据。除了使用默认数据源，华炎魔方零代码功能，可以通过填写表单的形式，配置数据源的相关信息，即可完成外部数据源的连接，包括SQL Server、Oracle、MySQL、PostgreSQL等。"><meta data-react-helmet="true" property="og:description" content="数据源用于定义数据库连接方式，业务对象通过对应的数据源保存数据。除了使用默认数据源，华炎魔方零代码功能，可以通过填写表单的形式，配置数据源的相关信息，即可完成外部数据源的连接，包括SQL Server、Oracle、MySQL、PostgreSQL等。"><meta data-react-helmet="true" name="keywords" content="oa,开发平台,开发工具,低代码,快速开发平台,开源"><meta data-react-helmet="true" property="og:url" content="https://www.steedos.com/developer/no-code/object_datasources">
+
+<link data-react-helmet="true" rel="shortcut icon" href="/img/icon_blue.png">
+
+
+<link rel="stylesheet" href="/styles.dc459ae6.css">
+
+
+<link rel="preload" href="/styles.5cb2dda0.js" as="script">
+
+<link rel="preload" href="/runtime~main.3f7e4129.js" as="script">
+
+<link rel="preload" href="/main.425047df.js" as="script">
+
+<link rel="preload" href="/1.70ca2938.js" as="script">
+
+<link rel="preload" href="/2.5429779a.js" as="script">
+
+<link rel="preload" href="/3.80cf7b54.js" as="script">
+
+<link rel="preload" href="/1be78505.347dc1df.js" as="script">
+
+<link rel="preload" href="/ec1ed54d.2477804b.js" as="script">
+
+<link rel="preload" href="/17896441.d79f7631.js" as="script">
+
+<link rel="preload" href="/0fc7a0b2.8ac892a3.js" as="script">
+
+</head>
+<body>
+
+<div id="__docusaurus">
+<nav class="navbar navbar--light navbar--fixed-top"><div class="navbar__inner"><div class="navbar__items"><div aria-label="Navigation bar toggle" class="navbar__toggle" role="button" tabindex="0"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" role="img" focusable="false"><title>Menu</title><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></div><a class="navbar__brand" href="/cn/"><img class="navbar__logo" src="/img/icon_blue.png" alt="华炎魔方"><strong class="navbar__title">华炎</strong></a><a class="navbar__item navbar__link" href="/platform/">华炎魔方</a><a class="navbar__item navbar__link" href="/oa/">华炎办公</a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/developer/">培训教程</a><a class="navbar__item navbar__link" href="/company/about-us/">关于我们</a></div><div class="navbar__items navbar__items--right"><a class="navbar__item navbar__link" href="/us/">English</a><a target="_blank" rel="noopener noreferrer" href="https://cn.steedos.com" class="navbar__item navbar__link">登录</a><div class="navbar__search"><span aria-label="expand searchbar" role="button" class="search-icon" tabindex="0"></span><input type="search" id="search_input_react" placeholder="Search" aria-label="Search" class="navbar__search-input search-bar"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div><div class="navbar-sidebar"><div class="navbar-sidebar__brand"><a class="navbar__brand" href="/cn/"><img class="navbar__logo" src="/img/icon_blue.png" alt="华炎魔方"><strong class="navbar__title">华炎</strong></a></div><div class="navbar-sidebar__items"><div class="menu"><ul class="menu__list"><li class="menu__list-item"><a class="menu__link" position="left" href="/platform/">华炎魔方</a></li><li class="menu__list-item"><a class="menu__link" position="left" href="/oa/">华炎办公</a></li><li class="menu__list-item"><a aria-current="page" class="menu__link navbar__link--active" position="left" href="/developer/">培训教程</a></li><li class="menu__list-item"><a class="menu__link" position="left" href="/company/about-us/">关于我们</a></li><li class="menu__list-item"><a class="menu__link" position="right" href="/us/">English</a></li><li class="menu__list-item"><a target="_blank" rel="noopener noreferrer" href="https://cn.steedos.com" class="menu__link" position="right">登录</a></li></ul></div></div></div></nav><div class="main-wrapper"><div class="docPage_1jis"><main class="docMainContainer_3j_A"><style>
+          .main-wrapper {
+            background: url(/img/banner/default.png);  
+            background-repeat: no-repeat;
+            background-position: top;
+            background-size: contain;
+          }
+          @media (max-width: 996px) {
+            .main-wrapper {
+              background-size: auto;
+            }
+          }
+        </style><div class="padding-vert--lg"><div class="container"><div class="row"><div class="col col--9"><div class="docItemContainer_1tAC"><article><header><h1 class="docTitle_cWlf">零代码 - 外部数据源</h1></header><div class="markdown"><p>数据源用于定义数据库连接方式，业务对象通过对应的数据源保存数据。除了使用默认数据源，华炎魔方零代码功能，可以通过填写表单的形式，配置数据源的相关信息，即可完成外部数据源的连接，包括SQL Server、Oracle、MySQL、PostgreSQL等。</p><h2><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="创建外部数据源-sql-server"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#创建外部数据源-sql-server" title="Direct link to heading">#</a>创建外部数据源-SQL Server</h2><p>进入“设置”-“对象设置”-“外部数据源”，新建一个driver-test外部数据源，依次输入对象名（一般为英文），显示名称，选择合适图标。</p><p><img src="/assets/no-code/sqlserver_new.png" alt="零代码-新建"></p><p>保存完成创建，并进入资产调拨详情页。</p><p><img src="/assets/no-code/assetallocation_1.png" alt="零代码-资产"></p><h2><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="设置为资产表的子表，并添加相关字段"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#设置为资产表的子表，并添加相关字段" title="Direct link to heading">#</a>设置为资产表的子表，并添加相关字段</h2><p>可以看到刚创建的资产调拨有一个默认字段：名称，我们可以将此字段改名为调拨说明。</p><p><img src="/assets/no-code/assetallocation_2.png" alt="零代码-字段"></p><p>为了把资产调拨挂到资产表下面作为子表，我们需要创建一个“相关资产”的字段，字段类型选择“主表/子表”，在引用对象中选择“资产”。通过设置“主表/子表”类型的字段，两个表之间自动创建了关联关系。</p><p><img src="/assets/no-code/assetallocation_3.png" alt="零代码-字段"></p><p>最后可以为资产调拨添加其他字段例如调拨日期、调出部门、调入部门等。</p><h2><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="配置列表视图"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#配置列表视图" title="Direct link to heading">#</a>配置列表视图</h2><p>返回资产调拨对象管理界面，点击系统自动创建的列表视图：“所有”，可以看到显示的字段只有名称。把需要显示在列表页上的新增字段依次添加进去：相关资产、调拨日期、调出部门、调入部门。</p><p><img src="/assets/no-code/assetallocation_4.png" alt="零代码-视图"></p><h2><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="配置应用程序"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#配置应用程序" title="Direct link to heading">#</a>配置应用程序</h2><p>点击应用程序设置，点击进入资产管理详情页，主菜单项选择加上刚创建的“资产调拨”，保存完成资产管理台账中新增资产调拨。</p><p><img src="/assets/no-code/assetallocation_5.png" alt="零代码-应用"></p><h2><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="试用新版资产管理应用"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#试用新版资产管理应用" title="Direct link to heading">#</a>试用新版资产管理应用</h2><p>点击进入新版的资产管理应用，可以看到两个主菜单栏：资产、资产调拨。</p><p>点击进入资产列表，选择“打印机”，进入打印机详情页，可以看到，此时多了一个资产调拨子表，点击新建可以直接为当前资产创建一条“资产调拨”记录。</p><p><img src="/assets/no-code/assetallocation_6.png" alt="零代码-应用"></p><p>点击主菜单的资产调拨选项卡，可以查看所有资产的调拨明细。</p></div></article><div class="margin-vert--lg"><nav class="pagination-nav"><div class="pagination-nav__item"></div><div class="pagination-nav__item pagination-nav__item--next"></div></nav></div></div></div><div class="col col--3"><div class="tableOfContents_tVyB"><ul class="contents contents__left-border"><li><a href="#创建外部数据源-sql-server" class="contents__link">创建外部数据源-SQL Server</a></li><li><a href="#设置为资产表的子表，并添加相关字段" class="contents__link">设置为资产表的子表，并添加相关字段</a></li><li><a href="#配置列表视图" class="contents__link">配置列表视图</a></li><li><a href="#配置应用程序" class="contents__link">配置应用程序</a></li><li><a href="#试用新版资产管理应用" class="contents__link">试用新版资产管理应用</a></li></ul></div></div></div></div></div></main></div></div><footer class="footer footer--dark"><div class="container"><div class="row footer__links"><div class="col footer__col"><h4 class="footer__title">初识华炎？</h4><ul class="footer__items"><li class="footer__item"><a class="footer__link-item" href="/platform/lowcode/">低代码</a></li><li class="footer__item"><a class="footer__link-item" href="/platform/no-code/">零代码/无代码</a></li><li class="footer__item"><a class="footer__link-item" href="/platform/">开源低代码开发平台</a></li><li class="footer__item"><a class="footer__link-item" target="_blank" rel="noopener noreferrer" href="/platform/cases/">数字化转型</a></li></ul></div><div class="col footer__col"><h4 class="footer__title">解决方案</h4><ul class="footer__items"><li class="footer__item"><a class="footer__link-item" href="/oa/">OA办公系统</a></li><li class="footer__item"><a class="footer__link-item" target="_blank" rel="noopener noreferrer" href="/solutions/group/">集团管控</a></li><li class="footer__item"><a class="footer__link-item" target="_blank" rel="noopener noreferrer" href="/products/contract/">合同管理</a></li><li class="footer__item"><a class="footer__link-item" target="_blank" rel="noopener noreferrer" href="/solutions/workflow/">流程审批</a></li></ul></div><div class="col footer__col"><h4 class="footer__title">技术支持</h4><ul class="footer__items"><li class="footer__item"><a class="footer__link-item">销售热线：400-820-1612</a></li><li class="footer__item"><a class="footer__link-item" href="/company/contact-us">在线咨询</a></li><li class="footer__item"><a class="footer__link-item" href="/blog">最新动态</a></li></ul></div></div><div class="text--center">Copyright © 2020 上海华炎软件科技有限公司. <a href="http://www.beian.miit.gov.cn/" target="_blank" class="footer__link-item"> 沪ICP备09089283号</a></div></div></footer>
+</div>
+
+<script src="/styles.5cb2dda0.js"></script>
+
+<script src="/runtime~main.3f7e4129.js"></script>
+
+<script src="/main.425047df.js"></script>
+
+<script src="/1.70ca2938.js"></script>
+
+<script src="/2.5429779a.js"></script>
+
+<script src="/3.80cf7b54.js"></script>
+
+<script src="/1be78505.347dc1df.js"></script>
+
+<script src="/ec1ed54d.2477804b.js"></script>
+
+<script src="/17896441.d79f7631.js"></script>
+
+<script src="/0fc7a0b2.8ac892a3.js"></script>
+
+
+</body>
+</html>
