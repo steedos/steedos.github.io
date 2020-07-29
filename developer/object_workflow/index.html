@@ -8,33 +8,33 @@
 
 <title data-react-helmet="true">对象流程映射 | Steedos 开发文档</title>
 
-<meta data-react-helmet="true" http-equiv="x-ua-compatible" content="ie=edge"><meta data-react-helmet="true" name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta data-react-helmet="true" property="og:image" content="https://www.steedos.com/img/icon_blue.png"><meta data-react-helmet="true" property="twitter:image" content="https://www.steedos.com/img/icon_blue.png"><meta data-react-helmet="true" name="twitter:image:alt" content="Image for 华炎"><meta data-react-helmet="true" name="twitter:card" content="summary"><meta data-react-helmet="true" property="og:title" content="对象流程映射 | Steedos 开发文档"><meta data-react-helmet="true" name="description" content="Steedos中定义的业务对象，可以与[审批王](../workflow)系统集成。可以从台账中发起业务流程，也可以将审批王中的业务流程归档到台账中。"><meta data-react-helmet="true" property="og:description" content="Steedos中定义的业务对象，可以与[审批王](../workflow)系统集成。可以从台账中发起业务流程，也可以将审批王中的业务流程归档到台账中。"><meta data-react-helmet="true" name="keywords" content="oa,开发平台,开发工具,低代码,快速开发平台,开源"><meta data-react-helmet="true" property="og:url" content="https://www.steedos.com/developer/object_workflow">
+<meta data-react-helmet="true" http-equiv="x-ua-compatible" content="ie=edge"><meta data-react-helmet="true" name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta data-react-helmet="true" property="og:image" content="https://www.steedos.com/img/icon_blue.png"><meta data-react-helmet="true" property="twitter:image" content="https://www.steedos.com/img/icon_blue.png"><meta data-react-helmet="true" name="twitter:image:alt" content="Image for 华炎"><meta data-react-helmet="true" name="twitter:card" content="summary"><meta data-react-helmet="true" property="og:title" content="对象流程映射 | Steedos 开发文档"><meta data-react-helmet="true" name="description" content="Steedos中定义的业务对象，可以与[审批王](../workflow)系统集成。可以从台账中发起业务流程，也可以将审批王中的业务流程归档到台账中。"><meta data-react-helmet="true" property="og:description" content="Steedos中定义的业务对象，可以与[审批王](../workflow)系统集成。可以从台账中发起业务流程，也可以将审批王中的业务流程归档到台账中。"><meta data-react-helmet="true" name="keywords" content="oa,开发平台,开发工具,低代码,快速开发平台,开源"><meta data-react-helmet="true" property="og:url" content="https://www.steedos.com/developer/object_workflow">
 
 <link data-react-helmet="true" rel="shortcut icon" href="/img/icon_blue.png">
 
 
-<link rel="stylesheet" href="/styles.57125e5c.css">
+<link rel="stylesheet" href="/styles.dfa08393.css">
 
 
-<link rel="preload" href="/styles.293c492b.js" as="script">
+<link rel="preload" href="/styles.c397fbc8.js" as="script">
 
-<link rel="preload" href="/runtime~main.5a1e64af.js" as="script">
+<link rel="preload" href="/runtime~main.afb046f2.js" as="script">
 
-<link rel="preload" href="/main.5c5c5bce.js" as="script">
+<link rel="preload" href="/main.9877487d.js" as="script">
 
 <link rel="preload" href="/1.58c4c4fd.js" as="script">
 
-<link rel="preload" href="/2.4de1974e.js" as="script">
+<link rel="preload" href="/2.1c4b43bc.js" as="script">
 
-<link rel="preload" href="/3.6519041c.js" as="script">
+<link rel="preload" href="/3.03e63236.js" as="script">
 
-<link rel="preload" href="/1be78505.2da41e46.js" as="script">
+<link rel="preload" href="/1be78505.af771906.js" as="script">
 
-<link rel="preload" href="/ec1ed54d.2bf489fd.js" as="script">
+<link rel="preload" href="/ec1ed54d.ca975740.js" as="script">
 
-<link rel="preload" href="/17896441.076ebdf2.js" as="script">
+<link rel="preload" href="/17896441.6793ca1f.js" as="script">
 
-<link rel="preload" href="/426eebae.43f135f6.js" as="script">
+<link rel="preload" href="/fbfb8c0a.7018a745.js" as="script">
 
 </head>
 <body>
@@ -55,25 +55,25 @@
         </style><div class="padding-vert--lg"><div class="container"><div class="row"><div class="col col--9"><div class="docItemContainer_1tAC"><article><header><h1 class="docTitle_cWlf">对象流程映射</h1></header><div class="markdown"><p>Steedos中定义的业务对象，可以与<a href="../workflow">审批王</a>系统集成。可以从台账中发起业务流程，也可以将审批王中的业务流程归档到台账中。</p><h2><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="从审批表单到业务台账"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#从审批表单到业务台账" title="Direct link to heading">#</a>从审批表单到业务台账</h2><p>对于审批结束的申请单，可以自动将数据同步到Steedos相关对象中。</p><h3><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="归档配置"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#归档配置" title="Direct link to heading">#</a>归档配置</h3><ul><li>一个流程也可以映射为多个对象，建立多个台账。例如合同流程执行完成之后可以进入合同台账和档案台账。</li><li>多个流程可以映射为同一个对象，例如不同单位的合同审批流程汇总进入同一个合同台账。</li><li>可设定对象字段与流程表单字段的对应关系。</li><li>可设定是否同步附件：不同步、同步最新版、同步所有版。</li></ul><h3><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="自动同步"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#自动同步" title="Direct link to heading">#</a>自动同步</h3><ul><li>流程发起审批之后，自动同步进入台账，状态为“审批中”。</li><li>流程审批完成之后，自动同步进入台账，状态为“核准”、“驳回”、“完成”</li></ul><h2><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="从业务台账发起审批"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#从业务台账发起审批" title="Direct link to heading">#</a>从业务台账发起审批</h2><p>对于需要领导审批的业务数据，可以一键发送到审批系统进行审批，例如合同新建后可以提交审批。</p><ul><li>一个对象可以设定一个审批流程。</li><li>可设定对象字段与流程表单字段的对应关系。</li><li>可设定是否同步附件：不同步、同步最新版、同步所有版。</li></ul><h3><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="业务逻辑"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#业务逻辑" title="Direct link to heading">#</a>业务逻辑</h3><ul><li>当对象配置了审批流程，用户界面会增加一个提交审批按钮。</li><li>根据后台配置的字段映射关系，系统自动生成流程的审批单。</li><li>根据配置，如果原记录有附件，会自动带上附件。</li><li>用户选择下一步骤，下一步处理人，点击提交即可开始流程审批。</li><li>记录的“审批状态”字段自动更新为“审批中”。</li><li>流程审批每完成一步骤，记录内容和附件会重新同步回Steedos台账中。</li><li>流程审批完成后，记录的“审批状态”字段自动更新为“核准”、“驳回”、“完成”。</li></ul><h3><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="界面显示"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#界面显示" title="Direct link to heading">#</a>界面显示</h3><ul><li>对于可审批的记录，界面显示“发起审批”按钮。</li><li>每条记录只能同时发起一个审批，前一个审批结束之后可以发起新的审批。</li><li>在记录的相关列表中，显示申请单子表，列出记录的审批历史。点击弹出申请单显示页面。</li></ul><h2><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="配置对象与流程映射关系"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#配置对象与流程映射关系" title="Direct link to heading">#</a>配置对象与流程映射关系</h2><p>只需配置好1个对象和1个流程的映射业务逻辑，即可实现：</p><ul><li>从对象记录发起流程，并根据字段映射关系将记录的信息、相关附件传入表单，并执行对象至表单的脚本。</li><li>表单流程流转时及流转完成后，即时依据将字段映射关系将表单里的字段信息、相关附件传入对象，并执行表单至对象的脚本。</li><li>对象记录的相关审批单中，可以查看审批单的即时进展。</li></ul><p>设置对象流程，主要包括以下内容的设置：</p><ul><li>名称</li><li>对象: 系统对象，或自定义对象</li><li>流程: 审批流程</li><li>字段映射关系（对象到表单）<ul><li>表单字段：表单的默认字段、表单的自定义字段</li><li>对象字段：对象的默认字段、对象的自定义字段、对象的引用对象的字段</li></ul></li><li>字段映射关系（表单到对象）<ul><li>对象字段：对象的默认字段、对象的自定义字段</li><li>表单字段：表单的默认字段、表单的自定义字段</li></ul></li><li>附件同步方式: 不同步/同步最新版本/同步所有版本</li><li>脚本<ul><li>对象至表单</li><li>表单至对象</li></ul></li></ul><h2><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="启用对象流程映射"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#启用对象流程映射" title="Direct link to heading">#</a>启用对象流程映射</h2><p>请注意，如果您要启用对象流程映射，还需在项目配置文件（steedos-config.yml）中进行设置。</p><div class="mdxCodeBlock_iHAB"><div class="codeBlockContent_3RXF"><button type="button" aria-label="Copy code to clipboard" class="copyButton_1PCb">Copy</button><pre class="prism-code language-yaml codeBlock_1wn8"><div class="codeBlockLines_3HrO" style="color:#bfc7d5;background-color:#292d3e"><div class="token-line" style="color:#bfc7d5"><span class="token key atrule">cron</span><span class="token punctuation" style="color:rgb(199, 146, 234)">:</span><span class="token plain"></span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">  </span><span class="token key atrule">instancerecordqueue_interval</span><span class="token punctuation" style="color:rgb(199, 146, 234)">:</span><span class="token plain"> </span><span class="token number" style="color:rgb(247, 140, 108)">10000</span><span class="token plain"></span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain"></span><span class="token key atrule">public</span><span class="token punctuation" style="color:rgb(199, 146, 234)">:</span><span class="token plain"></span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">  </span><span class="token key atrule">webservices</span><span class="token punctuation" style="color:rgb(199, 146, 234)">:</span><span class="token plain"></span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">    </span><span class="token key atrule">workflow</span><span class="token punctuation" style="color:rgb(199, 146, 234)">:</span><span class="token plain"></span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">      </span><span class="token key atrule">url</span><span class="token punctuation" style="color:rgb(199, 146, 234)">:</span><span class="token plain"> </span><span class="token string" style="color:rgb(195, 232, 141)">&quot;http://127.0.0.1:5000/&quot;</span><span class="token plain"></span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">    </span><span class="token key atrule">creator</span><span class="token punctuation" style="color:rgb(199, 146, 234)">:</span><span class="token plain"></span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">      </span><span class="token key atrule">url</span><span class="token punctuation" style="color:rgb(199, 146, 234)">:</span><span class="token plain"> </span><span class="token string" style="color:rgb(195, 232, 141)">&quot;http://127.0.0.1:5000/&quot;</span></div></div></pre></div></div><p>其中，public.webservices.workflow.url及public.webservices.creator.url需与env.ROOT_URL相一致。</p><p>项目配置文件修改后，重启服务即可。</p></div></article><div class="margin-vert--lg"><nav class="pagination-nav"><div class="pagination-nav__item"><a class="pagination-nav__link" href="/developer/app"><div class="pagination-nav__link--sublabel">Previous</div><div class="pagination-nav__link--label">« 应用</div></a></div><div class="pagination-nav__item pagination-nav__item--next"><a class="pagination-nav__link" href="/developer/reports"><div class="pagination-nav__link--sublabel">Next</div><div class="pagination-nav__link--label">统计报表 »</div></a></div></nav></div></div></div><div class="col col--3"><div class="tableOfContents_tVyB"><ul class="contents contents__left-border"><li><a href="#从审批表单到业务台账" class="contents__link">从审批表单到业务台账</a><ul><li><a href="#归档配置" class="contents__link">归档配置</a></li><li><a href="#自动同步" class="contents__link">自动同步</a></li></ul></li><li><a href="#从业务台账发起审批" class="contents__link">从业务台账发起审批</a><ul><li><a href="#业务逻辑" class="contents__link">业务逻辑</a></li><li><a href="#界面显示" class="contents__link">界面显示</a></li></ul></li><li><a href="#配置对象与流程映射关系" class="contents__link">配置对象与流程映射关系</a></li><li><a href="#启用对象流程映射" class="contents__link">启用对象流程映射</a></li></ul></div></div></div></div></div></main></div></div><footer class="footer footer--dark"><div class="container"><div class="row footer__links"><div class="col footer__col"><h4 class="footer__title">初识华炎？</h4><ul class="footer__items"><li class="footer__item"><a class="footer__link-item" href="/platform/lowcode/">低代码</a></li><li class="footer__item"><a class="footer__link-item" href="/platform/no-code/">零代码/无代码</a></li><li class="footer__item"><a class="footer__link-item" href="/platform/">开源低代码开发平台</a></li><li class="footer__item"><a class="footer__link-item" target="_blank" rel="noopener noreferrer" href="/platform/cases/">数字化转型</a></li></ul></div><div class="col footer__col"><h4 class="footer__title">解决方案</h4><ul class="footer__items"><li class="footer__item"><a class="footer__link-item" href="/oa/">OA办公系统</a></li><li class="footer__item"><a class="footer__link-item" target="_blank" rel="noopener noreferrer" href="/solutions/group/">集团管控</a></li><li class="footer__item"><a class="footer__link-item" target="_blank" rel="noopener noreferrer" href="/products/contract/">合同管理</a></li><li class="footer__item"><a class="footer__link-item" target="_blank" rel="noopener noreferrer" href="/solutions/workflow/">流程审批</a></li></ul></div><div class="col footer__col"><h4 class="footer__title">技术支持</h4><ul class="footer__items"><li class="footer__item"><a class="footer__link-item">销售热线：400-820-1612</a></li><li class="footer__item"><a class="footer__link-item" href="/company/contact-us">在线咨询</a></li><li class="footer__item"><a class="footer__link-item" href="/blog">最新动态</a></li></ul></div></div><div class="text--center">Copyright © 2020 上海华炎软件科技有限公司. <a href="http://www.beian.miit.gov.cn/" target="_blank" class="footer__link-item"> 沪ICP备09089283号</a></div></div></footer>
 </div>
 
-<script src="/styles.293c492b.js"></script>
+<script src="/styles.c397fbc8.js"></script>
 
-<script src="/runtime~main.5a1e64af.js"></script>
+<script src="/runtime~main.afb046f2.js"></script>
 
-<script src="/main.5c5c5bce.js"></script>
+<script src="/main.9877487d.js"></script>
 
 <script src="/1.58c4c4fd.js"></script>
 
-<script src="/2.4de1974e.js"></script>
+<script src="/2.1c4b43bc.js"></script>
 
-<script src="/3.6519041c.js"></script>
+<script src="/3.03e63236.js"></script>
 
-<script src="/1be78505.2da41e46.js"></script>
+<script src="/1be78505.af771906.js"></script>
 
-<script src="/ec1ed54d.2bf489fd.js"></script>
+<script src="/ec1ed54d.ca975740.js"></script>
 
-<script src="/17896441.076ebdf2.js"></script>
+<script src="/17896441.6793ca1f.js"></script>
 
-<script src="/426eebae.43f135f6.js"></script>
+<script src="/fbfb8c0a.7018a745.js"></script>
 
 
 </body>

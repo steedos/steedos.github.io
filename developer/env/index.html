@@ -8,33 +8,33 @@
 
 <title data-react-helmet="true">环境变量 | Steedos 开发文档</title>
 
-<meta data-react-helmet="true" http-equiv="x-ua-compatible" content="ie=edge"><meta data-react-helmet="true" name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta data-react-helmet="true" property="og:image" content="https://www.steedos.com/img/icon_blue.png"><meta data-react-helmet="true" property="twitter:image" content="https://www.steedos.com/img/icon_blue.png"><meta data-react-helmet="true" name="twitter:image:alt" content="Image for 华炎"><meta data-react-helmet="true" name="twitter:card" content="summary"><meta data-react-helmet="true" property="og:title" content="环境变量 | Steedos 开发文档"><meta data-react-helmet="true" name="description" content=".env，用于配置环境变量，位于项目的根目录。"><meta data-react-helmet="true" property="og:description" content=".env，用于配置环境变量，位于项目的根目录。"><meta data-react-helmet="true" name="keywords" content="oa,开发平台,开发工具,低代码,快速开发平台,开源"><meta data-react-helmet="true" property="og:url" content="https://www.steedos.com/developer/env">
+<meta data-react-helmet="true" http-equiv="x-ua-compatible" content="ie=edge"><meta data-react-helmet="true" name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta data-react-helmet="true" property="og:image" content="https://www.steedos.com/img/icon_blue.png"><meta data-react-helmet="true" property="twitter:image" content="https://www.steedos.com/img/icon_blue.png"><meta data-react-helmet="true" name="twitter:image:alt" content="Image for 华炎"><meta data-react-helmet="true" name="twitter:card" content="summary"><meta data-react-helmet="true" property="og:title" content="环境变量 | Steedos 开发文档"><meta data-react-helmet="true" name="description" content=".env，用于配置环境变量，位于项目的根目录。"><meta data-react-helmet="true" property="og:description" content=".env，用于配置环境变量，位于项目的根目录。"><meta data-react-helmet="true" name="keywords" content="oa,开发平台,开发工具,低代码,快速开发平台,开源"><meta data-react-helmet="true" property="og:url" content="https://www.steedos.com/developer/env">
 
 <link data-react-helmet="true" rel="shortcut icon" href="/img/icon_blue.png">
 
 
-<link rel="stylesheet" href="/styles.57125e5c.css">
+<link rel="stylesheet" href="/styles.dfa08393.css">
 
 
-<link rel="preload" href="/styles.293c492b.js" as="script">
+<link rel="preload" href="/styles.c397fbc8.js" as="script">
 
-<link rel="preload" href="/runtime~main.5a1e64af.js" as="script">
+<link rel="preload" href="/runtime~main.afb046f2.js" as="script">
 
-<link rel="preload" href="/main.5c5c5bce.js" as="script">
+<link rel="preload" href="/main.9877487d.js" as="script">
 
 <link rel="preload" href="/1.58c4c4fd.js" as="script">
 
-<link rel="preload" href="/2.4de1974e.js" as="script">
+<link rel="preload" href="/2.1c4b43bc.js" as="script">
 
-<link rel="preload" href="/3.6519041c.js" as="script">
+<link rel="preload" href="/3.03e63236.js" as="script">
 
-<link rel="preload" href="/1be78505.2da41e46.js" as="script">
+<link rel="preload" href="/1be78505.af771906.js" as="script">
 
-<link rel="preload" href="/ec1ed54d.2bf489fd.js" as="script">
+<link rel="preload" href="/ec1ed54d.ca975740.js" as="script">
 
-<link rel="preload" href="/17896441.076ebdf2.js" as="script">
+<link rel="preload" href="/17896441.6793ca1f.js" as="script">
 
-<link rel="preload" href="/d63f4a38.e6fd0334.js" as="script">
+<link rel="preload" href="/1fdcdc8e.b5751ddf.js" as="script">
 
 </head>
 <body>
@@ -55,25 +55,25 @@
         </style><div class="padding-vert--lg"><div class="container"><div class="row"><div class="col col--9"><div class="docItemContainer_1tAC"><article><header><h1 class="docTitle_cWlf">环境变量</h1></header><div class="markdown"><p>.env，用于配置环境变量，位于项目的根目录。</p><p>如果是多人协作同一个项目的时候，推荐各自新建 .env.local 来替代 .env 。</p><blockquote><p>如果存在文件.env.local，系统启动时，就从文件.env.local中读取环境变量。反之，如果不存在文件.env.local，系统启动时，则从文件.env中读取环境变量。</p></blockquote><h2><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="默认的环境变量"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#默认的环境变量" title="Direct link to heading">#</a>默认的环境变量</h2><p>项目创建后，默认的环境变量包括：</p><div class="mdxCodeBlock_iHAB"><div class="codeBlockContent_3RXF"><button type="button" aria-label="Copy code to clipboard" class="copyButton_1PCb">Copy</button><pre class="prism-code language-yml codeBlock_1wn8"><div class="codeBlockLines_3HrO" style="color:#bfc7d5;background-color:#292d3e"><div class="token-line" style="color:#bfc7d5"><span class="token plain">MONGO_URL=mongodb</span><span class="token punctuation" style="color:rgb(199, 146, 234)">:</span><span class="token plain">//127.0.0.1</span><span class="token punctuation" style="color:rgb(199, 146, 234)">:</span><span class="token plain">27017/steedos</span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">PORT=5000</span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">ROOT_URL=http</span><span class="token punctuation" style="color:rgb(199, 146, 234)">:</span><span class="token plain">//127.0.0.1</span><span class="token punctuation" style="color:rgb(199, 146, 234)">:</span><span class="token number" style="color:rgb(247, 140, 108)">5000</span></div></div></pre></div></div><p>可按需修改这些环境变量的值。修改后，重启服务即生效。</p><ul><li>MONGO_URL ： MongoDB的连接URL</li><li>PORT ： 系统的端口号 </li><li>ROOT_URL ： 系统的访问网址，建议改用本机的IP地址。这样，在其他机器就可以用ROOT_URL来访问系统了。</li></ul><h2><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="自定义环境变量"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#自定义环境变量" title="Direct link to heading">#</a>自定义环境变量</h2><p>可以在.env.local / .env 中，按需配置自定义的环境变量。 自定义的环境变量主要服务于<a href="https://www.steedos.com/developer/steedos_config">steedos-config.yml</a> 。</p><p>例如，在.env.local中添加自定义的环境变量</p><div class="mdxCodeBlock_iHAB"><div class="codeBlockContent_3RXF"><button type="button" aria-label="Copy code to clipboard" class="copyButton_1PCb">Copy</button><pre class="prism-code language-yml codeBlock_1wn8"><div class="codeBlockLines_3HrO" style="color:#bfc7d5;background-color:#292d3e"><div class="token-line" style="color:#bfc7d5"><span class="token plain">ENV_CFS_STORE=local</span></div></div></pre></div></div><p>定义环境变量ENV_CFS_STORE=local 后，就可以在steedos-config.yml 里引用它。</p><div class="mdxCodeBlock_iHAB"><div class="codeBlockContent_3RXF"><button type="button" aria-label="Copy code to clipboard" class="copyButton_1PCb">Copy</button><pre class="prism-code language-yml codeBlock_1wn8"><div class="codeBlockLines_3HrO" style="color:#bfc7d5;background-color:#292d3e"><div class="token-line" style="color:#bfc7d5"><span class="token key atrule">public</span><span class="token punctuation" style="color:rgb(199, 146, 234)">:</span><span class="token plain"></span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">  </span><span class="token key atrule">cfs</span><span class="token punctuation" style="color:rgb(199, 146, 234)">:</span><span class="token plain"></span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">    </span><span class="token key atrule">storage</span><span class="token punctuation" style="color:rgb(199, 146, 234)">:</span><span class="token plain"> $</span><span class="token punctuation" style="color:rgb(199, 146, 234)">{</span><span class="token plain">ENV_CFS_STORE</span><span class="token punctuation" style="color:rgb(199, 146, 234)">}</span><span class="token plain"> </span><span class="token comment" style="color:rgb(105, 112, 152);font-style:italic"># 通过${ENV_CFS_STORE}获取在.env.local中添加的变量的值</span></div></div></pre></div></div></div></article><div class="margin-vert--lg"><nav class="pagination-nav"><div class="pagination-nav__item"><a class="pagination-nav__link" href="/developer/steedos_config"><div class="pagination-nav__link--sublabel">Previous</div><div class="pagination-nav__link--label">« steedos-config</div></a></div><div class="pagination-nav__item pagination-nav__item--next"><a class="pagination-nav__link" href="/developer/objectql_connection"><div class="pagination-nav__link--sublabel">Next</div><div class="pagination-nav__link--label">数据库连接 »</div></a></div></nav></div></div></div><div class="col col--3"><div class="tableOfContents_tVyB"><ul class="contents contents__left-border"><li><a href="#默认的环境变量" class="contents__link">默认的环境变量</a></li><li><a href="#自定义环境变量" class="contents__link">自定义环境变量</a></li></ul></div></div></div></div></div></main></div></div><footer class="footer footer--dark"><div class="container"><div class="row footer__links"><div class="col footer__col"><h4 class="footer__title">初识华炎？</h4><ul class="footer__items"><li class="footer__item"><a class="footer__link-item" href="/platform/lowcode/">低代码</a></li><li class="footer__item"><a class="footer__link-item" href="/platform/no-code/">零代码/无代码</a></li><li class="footer__item"><a class="footer__link-item" href="/platform/">开源低代码开发平台</a></li><li class="footer__item"><a class="footer__link-item" target="_blank" rel="noopener noreferrer" href="/platform/cases/">数字化转型</a></li></ul></div><div class="col footer__col"><h4 class="footer__title">解决方案</h4><ul class="footer__items"><li class="footer__item"><a class="footer__link-item" href="/oa/">OA办公系统</a></li><li class="footer__item"><a class="footer__link-item" target="_blank" rel="noopener noreferrer" href="/solutions/group/">集团管控</a></li><li class="footer__item"><a class="footer__link-item" target="_blank" rel="noopener noreferrer" href="/products/contract/">合同管理</a></li><li class="footer__item"><a class="footer__link-item" target="_blank" rel="noopener noreferrer" href="/solutions/workflow/">流程审批</a></li></ul></div><div class="col footer__col"><h4 class="footer__title">技术支持</h4><ul class="footer__items"><li class="footer__item"><a class="footer__link-item">销售热线：400-820-1612</a></li><li class="footer__item"><a class="footer__link-item" href="/company/contact-us">在线咨询</a></li><li class="footer__item"><a class="footer__link-item" href="/blog">最新动态</a></li></ul></div></div><div class="text--center">Copyright © 2020 上海华炎软件科技有限公司. <a href="http://www.beian.miit.gov.cn/" target="_blank" class="footer__link-item"> 沪ICP备09089283号</a></div></div></footer>
 </div>
 
-<script src="/styles.293c492b.js"></script>
+<script src="/styles.c397fbc8.js"></script>
 
-<script src="/runtime~main.5a1e64af.js"></script>
+<script src="/runtime~main.afb046f2.js"></script>
 
-<script src="/main.5c5c5bce.js"></script>
+<script src="/main.9877487d.js"></script>
 
 <script src="/1.58c4c4fd.js"></script>
 
-<script src="/2.4de1974e.js"></script>
+<script src="/2.1c4b43bc.js"></script>
 
-<script src="/3.6519041c.js"></script>
+<script src="/3.03e63236.js"></script>
 
-<script src="/1be78505.2da41e46.js"></script>
+<script src="/1be78505.af771906.js"></script>
 
-<script src="/ec1ed54d.2bf489fd.js"></script>
+<script src="/ec1ed54d.ca975740.js"></script>
 
-<script src="/17896441.076ebdf2.js"></script>
+<script src="/17896441.6793ca1f.js"></script>
 
-<script src="/d63f4a38.e6fd0334.js"></script>
+<script src="/1fdcdc8e.b5751ddf.js"></script>
 
 
 </body>

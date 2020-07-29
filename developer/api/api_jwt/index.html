@@ -8,33 +8,33 @@
 
 <title data-react-helmet="true">JWT | 华炎API</title>
 
-<meta data-react-helmet="true" http-equiv="x-ua-compatible" content="ie=edge"><meta data-react-helmet="true" name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta data-react-helmet="true" property="og:image" content="https://www.steedos.com/img/icon_blue.png"><meta data-react-helmet="true" property="twitter:image" content="https://www.steedos.com/img/icon_blue.png"><meta data-react-helmet="true" name="twitter:image:alt" content="Image for 华炎"><meta data-react-helmet="true" name="twitter:card" content="summary"><meta data-react-helmet="true" property="og:title" content="JWT | 华炎API"><meta data-react-helmet="true" name="description" content="### 关于JWT"><meta data-react-helmet="true" property="og:description" content="### 关于JWT"><meta data-react-helmet="true" name="keywords" content="oa,开发平台,开发工具,低代码,快速开发平台,开源"><meta data-react-helmet="true" property="og:url" content="https://www.steedos.com/developer/api/api_jwt">
+<meta data-react-helmet="true" http-equiv="x-ua-compatible" content="ie=edge"><meta data-react-helmet="true" name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta data-react-helmet="true" property="og:image" content="https://www.steedos.com/img/icon_blue.png"><meta data-react-helmet="true" property="twitter:image" content="https://www.steedos.com/img/icon_blue.png"><meta data-react-helmet="true" name="twitter:image:alt" content="Image for 华炎"><meta data-react-helmet="true" name="twitter:card" content="summary"><meta data-react-helmet="true" property="og:title" content="JWT | 华炎API"><meta data-react-helmet="true" name="description" content="### 关于JWT"><meta data-react-helmet="true" property="og:description" content="### 关于JWT"><meta data-react-helmet="true" name="keywords" content="oa,开发平台,开发工具,低代码,快速开发平台,开源"><meta data-react-helmet="true" property="og:url" content="https://www.steedos.com/developer/api/api_jwt">
 
 <link data-react-helmet="true" rel="shortcut icon" href="/img/icon_blue.png">
 
 
-<link rel="stylesheet" href="/styles.57125e5c.css">
+<link rel="stylesheet" href="/styles.dfa08393.css">
 
 
-<link rel="preload" href="/styles.293c492b.js" as="script">
+<link rel="preload" href="/styles.c397fbc8.js" as="script">
 
-<link rel="preload" href="/runtime~main.5a1e64af.js" as="script">
+<link rel="preload" href="/runtime~main.afb046f2.js" as="script">
 
-<link rel="preload" href="/main.5c5c5bce.js" as="script">
+<link rel="preload" href="/main.9877487d.js" as="script">
 
 <link rel="preload" href="/1.58c4c4fd.js" as="script">
 
-<link rel="preload" href="/2.4de1974e.js" as="script">
+<link rel="preload" href="/2.1c4b43bc.js" as="script">
 
-<link rel="preload" href="/3.6519041c.js" as="script">
+<link rel="preload" href="/3.03e63236.js" as="script">
 
-<link rel="preload" href="/1be78505.2da41e46.js" as="script">
+<link rel="preload" href="/1be78505.af771906.js" as="script">
 
-<link rel="preload" href="/ec1ed54d.2bf489fd.js" as="script">
+<link rel="preload" href="/ec1ed54d.ca975740.js" as="script">
 
-<link rel="preload" href="/17896441.076ebdf2.js" as="script">
+<link rel="preload" href="/17896441.6793ca1f.js" as="script">
 
-<link rel="preload" href="/b0d31eec.b2662555.js" as="script">
+<link rel="preload" href="/f72690d0.73ee9c10.js" as="script">
 
 </head>
 <body>
@@ -55,25 +55,25 @@
         </style><div class="padding-vert--lg"><div class="container"><div class="row"><div class="col col--9"><div class="docItemContainer_1tAC"><article><header><h1 class="docTitle_cWlf">JWT</h1></header><div class="markdown"><h3><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="关于jwt"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#关于jwt" title="Direct link to heading">#</a>关于JWT</h3><ul><li>Json web token (JWT), 是为了在网络应用环境间传递声明而执行的一种基于JSON的开放标准.该token被设计为紧凑且安全的，特别适用于分布式站点的单点登录（SSO）场景。JWT的声明一般被用来在身份提供者和服务提供者间传递被认证的用户身份信息，以便于从资源服务器获取资源，也可以增加一些额外的其它业务逻辑所必须的声明信息，该token也可直接被用于认证，也可被加密。</li><li>官网：<a href="https://jwt.io/">https://jwt.io/</a></li></ul><h3><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="使用jwt单点登录到steedos应用中"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#使用jwt单点登录到steedos应用中" title="Direct link to heading">#</a>使用JWT单点登录到Steedos应用中</h3><ul><li>以<a href="https://github.com/steedos/steedos-contracts-app">华炎合同管理系统</a>为例，在本地启动合同管理系统访问地址为<code>http://127.0.0.1:5000</code></li><li>进入系统后在<code>设置-高级</code>里新建<code>OAuth2应用</code>, <code>客户端ID</code>作为生成JWT的payload.iss的值，<code>密钥</code>则作为生成JWT时的secret值，这两个字段的值需要提供给其他系统保存以生成JWT</li><li>生成JWT过程如下,以nodejs为例：</li></ul><div class="mdxCodeBlock_iHAB"><div class="codeBlockContent_3RXF"><button type="button" aria-label="Copy code to clipboard" class="copyButton_1PCb">Copy</button><pre class="prism-code language-js codeBlock_1wn8"><div class="codeBlockLines_3HrO" style="color:#bfc7d5;background-color:#292d3e"><div class="token-line" style="color:#bfc7d5"><span class="token keyword" style="font-style:italic">var</span><span class="token plain"> jwt </span><span class="token operator" style="color:rgb(137, 221, 255)">=</span><span class="token plain"> </span><span class="token function" style="color:rgb(130, 170, 255)">require</span><span class="token punctuation" style="color:rgb(199, 146, 234)">(</span><span class="token string" style="color:rgb(195, 232, 141)">&#x27;jsonwebtoken&#x27;</span><span class="token punctuation" style="color:rgb(199, 146, 234)">)</span><span class="token punctuation" style="color:rgb(199, 146, 234)">;</span><span class="token plain"></span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain"></span><span class="token keyword" style="font-style:italic">var</span><span class="token plain"> username </span><span class="token operator" style="color:rgb(137, 221, 255)">=</span><span class="token plain"> </span><span class="token string" style="color:rgb(195, 232, 141)">&#x27;Administrator&#x27;</span><span class="token punctuation" style="color:rgb(199, 146, 234)">;</span><span class="token plain"> </span><span class="token comment" style="color:rgb(105, 112, 152);font-style:italic">// 用户名用于识别当前用户身份</span><span class="token plain"></span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain"></span><span class="token keyword" style="font-style:italic">var</span><span class="token plain"> iss </span><span class="token operator" style="color:rgb(137, 221, 255)">=</span><span class="token plain"> </span><span class="token string" style="color:rgb(195, 232, 141)">&#x27;e37DceLdtx2Qedc6o&#x27;</span><span class="token punctuation" style="color:rgb(199, 146, 234)">;</span><span class="token plain"> </span><span class="token comment" style="color:rgb(105, 112, 152);font-style:italic">// OAuth2应用的客户端ID</span><span class="token plain"></span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain"></span><span class="token keyword" style="font-style:italic">var</span><span class="token plain"> secret </span><span class="token operator" style="color:rgb(137, 221, 255)">=</span><span class="token plain"> </span><span class="token string" style="color:rgb(195, 232, 141)">&#x27;7q5G21ymbDxqBcAFzyKPro84FKDN6FclMOkz5rZ_kUg&#x27;</span><span class="token punctuation" style="color:rgb(199, 146, 234)">;</span><span class="token plain"> </span><span class="token comment" style="color:rgb(105, 112, 152);font-style:italic">// OAuth2应用的密钥</span><span class="token plain"></span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain"></span><span class="token keyword" style="font-style:italic">var</span><span class="token plain"> redirect_url </span><span class="token operator" style="color:rgb(137, 221, 255)">=</span><span class="token plain"> </span><span class="token string" style="color:rgb(195, 232, 141)">&#x27;http://127.0.0.1:5000/app/admin/OAuth2Clients/grid/all&#x27;</span><span class="token punctuation" style="color:rgb(199, 146, 234)">;</span><span class="token plain"> </span><span class="token comment" style="color:rgb(105, 112, 152);font-style:italic">// 跳转地址</span><span class="token plain"></span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain"></span><span class="token keyword" style="font-style:italic">var</span><span class="token plain"> token </span><span class="token operator" style="color:rgb(137, 221, 255)">=</span><span class="token plain"> jwt</span><span class="token punctuation" style="color:rgb(199, 146, 234)">.</span><span class="token method function property-access" style="color:rgb(130, 170, 255)">sign</span><span class="token punctuation" style="color:rgb(199, 146, 234)">(</span><span class="token punctuation" style="color:rgb(199, 146, 234)">{</span><span class="token plain"> username</span><span class="token operator" style="color:rgb(137, 221, 255)">:</span><span class="token plain"> username</span><span class="token punctuation" style="color:rgb(199, 146, 234)">,</span><span class="token plain"> redirect_url</span><span class="token operator" style="color:rgb(137, 221, 255)">:</span><span class="token plain"> redirect_url</span><span class="token punctuation" style="color:rgb(199, 146, 234)">,</span><span class="token plain"> iss</span><span class="token operator" style="color:rgb(137, 221, 255)">:</span><span class="token plain"> iss </span><span class="token punctuation" style="color:rgb(199, 146, 234)">}</span><span class="token punctuation" style="color:rgb(199, 146, 234)">,</span><span class="token plain"> secret</span><span class="token punctuation" style="color:rgb(199, 146, 234)">)</span><span class="token punctuation" style="color:rgb(199, 146, 234)">;</span><span class="token plain"></span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain"></span><span class="token console class-name" style="color:rgb(255, 203, 107)">console</span><span class="token punctuation" style="color:rgb(199, 146, 234)">.</span><span class="token method function property-access" style="color:rgb(130, 170, 255)">log</span><span class="token punctuation" style="color:rgb(199, 146, 234)">(</span><span class="token string" style="color:rgb(195, 232, 141)">&#x27;token: &#x27;</span><span class="token punctuation" style="color:rgb(199, 146, 234)">,</span><span class="token plain"> token</span><span class="token punctuation" style="color:rgb(199, 146, 234)">)</span><span class="token punctuation" style="color:rgb(199, 146, 234)">;</span></div></div></pre></div></div><ul><li>生成好token之后即可访问单点登录接口<code>GET /jwt/sso</code>，并设置query参数如：</li></ul><div class="mdxCodeBlock_iHAB"><div class="codeBlockContent_3RXF"><button type="button" aria-label="Copy code to clipboard" class="copyButton_1PCb">Copy</button><pre class="prism-code language-js codeBlock_1wn8"><div class="codeBlockLines_3HrO" style="color:#bfc7d5;background-color:#292d3e"><div class="token-line" style="color:#bfc7d5"><span class="token function" style="color:rgb(130, 170, 255)">fetch</span><span class="token punctuation" style="color:rgb(199, 146, 234)">(</span><span class="token string" style="color:rgb(195, 232, 141)">&#x27;http://127.0.0.1:5000/jwt/sso?jwt_token=xxxxxxxxx&#x27;</span><span class="token punctuation" style="color:rgb(199, 146, 234)">,</span><span class="token plain"> </span><span class="token punctuation" style="color:rgb(199, 146, 234)">{</span><span class="token plain"></span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain"></span><span class="token punctuation" style="color:rgb(199, 146, 234)">}</span><span class="token punctuation" style="color:rgb(199, 146, 234)">)</span></div></div></pre></div></div><ul><li>请求成功则会跳转到redirect_url，完成单点登录</li></ul></div></article><div class="margin-vert--lg"><nav class="pagination-nav"><div class="pagination-nav__item"><a class="pagination-nav__link" href="/developer/api/graphql_delete"><div class="pagination-nav__link--sublabel">Previous</div><div class="pagination-nav__link--label">« 删除</div></a></div><div class="pagination-nav__item pagination-nav__item--next"></div></nav></div></div></div><div class="col col--3"><div class="tableOfContents_tVyB"><ul class="contents contents__left-border"><li><a href="#关于jwt" class="contents__link">关于JWT</a></li><li><a href="#使用jwt单点登录到steedos应用中" class="contents__link">使用JWT单点登录到Steedos应用中</a></li></ul></div></div></div></div></div></main></div></div><footer class="footer footer--dark"><div class="container"><div class="row footer__links"><div class="col footer__col"><h4 class="footer__title">初识华炎？</h4><ul class="footer__items"><li class="footer__item"><a class="footer__link-item" href="/platform/lowcode/">低代码</a></li><li class="footer__item"><a class="footer__link-item" href="/platform/no-code/">零代码/无代码</a></li><li class="footer__item"><a class="footer__link-item" href="/platform/">开源低代码开发平台</a></li><li class="footer__item"><a class="footer__link-item" target="_blank" rel="noopener noreferrer" href="/platform/cases/">数字化转型</a></li></ul></div><div class="col footer__col"><h4 class="footer__title">解决方案</h4><ul class="footer__items"><li class="footer__item"><a class="footer__link-item" href="/oa/">OA办公系统</a></li><li class="footer__item"><a class="footer__link-item" target="_blank" rel="noopener noreferrer" href="/solutions/group/">集团管控</a></li><li class="footer__item"><a class="footer__link-item" target="_blank" rel="noopener noreferrer" href="/products/contract/">合同管理</a></li><li class="footer__item"><a class="footer__link-item" target="_blank" rel="noopener noreferrer" href="/solutions/workflow/">流程审批</a></li></ul></div><div class="col footer__col"><h4 class="footer__title">技术支持</h4><ul class="footer__items"><li class="footer__item"><a class="footer__link-item">销售热线：400-820-1612</a></li><li class="footer__item"><a class="footer__link-item" href="/company/contact-us">在线咨询</a></li><li class="footer__item"><a class="footer__link-item" href="/blog">最新动态</a></li></ul></div></div><div class="text--center">Copyright © 2020 上海华炎软件科技有限公司. <a href="http://www.beian.miit.gov.cn/" target="_blank" class="footer__link-item"> 沪ICP备09089283号</a></div></div></footer>
 </div>
 
-<script src="/styles.293c492b.js"></script>
+<script src="/styles.c397fbc8.js"></script>
 
-<script src="/runtime~main.5a1e64af.js"></script>
+<script src="/runtime~main.afb046f2.js"></script>
 
-<script src="/main.5c5c5bce.js"></script>
+<script src="/main.9877487d.js"></script>
 
 <script src="/1.58c4c4fd.js"></script>
 
-<script src="/2.4de1974e.js"></script>
+<script src="/2.1c4b43bc.js"></script>
 
-<script src="/3.6519041c.js"></script>
+<script src="/3.03e63236.js"></script>
 
-<script src="/1be78505.2da41e46.js"></script>
+<script src="/1be78505.af771906.js"></script>
 
-<script src="/ec1ed54d.2bf489fd.js"></script>
+<script src="/ec1ed54d.ca975740.js"></script>
 
-<script src="/17896441.076ebdf2.js"></script>
+<script src="/17896441.6793ca1f.js"></script>
 
-<script src="/b0d31eec.b2662555.js"></script>
+<script src="/f72690d0.73ee9c10.js"></script>
 
 
 </body>
