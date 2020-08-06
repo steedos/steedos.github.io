@@ -5,38 +5,38 @@
 <meta name="viewport" content="width=device-width">
 <meta name="generator" content="Docusaurus v2.0.0-alpha.54">
 <script>var _hmt=_hmt||[];!function(){var e=document.createElement("script");e.src="https://hm.baidu.com/hm.js?8e30e1c152eed21154e2090d348e7dec";var t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t)}()</script>
-<script src="http://imgcache.qq.com/open/qcloud/video/tcplayer/lib/hls.min.0.8.8.js"></script>
+<script src="https://imgcache.qq.com/open/qcloud/video/tcplayer/lib/hls.min.0.8.8.js"></script>
 <script src="https://imgcache.qq.com/open/qcloud/video/tcplayer/tcplayer.min.js"></script>
 
 <title data-react-helmet="true">服务端插件 | 华炎</title>
 
 <meta data-react-helmet="true" http-equiv="x-ua-compatible" content="ie=edge"><meta data-react-helmet="true" name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta data-react-helmet="true" property="og:image" content="https://www.steedos.com/img/icon_blue.png"><meta data-react-helmet="true" property="twitter:image" content="https://www.steedos.com/img/icon_blue.png"><meta data-react-helmet="true" name="twitter:image:alt" content="Image for 华炎"><meta data-react-helmet="true" name="twitter:card" content="summary"><meta data-react-helmet="true" property="og:title" content="服务端插件 | 华炎"><meta data-react-helmet="true" name="description" content="通过定义服务端插件，开发人员可以创建/继承业务对象，或是开发服务端API。"><meta data-react-helmet="true" property="og:description" content="通过定义服务端插件，开发人员可以创建/继承业务对象，或是开发服务端API。"><meta data-react-helmet="true" name="keywords" content="oa,开发平台,开发工具,低代码,快速开发平台,开源"><meta data-react-helmet="true" property="og:url" content="https://www.steedos.com/plugins/plugin_server">
 
-<link data-react-helmet="true" href="http://imgcache.qq.com/open/qcloud/video/tcplayer/tcplayer.css" rel="stylesheet"><link data-react-helmet="true" rel="shortcut icon" href="/img/icon_blue.png">
+<link data-react-helmet="true" href="https://imgcache.qq.com/open/qcloud/video/tcplayer/tcplayer.css" rel="stylesheet"><link data-react-helmet="true" rel="shortcut icon" href="/img/icon_blue.png">
 
 
 <link rel="stylesheet" href="/styles.6255be75.css">
 
 
-<link rel="preload" href="/styles.0ca70e75.js" as="script">
+<link rel="preload" href="/styles.6a574cb2.js" as="script">
 
-<link rel="preload" href="/runtime~main.8efedb5e.js" as="script">
+<link rel="preload" href="/runtime~main.aa066c42.js" as="script">
 
-<link rel="preload" href="/main.748b5d97.js" as="script">
+<link rel="preload" href="/main.5c16affc.js" as="script">
 
-<link rel="preload" href="/1.1a63ecee.js" as="script">
+<link rel="preload" href="/1.3b316f25.js" as="script">
 
-<link rel="preload" href="/2.0e918486.js" as="script">
+<link rel="preload" href="/2.5ed67586.js" as="script">
 
-<link rel="preload" href="/3.da336bdb.js" as="script">
+<link rel="preload" href="/3.30e1bd51.js" as="script">
 
-<link rel="preload" href="/1be78505.8a241c23.js" as="script">
+<link rel="preload" href="/1be78505.418846b9.js" as="script">
 
-<link rel="preload" href="/ec1ed54d.9c981212.js" as="script">
+<link rel="preload" href="/ec1ed54d.456fc96f.js" as="script">
 
-<link rel="preload" href="/17896441.ab6beed7.js" as="script">
+<link rel="preload" href="/17896441.e2a84acf.js" as="script">
 
-<link rel="preload" href="/93e3bd17.535127c3.js" as="script">
+<link rel="preload" href="/93e3bd17.0d4667b9.js" as="script">
 
 </head>
 <body>
@@ -59,25 +59,25 @@
 </span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain"></span><span class="token keyword module" style="font-style:italic">export</span><span class="token plain"> </span><span class="token keyword" style="font-style:italic">function</span><span class="token plain"> </span><span class="token function" style="color:rgb(130, 170, 255)">init</span><span class="token punctuation" style="color:rgb(199, 146, 234)">(</span><span class="token parameter">context</span><span class="token punctuation" style="color:rgb(199, 146, 234)">)</span><span class="token plain"> </span><span class="token punctuation" style="color:rgb(199, 146, 234)">{</span><span class="token plain"></span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">    </span><span class="token comment" style="color:rgb(105, 112, 152);font-style:italic">// 执行插件初始化。</span><span class="token plain"></span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">    context</span><span class="token punctuation" style="color:rgb(199, 146, 234)">.</span><span class="token property-access">app</span><span class="token punctuation" style="color:rgb(199, 146, 234)">.</span><span class="token method function property-access" style="color:rgb(130, 170, 255)">use</span><span class="token punctuation" style="color:rgb(199, 146, 234)">(</span><span class="token string" style="color:rgb(195, 232, 141)">&#x27;/.plugins/hello-world/api&#x27;</span><span class="token punctuation" style="color:rgb(199, 146, 234)">,</span><span class="token plain"> router</span><span class="token punctuation" style="color:rgb(199, 146, 234)">)</span><span class="token punctuation" style="color:rgb(199, 146, 234)">;</span><span class="token plain"></span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain"></span><span class="token punctuation" style="color:rgb(199, 146, 234)">}</span></div></div></pre></div></div><p>context中包含以下参数：</p><ul><li>app: express 服务端，用于引入路由。</li><li>settings: 项目 steedos-config.yml 中配置的所有参数。</li></ul></div></article><div class="margin-vert--lg"><nav class="pagination-nav"><div class="pagination-nav__item"></div><div class="pagination-nav__item pagination-nav__item--next"></div></nav></div></div></div><div class="col col--3"><div class="tableOfContents_tVyB"><ul class="contents contents__left-border"><li><a href="#创建插件" class="contents__link">创建插件</a></li><li><a href="#初始化插件" class="contents__link">初始化插件</a><ul><li><a href="#插件名称-name" class="contents__link">插件名称 name</a></li></ul></li><li><a href="#插件配置" class="contents__link">插件配置</a><ul><li><a href="#定义服务端api" class="contents__link">定义服务端API</a></li><li><a href="#插件初始化" class="contents__link">插件初始化</a></li></ul></li></ul></div></div></div></div></div></main></div></div><footer class="footer footer--dark"><div class="container"><div class="row footer__links"><div class="col footer__col"><h4 class="footer__title">初识华炎？</h4><ul class="footer__items"><li class="footer__item"><a class="footer__link-item" href="/platform/lowcode/">低代码</a></li><li class="footer__item"><a class="footer__link-item" href="/platform/no-code/">零代码/无代码</a></li><li class="footer__item"><a class="footer__link-item" href="/platform/">开源低代码开发平台</a></li><li class="footer__item"><a class="footer__link-item" target="_blank" rel="noopener noreferrer" href="/platform/cases/">数字化转型</a></li></ul></div><div class="col footer__col"><h4 class="footer__title">解决方案</h4><ul class="footer__items"><li class="footer__item"><a class="footer__link-item" href="/oa/">OA办公系统</a></li><li class="footer__item"><a class="footer__link-item" target="_blank" rel="noopener noreferrer" href="/solutions/group/">集团管控</a></li><li class="footer__item"><a class="footer__link-item" target="_blank" rel="noopener noreferrer" href="/products/contract/">合同管理</a></li><li class="footer__item"><a class="footer__link-item" target="_blank" rel="noopener noreferrer" href="/solutions/workflow/">流程审批</a></li></ul></div><div class="col footer__col"><h4 class="footer__title">技术支持</h4><ul class="footer__items"><li class="footer__item"><a class="footer__link-item">销售热线：400-820-1612</a></li><li class="footer__item"><a class="footer__link-item" href="/company/contact-us">在线咨询</a></li><li class="footer__item"><a class="footer__link-item" href="/blog">最新动态</a></li></ul></div></div><div class="text--center">Copyright © 2020 上海华炎软件科技有限公司. <a href="http://www.beian.miit.gov.cn/" target="_blank" class="footer__link-item"> 沪ICP备09089283号</a></div></div></footer>
 </div>
 
-<script src="/styles.0ca70e75.js"></script>
+<script src="/styles.6a574cb2.js"></script>
 
-<script src="/runtime~main.8efedb5e.js"></script>
+<script src="/runtime~main.aa066c42.js"></script>
 
-<script src="/main.748b5d97.js"></script>
+<script src="/main.5c16affc.js"></script>
 
-<script src="/1.1a63ecee.js"></script>
+<script src="/1.3b316f25.js"></script>
 
-<script src="/2.0e918486.js"></script>
+<script src="/2.5ed67586.js"></script>
 
-<script src="/3.da336bdb.js"></script>
+<script src="/3.30e1bd51.js"></script>
 
-<script src="/1be78505.8a241c23.js"></script>
+<script src="/1be78505.418846b9.js"></script>
 
-<script src="/ec1ed54d.9c981212.js"></script>
+<script src="/ec1ed54d.456fc96f.js"></script>
 
-<script src="/17896441.ab6beed7.js"></script>
+<script src="/17896441.e2a84acf.js"></script>
 
-<script src="/93e3bd17.535127c3.js"></script>
+<script src="/93e3bd17.0d4667b9.js"></script>
 
 
 </body>
