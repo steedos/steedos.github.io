@@ -15,28 +15,28 @@
 <link data-react-helmet="true" href="https://imgcache.qq.com/open/qcloud/video/tcplayer/tcplayer.css" rel="stylesheet"><link data-react-helmet="true" rel="shortcut icon" href="/img/icon_blue.png">
 
 
-<link rel="stylesheet" href="/styles.6255be75.css">
+<link rel="stylesheet" href="/styles.dd017c01.css">
 
 
-<link rel="preload" href="/styles.6a574cb2.js" as="script">
+<link rel="preload" href="/styles.0bb50630.js" as="script">
 
-<link rel="preload" href="/runtime~main.aa066c42.js" as="script">
+<link rel="preload" href="/runtime~main.6afe33dd.js" as="script">
 
-<link rel="preload" href="/main.5c16affc.js" as="script">
+<link rel="preload" href="/main.106cbfe1.js" as="script">
 
-<link rel="preload" href="/1.3b316f25.js" as="script">
+<link rel="preload" href="/1.f694ded8.js" as="script">
 
-<link rel="preload" href="/2.5ed67586.js" as="script">
+<link rel="preload" href="/2.8531ccb3.js" as="script">
 
-<link rel="preload" href="/3.30e1bd51.js" as="script">
+<link rel="preload" href="/3.37eae0ca.js" as="script">
 
-<link rel="preload" href="/1be78505.418846b9.js" as="script">
+<link rel="preload" href="/1be78505.62d01586.js" as="script">
 
 <link rel="preload" href="/ec1ed54d.456fc96f.js" as="script">
 
-<link rel="preload" href="/17896441.e2a84acf.js" as="script">
+<link rel="preload" href="/17896441.317408a8.js" as="script">
 
-<link rel="preload" href="/3e7b1f7e.cde57953.js" as="script">
+<link rel="preload" href="/3e7b1f7e.f24095f7.js" as="script">
 
 </head>
 <body>
@@ -61,25 +61,25 @@ filter_fields需定义为数组，元素为对象的字段名称。</p><div clas
 开发人员用代码定义的列表视图默认都是共享视图。</p><h2><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="最近查看视图"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#最近查看视图" title="Direct link to heading">#</a>最近查看视图</h2><p>系统内置了一个recent视图，用于显示用户各自最近查看的记录。开发人员只可以为最近查看视图定义 label、 columns，其他参数不起作用。</p><div class="mdxCodeBlock_iHAB"><div class="codeBlockContent_3RXF"><button type="button" aria-label="Copy code to clipboard" class="copyButton_1PCb">Copy</button><pre class="prism-code language-yaml codeBlock_1wn8"><div class="codeBlockLines_3HrO" style="color:#bfc7d5;background-color:#292d3e"><div class="token-line" style="color:#bfc7d5"><span class="token key atrule">list_views</span><span class="token punctuation" style="color:rgb(199, 146, 234)">:</span><span class="token plain"></span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">  </span><span class="token key atrule">recent</span><span class="token punctuation" style="color:rgb(199, 146, 234)">:</span><span class="token plain"></span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">    </span><span class="token key atrule">label</span><span class="token punctuation" style="color:rgb(199, 146, 234)">:</span><span class="token plain"> 最近查看</span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">    </span><span class="token key atrule">columns</span><span class="token punctuation" style="color:rgb(199, 146, 234)">:</span><span class="token plain"></span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">      </span><span class="token punctuation" style="color:rgb(199, 146, 234)">-</span><span class="token plain"> name</span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">      </span><span class="token punctuation" style="color:rgb(199, 146, 234)">-</span><span class="token plain"> priority</span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">      </span><span class="token punctuation" style="color:rgb(199, 146, 234)">-</span><span class="token plain"> owner</span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">      </span><span class="token punctuation" style="color:rgb(199, 146, 234)">-</span><span class="token plain"> modified</span></div></div></pre></div></div><h2><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="列表视图用户界面"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#列表视图用户界面" title="Direct link to heading">#</a>列表视图用户界面</h2><h3><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="快速编辑"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#快速编辑" title="Direct link to heading">#</a>快速编辑</h3><p>双击列表中的字段，可以快速编辑此字段的内容。</p><h3><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="多行编辑"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#多行编辑" title="Direct link to heading">#</a>多行编辑</h3><p>使用列表左侧的检查框选中多条记录，然后再双击字段，可以一次修改多条记录的内容。</p><h3><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="调整列表样式"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#调整列表样式" title="Direct link to heading">#</a>调整列表样式</h3><p>用户可以拖拉调整字段宽度，以及字段显示的先后顺序。</p><h3><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="数据筛选"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#数据筛选" title="Direct link to heading">#</a>数据筛选</h3><p>点击右侧的过滤器图标，会列出此列表视图中指定的常用过滤字段。选中字段可以设定筛选条件。点击“添加筛选条件”，可以增加新的筛选字段。</p><h3><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="组合排序"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#组合排序" title="Direct link to heading">#</a>组合排序</h3><ul><li>选中需要排序的第一个字段，点击列标题可以排序，再点一次可以切换排序顺序</li><li>在列表题上点击右键，或是按住(SHIFT键)再点击列标题，可以设定多个字段的组合排序。</li></ul></div></article><div class="margin-vert--lg"><nav class="pagination-nav"><div class="pagination-nav__item"><a class="pagination-nav__link" href="/developer/object_field"><div class="pagination-nav__link--sublabel">Previous</div><div class="pagination-nav__link--label">« 字段</div></a></div><div class="pagination-nav__item pagination-nav__item--next"><a class="pagination-nav__link" href="/developer/object_permission"><div class="pagination-nav__link--sublabel">Next</div><div class="pagination-nav__link--label">对象权限 »</div></a></div></nav></div></div></div><div class="col col--3"><div class="tableOfContents_tVyB"><ul class="contents contents__left-border"><li><a href="#列表视图配置" class="contents__link">列表视图配置</a><ul><li><a href="#名称-name" class="contents__link">名称 name</a></li><li><a href="#显示名称-label" class="contents__link">显示名称 label</a></li><li><a href="#过滤条件-filters" class="contents__link">过滤条件 filters</a></li><li><a href="#列-columns" class="contents__link">列 columns</a></li><li><a href="#排序规则-sort" class="contents__link">排序规则 sort</a></li><li><a href="#用户筛选字段-filter_fields" class="contents__link">用户筛选字段 filter_fields</a></li><li><a href="#滚动条样式-scrolling_mode" class="contents__link">滚动条样式 scrolling_mode</a></li><li><a href="#过滤范围-filter_scope" class="contents__link">过滤范围 filter_scope</a></li><li><a href="#共享-shared" class="contents__link">共享 shared</a></li></ul></li><li><a href="#最近查看视图" class="contents__link">最近查看视图</a></li><li><a href="#列表视图用户界面" class="contents__link">列表视图用户界面</a><ul><li><a href="#快速编辑" class="contents__link">快速编辑</a></li><li><a href="#多行编辑" class="contents__link">多行编辑</a></li><li><a href="#调整列表样式" class="contents__link">调整列表样式</a></li><li><a href="#数据筛选" class="contents__link">数据筛选</a></li><li><a href="#组合排序" class="contents__link">组合排序</a></li></ul></li></ul></div></div></div></div></div></main></div></div><footer class="footer footer--dark"><div class="container"><div class="row footer__links"><div class="col footer__col"><h4 class="footer__title">初识华炎？</h4><ul class="footer__items"><li class="footer__item"><a class="footer__link-item" href="/platform/lowcode/">低代码</a></li><li class="footer__item"><a class="footer__link-item" href="/platform/no-code/">零代码/无代码</a></li><li class="footer__item"><a class="footer__link-item" href="/platform/">开源低代码开发平台</a></li><li class="footer__item"><a class="footer__link-item" target="_blank" rel="noopener noreferrer" href="/platform/cases/">数字化转型</a></li></ul></div><div class="col footer__col"><h4 class="footer__title">解决方案</h4><ul class="footer__items"><li class="footer__item"><a class="footer__link-item" href="/oa/">OA办公系统</a></li><li class="footer__item"><a class="footer__link-item" target="_blank" rel="noopener noreferrer" href="/solutions/group/">集团管控</a></li><li class="footer__item"><a class="footer__link-item" target="_blank" rel="noopener noreferrer" href="/products/contract/">合同管理</a></li><li class="footer__item"><a class="footer__link-item" target="_blank" rel="noopener noreferrer" href="/solutions/workflow/">流程审批</a></li></ul></div><div class="col footer__col"><h4 class="footer__title">技术支持</h4><ul class="footer__items"><li class="footer__item"><a class="footer__link-item">销售热线：400-820-1612</a></li><li class="footer__item"><a class="footer__link-item" href="/company/contact-us">在线咨询</a></li><li class="footer__item"><a class="footer__link-item" href="/blog">最新动态</a></li></ul></div></div><div class="text--center">Copyright © 2020 上海华炎软件科技有限公司. <a href="http://www.beian.miit.gov.cn/" target="_blank" class="footer__link-item"> 沪ICP备09089283号</a></div></div></footer>
 </div>
 
-<script src="/styles.6a574cb2.js"></script>
+<script src="/styles.0bb50630.js"></script>
 
-<script src="/runtime~main.aa066c42.js"></script>
+<script src="/runtime~main.6afe33dd.js"></script>
 
-<script src="/main.5c16affc.js"></script>
+<script src="/main.106cbfe1.js"></script>
 
-<script src="/1.3b316f25.js"></script>
+<script src="/1.f694ded8.js"></script>
 
-<script src="/2.5ed67586.js"></script>
+<script src="/2.8531ccb3.js"></script>
 
-<script src="/3.30e1bd51.js"></script>
+<script src="/3.37eae0ca.js"></script>
 
-<script src="/1be78505.418846b9.js"></script>
+<script src="/1be78505.62d01586.js"></script>
 
 <script src="/ec1ed54d.456fc96f.js"></script>
 
-<script src="/17896441.e2a84acf.js"></script>
+<script src="/17896441.317408a8.js"></script>
 
-<script src="/3e7b1f7e.cde57953.js"></script>
+<script src="/3e7b1f7e.f24095f7.js"></script>
 
 
 </body>
