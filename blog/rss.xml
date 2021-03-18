@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+    <channel>
+        <title>华炎魔方 Blog</title>
+        <link>https://www.steedos.com/blog</link>
+        <description>华炎魔方 Blog</description>
+        <lastBuildDate>Sun, 01 Mar 2020 00:00:00 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <item>
+            <title><![CDATA[什么是低代码？如何选择低代码开发平台？]]></title>
+            <link>https://www.steedos.com/blog/2020/03/01/what-is-low-code</link>
+            <guid>什么是低代码？如何选择低代码开发平台？</guid>
+            <pubDate>Sun, 01 Mar 2020 00:00:00 GMT</pubDate>
+            <description><![CDATA[长久以来，开发企业软件系统需要大量的投资，需要业务部门提出精准的业务需求，并需要身价昂贵的顾问来设计应用程序。一旦系统建成后，就很难修改和升级，所以这类系统都会维持很多年，有时甚至十几年都不会经历大规模的升级。导致大部分中国企业还使用着难用难看的企业软件系统。]]></description>
+        </item>
+        <item>
+            <title><![CDATA[谈谈合同管理系统的选型]]></title>
+            <link>https://www.steedos.com/blog/2020/02/08/howchoosecontract</link>
+            <guid>谈谈合同管理系统的选型</guid>
+            <pubDate>Sat, 08 Feb 2020 00:00:00 GMT</pubDate>
+            <description><![CDATA[我们知道，合同管理是现代企业管理的重要内容之一，能否实施有效的合同管理，是企业经营管理成败的一个重要因素。而市场上的合同管理系统林林总总，企业如何选型，这就成了一个问题。]]></description>
+        </item>
+        <item>
+            <title><![CDATA[华炎合同管理系统简介]]></title>
+            <link>https://www.steedos.com/blog/2020/01/16/contract</link>
+            <guid>华炎合同管理系统简介</guid>
+            <pubDate>Thu, 16 Jan 2020 00:00:00 GMT</pubDate>
+            <description><![CDATA[华炎合同管理系统，是国内首款全周期、全功能的企业级合同管理系统，涵盖合同订立、执行、跟踪、变更、验收、付款、监督、统计的整个管理过程，并打通了合同管理系统与财务管理系统的数据与流程联动，实现企业合同的全闭环、自动化、一体化管理。]]></description>
+        </item>
+        <item>
+            <title><![CDATA[华炎发布合同管理系统]]></title>
+            <link>https://www.steedos.com/blog/2019/09/07/huayan-contract</link>
+            <guid>华炎发布合同管理系统</guid>
+            <pubDate>Sat, 07 Sep 2019 00:00:00 GMT</pubDate>
+            <description><![CDATA[点击查看视频]]></description>
+        </item>
+        <item>
+            <title><![CDATA[华炎发布低代码开发平台华炎魔方]]></title>
+            <link>https://www.steedos.com/blog/2019/09/05/hello-creator</link>
+            <guid>华炎发布低代码开发平台华炎魔方</guid>
+            <pubDate>Thu, 05 Sep 2019 00:00:00 GMT</pubDate>
+            <description><![CDATA[低代码开发平台，是指无需编码或很少代码（No Code or Low Code）就可以快速生成应用程序的工具，提供可视化的设计工具来快速搭建界面、设计数据模型、创建业务逻辑和工作流。]]></description>
+        </item>
+    </channel>
+</rss>
