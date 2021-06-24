@@ -1,1 +1,0 @@
-(self.webpackChunk=self.webpackChunk||[]).push([[9627],{21718:function(e,n,t){"use strict";t.r(n);var l=t(67294),c=t.n(l),r=t(59477),u=t(67775),a=t(52263);n.default=function(){var e=(0,a.Z)().siteConfig;return c().createElement(r.Z,null,c().createElement("h2",null,"Site config"),c().createElement(u.Z,{src:e,collapseDepth:"3"}))}}}]);
