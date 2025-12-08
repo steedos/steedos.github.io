@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkmy_website=globalThis.webpackChunkmy_website||[]).push([[7472],{55513:e=>{e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"Welcome to Steedos Platform","permalink":"/blog/welcome","unlisted":false,"date":"2023-06-12T00:00:00.000Z"}]}')}}]);
